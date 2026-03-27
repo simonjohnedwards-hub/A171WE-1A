@@ -1,0 +1,2297 @@
+{
+  "settings" : [ {
+    "key" : "appVersion",
+    "valueType" : "string",
+    "defaultValue" : "",
+    "configTitle" : "AppVersionTitle",
+    "configPrompt" : null,
+    "configType" : "alphaNumeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : true,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "userInfo",
+    "valueType" : "string",
+    "defaultValue" : "Please read message above",
+    "configTitle" : "userInfoTitle",
+    "configPrompt" : null,
+    "configType" : "alphaNumeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : true,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "productId",
+    "valueType" : "string",
+    "defaultValue" : "Product ID",
+    "configTitle" : "productId",
+    "configPrompt" : null,
+    "configType" : "alphaNumeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : true,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "licenseKey",
+    "valueType" : "string",
+    "defaultValue" : "Obtain and insert license key here",
+    "configTitle" : "licenseKey",
+    "configPrompt" : null,
+    "configType" : "alphaNumeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "presets",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "presetsTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "customstyle",
+      "value" : 0
+    }, {
+      "display" : "preset1",
+      "value" : 1
+    }, {
+      "display" : "preset2",
+      "value" : 2
+    }, {
+      "display" : "preset3",
+      "value" : 3
+    }, {
+      "display" : "preset4",
+      "value" : 4
+    }, {
+      "display" : "preset5",
+      "value" : 5
+    }, {
+      "display" : "preset6",
+      "value" : 6
+    }, {
+      "display" : "preset7",
+      "value" : 7
+    }, {
+      "display" : "preset8",
+      "value" : 8
+    }, {
+      "display" : "preset9",
+      "value" : 9
+    }, {
+      "display" : "preset10",
+      "value" : 10
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "sunsetOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "sunsetOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "wakeTime",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "wakeTimeTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "kmmiles",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "kmmilesTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "kilometers",
+      "value" : 0
+    }, {
+      "display" : "miles",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "metersfeet",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "metersfeetTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "meters",
+      "value" : 0
+    }, {
+      "display" : "feet",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "pressure",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "pressureTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "hPa",
+      "value" : 0
+    }, {
+      "display" : "millibar",
+      "value" : 1
+    }, {
+      "display" : "mmHg",
+      "value" : 2
+    }, {
+      "display" : "inHg",
+      "value" : 3
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "celsiusfahrenheit",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "celsiusfahrenheitTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "celsius",
+      "value" : 0
+    }, {
+      "display" : "fahrenheit",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "moveBarOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "moveBarOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "backgroundColour",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "backgroundColourTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "Black",
+      "value" : 0
+    }, {
+      "display" : "White",
+      "value" : 1
+    }, {
+      "display" : "LtGray",
+      "value" : 2
+    }, {
+      "display" : "DkGray",
+      "value" : 3
+    }, {
+      "display" : "Red",
+      "value" : 4
+    }, {
+      "display" : "DkRed",
+      "value" : 5
+    }, {
+      "display" : "Orange",
+      "value" : 6
+    }, {
+      "display" : "Yellow",
+      "value" : 7
+    }, {
+      "display" : "Green",
+      "value" : 8
+    }, {
+      "display" : "DkGreen",
+      "value" : 9
+    }, {
+      "display" : "Blue",
+      "value" : 10
+    }, {
+      "display" : "DkBlue",
+      "value" : 11
+    }, {
+      "display" : "Purple",
+      "value" : 12
+    }, {
+      "display" : "Pink",
+      "value" : 13
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "backgroundColourSleep",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "backgroundColourSleepTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "Black",
+      "value" : 0
+    }, {
+      "display" : "White",
+      "value" : 1
+    }, {
+      "display" : "LtGray",
+      "value" : 2
+    }, {
+      "display" : "DkGray",
+      "value" : 3
+    }, {
+      "display" : "Red",
+      "value" : 4
+    }, {
+      "display" : "DkRed",
+      "value" : 5
+    }, {
+      "display" : "Orange",
+      "value" : 6
+    }, {
+      "display" : "Yellow",
+      "value" : 7
+    }, {
+      "display" : "Green",
+      "value" : 8
+    }, {
+      "display" : "DkGreen",
+      "value" : 9
+    }, {
+      "display" : "Blue",
+      "value" : 10
+    }, {
+      "display" : "DkBlue",
+      "value" : 11
+    }, {
+      "display" : "Purple",
+      "value" : 12
+    }, {
+      "display" : "Pink",
+      "value" : 13
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "touchOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "handsOnTopTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "doNotDisturbOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "donotdisturbTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "batteryColourLevelOn",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "batteryColourLevelOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "bodyBatteryColourLevelOn",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "bodyBatteryColourLevelOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "batteryCircleOn",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "batteryCircleOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "presetsOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "presetsOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "twelvehourtimeUpper",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "twelvehourtimeUpperTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "bluetoothStatus",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "bluetoothStatusTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "digitalColour",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "digitalColourTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "Black",
+      "value" : 0
+    }, {
+      "display" : "White",
+      "value" : 1
+    }, {
+      "display" : "LtGray",
+      "value" : 2
+    }, {
+      "display" : "DkGray",
+      "value" : 3
+    }, {
+      "display" : "Red",
+      "value" : 4
+    }, {
+      "display" : "DkRed",
+      "value" : 5
+    }, {
+      "display" : "Orange",
+      "value" : 6
+    }, {
+      "display" : "Yellow",
+      "value" : 7
+    }, {
+      "display" : "Green",
+      "value" : 8
+    }, {
+      "display" : "DkGreen",
+      "value" : 9
+    }, {
+      "display" : "Blue",
+      "value" : 10
+    }, {
+      "display" : "DkBlue",
+      "value" : 11
+    }, {
+      "display" : "Purple",
+      "value" : 12
+    }, {
+      "display" : "Pink",
+      "value" : 13
+    }, {
+      "display" : "None",
+      "value" : 14
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "digitalFont",
+    "valueType" : "number",
+    "defaultValue" : 5,
+    "configTitle" : "digitalFontTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "tiny",
+      "value" : 0
+    }, {
+      "display" : "small",
+      "value" : 1
+    }, {
+      "display" : "medium",
+      "value" : 2
+    }, {
+      "display" : "big",
+      "value" : 3
+    }, {
+      "display" : "bigger",
+      "value" : 4
+    }, {
+      "display" : "larger",
+      "value" : 5
+    }, {
+      "display" : "largest",
+      "value" : 6
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "secondsColour",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "secondsColourTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "Black",
+      "value" : 0
+    }, {
+      "display" : "White",
+      "value" : 1
+    }, {
+      "display" : "LtGray",
+      "value" : 2
+    }, {
+      "display" : "DkGray",
+      "value" : 3
+    }, {
+      "display" : "Red",
+      "value" : 4
+    }, {
+      "display" : "DkRed",
+      "value" : 5
+    }, {
+      "display" : "Orange",
+      "value" : 6
+    }, {
+      "display" : "Yellow",
+      "value" : 7
+    }, {
+      "display" : "Green",
+      "value" : 8
+    }, {
+      "display" : "DkGreen",
+      "value" : 9
+    }, {
+      "display" : "Blue",
+      "value" : 10
+    }, {
+      "display" : "DkBlue",
+      "value" : 11
+    }, {
+      "display" : "Purple",
+      "value" : 12
+    }, {
+      "display" : "Pink",
+      "value" : 13
+    }, {
+      "display" : "None",
+      "value" : 14
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "secondsFontSize",
+    "valueType" : "number",
+    "defaultValue" : 2,
+    "configTitle" : "secondsFontSizeTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "tiny",
+      "value" : 0
+    }, {
+      "display" : "small",
+      "value" : 1
+    }, {
+      "display" : "medium",
+      "value" : 2
+    }, {
+      "display" : "big",
+      "value" : 3
+    }, {
+      "display" : "bigger",
+      "value" : 4
+    }, {
+      "display" : "larger",
+      "value" : 5
+    }, {
+      "display" : "largest",
+      "value" : 6
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "hourMinuteSeparator",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "hourMinuteSeparatorTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "minuteSecondSeparator",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "minuteSecondSeparatorTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "dateNextToThreeColour",
+    "valueType" : "number",
+    "defaultValue" : 14,
+    "configTitle" : "dateNextToThreeColourTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "Black",
+      "value" : 0
+    }, {
+      "display" : "White",
+      "value" : 1
+    }, {
+      "display" : "LtGray",
+      "value" : 2
+    }, {
+      "display" : "DkGray",
+      "value" : 3
+    }, {
+      "display" : "Red",
+      "value" : 4
+    }, {
+      "display" : "DkRed",
+      "value" : 5
+    }, {
+      "display" : "Orange",
+      "value" : 6
+    }, {
+      "display" : "Yellow",
+      "value" : 7
+    }, {
+      "display" : "Green",
+      "value" : 8
+    }, {
+      "display" : "DkGreen",
+      "value" : 9
+    }, {
+      "display" : "Blue",
+      "value" : 10
+    }, {
+      "display" : "DkBlue",
+      "value" : 11
+    }, {
+      "display" : "Purple",
+      "value" : 12
+    }, {
+      "display" : "Pink",
+      "value" : 13
+    }, {
+      "display" : "None",
+      "value" : 14
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "dateNextToThreeFont",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "dateNextToThreeFontTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "tiny",
+      "value" : 0
+    }, {
+      "display" : "small",
+      "value" : 1
+    }, {
+      "display" : "medium",
+      "value" : 2
+    }, {
+      "display" : "big",
+      "value" : 3
+    }, {
+      "display" : "bigger",
+      "value" : 4
+    }, {
+      "display" : "larger",
+      "value" : 5
+    }, {
+      "display" : "largest",
+      "value" : 6
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "dateNextToThreeBoxColour",
+    "valueType" : "number",
+    "defaultValue" : 3,
+    "configTitle" : "dateNextToThreeBoxColourTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "Black",
+      "value" : 0
+    }, {
+      "display" : "White",
+      "value" : 1
+    }, {
+      "display" : "LtGray",
+      "value" : 2
+    }, {
+      "display" : "DkGray",
+      "value" : 3
+    }, {
+      "display" : "Red",
+      "value" : 4
+    }, {
+      "display" : "DkRed",
+      "value" : 5
+    }, {
+      "display" : "Orange",
+      "value" : 6
+    }, {
+      "display" : "Yellow",
+      "value" : 7
+    }, {
+      "display" : "Green",
+      "value" : 8
+    }, {
+      "display" : "DkGreen",
+      "value" : 9
+    }, {
+      "display" : "Blue",
+      "value" : 10
+    }, {
+      "display" : "DkBlue",
+      "value" : 11
+    }, {
+      "display" : "Purple",
+      "value" : 12
+    }, {
+      "display" : "Pink",
+      "value" : 13
+    }, {
+      "display" : "None",
+      "value" : 14
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "dateNextToThreeFillColour",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "dateNextToThreeFillColourTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "Black",
+      "value" : 0
+    }, {
+      "display" : "White",
+      "value" : 1
+    }, {
+      "display" : "LtGray",
+      "value" : 2
+    }, {
+      "display" : "DkGray",
+      "value" : 3
+    }, {
+      "display" : "Red",
+      "value" : 4
+    }, {
+      "display" : "DkRed",
+      "value" : 5
+    }, {
+      "display" : "Orange",
+      "value" : 6
+    }, {
+      "display" : "Yellow",
+      "value" : 7
+    }, {
+      "display" : "Green",
+      "value" : 8
+    }, {
+      "display" : "DkGreen",
+      "value" : 9
+    }, {
+      "display" : "Blue",
+      "value" : 10
+    }, {
+      "display" : "DkBlue",
+      "value" : 11
+    }, {
+      "display" : "Purple",
+      "value" : 12
+    }, {
+      "display" : "Pink",
+      "value" : 13
+    }, {
+      "display" : "None",
+      "value" : 14
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "customFont",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "customFontTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "dateBox",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "dateBox",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "dateNotificationOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "dateNotificationOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "dateFormat",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "dateFormatTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "None",
+      "value" : 0
+    }, {
+      "display" : "DayDateMonth",
+      "value" : 1
+    }, {
+      "display" : "DateMonthDay",
+      "value" : 2
+    }, {
+      "display" : "DayMonthDate",
+      "value" : 3
+    }, {
+      "display" : "MonthDateDay",
+      "value" : 4
+    }, {
+      "display" : "DateMonthWeek",
+      "value" : 5
+    }, {
+      "display" : "DateMonth",
+      "value" : 6
+    }, {
+      "display" : "MonthDate",
+      "value" : 7
+    }, {
+      "display" : "DayDD",
+      "value" : 8
+    }, {
+      "display" : "DD",
+      "value" : 9
+    }, {
+      "display" : "DDMMYYYY",
+      "value" : 10
+    }, {
+      "display" : "MMDDYYYY",
+      "value" : 11
+    }, {
+      "display" : "YYYYMMDD",
+      "value" : 12
+    }, {
+      "display" : "DDMM",
+      "value" : 13
+    }, {
+      "display" : "MMDD",
+      "value" : 14
+    }, {
+      "display" : "digitalClock",
+      "value" : 15
+    }, {
+      "display" : "Battery",
+      "value" : 16
+    }, {
+      "display" : "totalDistance",
+      "value" : 17
+    }, {
+      "display" : "totalWeekDistance",
+      "value" : 18
+    }, {
+      "display" : "totalCal",
+      "value" : 19
+    }, {
+      "display" : "totalSteps",
+      "value" : 20
+    }, {
+      "display" : "totalFloors",
+      "value" : 21
+    }, {
+      "display" : "activityMinutesDay",
+      "value" : 40
+    }, {
+      "display" : "activityMinutesWeek",
+      "value" : 41
+    }, {
+      "display" : "heartRate",
+      "value" : 22
+    }, {
+      "display" : "notificationNumber",
+      "value" : 23
+    }, {
+      "display" : "alarmNumber",
+      "value" : 24
+    }, {
+      "display" : "nextsunevent",
+      "value" : 25
+    }, {
+      "display" : "sunrise",
+      "value" : 26
+    }, {
+      "display" : "sunset",
+      "value" : 27
+    }, {
+      "display" : "latitude",
+      "value" : 28
+    }, {
+      "display" : "longitude",
+      "value" : 29
+    }, {
+      "display" : "altitude",
+      "value" : 30
+    }, {
+      "display" : "meanSeaLevelPressure",
+      "value" : 31
+    }, {
+      "display" : "ambientPressure",
+      "value" : 32
+    }, {
+      "display" : "historyPressure",
+      "value" : 33
+    }, {
+      "display" : "temperature",
+      "value" : 34
+    }, {
+      "display" : "sunriseSunset",
+      "value" : 35
+    }, {
+      "display" : "latitudeLongitude",
+      "value" : 36
+    }, {
+      "display" : "bodyBattery",
+      "value" : 37
+    }, {
+      "display" : "timeToRecovery",
+      "value" : 38
+    }, {
+      "display" : "outsideTemperature",
+      "value" : 39
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "dateColour",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "dateColourTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "Black",
+      "value" : 0
+    }, {
+      "display" : "White",
+      "value" : 1
+    }, {
+      "display" : "LtGray",
+      "value" : 2
+    }, {
+      "display" : "DkGray",
+      "value" : 3
+    }, {
+      "display" : "Red",
+      "value" : 4
+    }, {
+      "display" : "DkRed",
+      "value" : 5
+    }, {
+      "display" : "Orange",
+      "value" : 6
+    }, {
+      "display" : "Yellow",
+      "value" : 7
+    }, {
+      "display" : "Green",
+      "value" : 8
+    }, {
+      "display" : "DkGreen",
+      "value" : 9
+    }, {
+      "display" : "Blue",
+      "value" : 10
+    }, {
+      "display" : "DkBlue",
+      "value" : 11
+    }, {
+      "display" : "Purple",
+      "value" : 12
+    }, {
+      "display" : "Pink",
+      "value" : 13
+    }, {
+      "display" : "None",
+      "value" : 14
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "dateFont",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "dateFontTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "small",
+      "value" : 0
+    }, {
+      "display" : "medium",
+      "value" : 1
+    }, {
+      "display" : "big",
+      "value" : 2
+    }, {
+      "display" : "larger",
+      "value" : 3
+    }, {
+      "display" : "largest",
+      "value" : 4
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "textNextToNineBox",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "textNextToNineBoxTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "nextToNineNotificationOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "nextToNineNotificationOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "textNextToNineNumber",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "textNextToNineNumberTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "None",
+      "value" : 0
+    }, {
+      "display" : "digitalClock",
+      "value" : 1
+    }, {
+      "display" : "Battery",
+      "value" : 2
+    }, {
+      "display" : "bodyBattery",
+      "value" : 23
+    }, {
+      "display" : "totalDistance",
+      "value" : 3
+    }, {
+      "display" : "totalWeekDistance",
+      "value" : 4
+    }, {
+      "display" : "totalCal",
+      "value" : 5
+    }, {
+      "display" : "totalSteps",
+      "value" : 6
+    }, {
+      "display" : "totalFloors",
+      "value" : 7
+    }, {
+      "display" : "activityMinutesDay",
+      "value" : 26
+    }, {
+      "display" : "activityMinutesWeek",
+      "value" : 27
+    }, {
+      "display" : "heartRate",
+      "value" : 8
+    }, {
+      "display" : "notificationNumber",
+      "value" : 9
+    }, {
+      "display" : "alarmNumber",
+      "value" : 10
+    }, {
+      "display" : "nextsunevent",
+      "value" : 11
+    }, {
+      "display" : "sunrise",
+      "value" : 12
+    }, {
+      "display" : "sunset",
+      "value" : 13
+    }, {
+      "display" : "latitude",
+      "value" : 14
+    }, {
+      "display" : "longitude",
+      "value" : 15
+    }, {
+      "display" : "altitude",
+      "value" : 16
+    }, {
+      "display" : "meanSeaLevelPressure",
+      "value" : 17
+    }, {
+      "display" : "ambientPressure",
+      "value" : 18
+    }, {
+      "display" : "historyPressure",
+      "value" : 19
+    }, {
+      "display" : "temperature",
+      "value" : 20
+    }, {
+      "display" : "timeToRecovery",
+      "value" : 24
+    }, {
+      "display" : "outsideTemperature",
+      "value" : 25
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "textNextToNineColour",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "textNextToNineColourTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "Black",
+      "value" : 0
+    }, {
+      "display" : "White",
+      "value" : 1
+    }, {
+      "display" : "LtGray",
+      "value" : 2
+    }, {
+      "display" : "DkGray",
+      "value" : 3
+    }, {
+      "display" : "Red",
+      "value" : 4
+    }, {
+      "display" : "DkRed",
+      "value" : 5
+    }, {
+      "display" : "Orange",
+      "value" : 6
+    }, {
+      "display" : "Yellow",
+      "value" : 7
+    }, {
+      "display" : "Green",
+      "value" : 8
+    }, {
+      "display" : "DkGreen",
+      "value" : 9
+    }, {
+      "display" : "Blue",
+      "value" : 10
+    }, {
+      "display" : "DkBlue",
+      "value" : 11
+    }, {
+      "display" : "Purple",
+      "value" : 12
+    }, {
+      "display" : "Pink",
+      "value" : 13
+    }, {
+      "display" : "None",
+      "value" : 14
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "nextToNineFont",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "nextToNineFontTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "tiny",
+      "value" : 0
+    }, {
+      "display" : "small",
+      "value" : 1
+    }, {
+      "display" : "medium",
+      "value" : 2
+    }, {
+      "display" : "big",
+      "value" : 3
+    }, {
+      "display" : "bigger",
+      "value" : 4
+    }, {
+      "display" : "larger",
+      "value" : 5
+    }, {
+      "display" : "largest",
+      "value" : 6
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "textBox",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "textBox",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "leftNotificationOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "leftNotificationOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "leftText",
+    "valueType" : "number",
+    "defaultValue" : 2,
+    "configTitle" : "leftTextTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "None",
+      "value" : 0
+    }, {
+      "display" : "digitalClock",
+      "value" : 1
+    }, {
+      "display" : "Battery",
+      "value" : 2
+    }, {
+      "display" : "bodyBattery",
+      "value" : 23
+    }, {
+      "display" : "totalDistance",
+      "value" : 3
+    }, {
+      "display" : "totalWeekDistance",
+      "value" : 4
+    }, {
+      "display" : "totalCal",
+      "value" : 5
+    }, {
+      "display" : "totalSteps",
+      "value" : 6
+    }, {
+      "display" : "totalFloors",
+      "value" : 7
+    }, {
+      "display" : "activityMinutesDay",
+      "value" : 26
+    }, {
+      "display" : "activityMinutesWeek",
+      "value" : 27
+    }, {
+      "display" : "heartRate",
+      "value" : 8
+    }, {
+      "display" : "notificationNumber",
+      "value" : 9
+    }, {
+      "display" : "alarmNumber",
+      "value" : 10
+    }, {
+      "display" : "nextsunevent",
+      "value" : 11
+    }, {
+      "display" : "sunrise",
+      "value" : 12
+    }, {
+      "display" : "sunset",
+      "value" : 13
+    }, {
+      "display" : "latitude",
+      "value" : 14
+    }, {
+      "display" : "longitude",
+      "value" : 15
+    }, {
+      "display" : "altitude",
+      "value" : 16
+    }, {
+      "display" : "meanSeaLevelPressure",
+      "value" : 17
+    }, {
+      "display" : "ambientPressure",
+      "value" : 18
+    }, {
+      "display" : "historyPressure",
+      "value" : 19
+    }, {
+      "display" : "temperature",
+      "value" : 20
+    }, {
+      "display" : "timeToRecovery",
+      "value" : 24
+    }, {
+      "display" : "outsideTemperature",
+      "value" : 25
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "rightNotificationOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "rightNotificationOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "rightText",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "rightTextTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "None",
+      "value" : 0
+    }, {
+      "display" : "digitalClock",
+      "value" : 1
+    }, {
+      "display" : "Battery",
+      "value" : 2
+    }, {
+      "display" : "bodyBattery",
+      "value" : 23
+    }, {
+      "display" : "totalDistance",
+      "value" : 3
+    }, {
+      "display" : "totalWeekDistance",
+      "value" : 4
+    }, {
+      "display" : "totalCal",
+      "value" : 5
+    }, {
+      "display" : "totalSteps",
+      "value" : 6
+    }, {
+      "display" : "totalFloors",
+      "value" : 7
+    }, {
+      "display" : "activityMinutesDay",
+      "value" : 26
+    }, {
+      "display" : "activityMinutesWeek",
+      "value" : 27
+    }, {
+      "display" : "heartRate",
+      "value" : 8
+    }, {
+      "display" : "notificationNumber",
+      "value" : 9
+    }, {
+      "display" : "alarmNumber",
+      "value" : 10
+    }, {
+      "display" : "nextsunevent",
+      "value" : 11
+    }, {
+      "display" : "sunrise",
+      "value" : 12
+    }, {
+      "display" : "sunset",
+      "value" : 13
+    }, {
+      "display" : "latitude",
+      "value" : 14
+    }, {
+      "display" : "longitude",
+      "value" : 15
+    }, {
+      "display" : "altitude",
+      "value" : 16
+    }, {
+      "display" : "meanSeaLevelPressure",
+      "value" : 17
+    }, {
+      "display" : "ambientPressure",
+      "value" : 18
+    }, {
+      "display" : "historyPressure",
+      "value" : 19
+    }, {
+      "display" : "temperature",
+      "value" : 20
+    }, {
+      "display" : "timeToRecovery",
+      "value" : 24
+    }, {
+      "display" : "outsideTemperature",
+      "value" : 25
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "textColour",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "textColourTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "Black",
+      "value" : 0
+    }, {
+      "display" : "White",
+      "value" : 1
+    }, {
+      "display" : "LtGray",
+      "value" : 2
+    }, {
+      "display" : "DkGray",
+      "value" : 3
+    }, {
+      "display" : "Red",
+      "value" : 4
+    }, {
+      "display" : "DkRed",
+      "value" : 5
+    }, {
+      "display" : "Orange",
+      "value" : 6
+    }, {
+      "display" : "Yellow",
+      "value" : 7
+    }, {
+      "display" : "Green",
+      "value" : 8
+    }, {
+      "display" : "DkGreen",
+      "value" : 9
+    }, {
+      "display" : "Blue",
+      "value" : 10
+    }, {
+      "display" : "DkBlue",
+      "value" : 11
+    }, {
+      "display" : "Purple",
+      "value" : 12
+    }, {
+      "display" : "Pink",
+      "value" : 13
+    }, {
+      "display" : "None",
+      "value" : 14
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "textFont",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "textFontTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "small",
+      "value" : 0
+    }, {
+      "display" : "medium",
+      "value" : 1
+    }, {
+      "display" : "big",
+      "value" : 2
+    }, {
+      "display" : "larger",
+      "value" : 3
+    }, {
+      "display" : "largest",
+      "value" : 4
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "flipFields",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "flipFieldsTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "twelvehourtime",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "twelvehourtimeTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "timeZoneOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "timeZoneOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "daylightSaving",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "daylightSavingTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "timeZone",
+    "valueType" : "number",
+    "defaultValue" : 29,
+    "configTitle" : "timeZoneTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "International",
+      "value" : 0
+    }, {
+      "display" : "Midway",
+      "value" : 1
+    }, {
+      "display" : "Hawaii",
+      "value" : 2
+    }, {
+      "display" : "Alaska",
+      "value" : 3
+    }, {
+      "display" : "Pacific",
+      "value" : 4
+    }, {
+      "display" : "Tijuana",
+      "value" : 5
+    }, {
+      "display" : "Arizona",
+      "value" : 6
+    }, {
+      "display" : "Chihuahua",
+      "value" : 7
+    }, {
+      "display" : "Mountain",
+      "value" : 8
+    }, {
+      "display" : "Central_America",
+      "value" : 9
+    }, {
+      "display" : "Central_Time",
+      "value" : 10
+    }, {
+      "display" : "Guadalajara",
+      "value" : 11
+    }, {
+      "display" : "Saskatchewan",
+      "value" : 12
+    }, {
+      "display" : "Bogota",
+      "value" : 13
+    }, {
+      "display" : "Eastern",
+      "value" : 14
+    }, {
+      "display" : "Indiana",
+      "value" : 15
+    }, {
+      "display" : "Atlantic",
+      "value" : 16
+    }, {
+      "display" : "Caracas",
+      "value" : 17
+    }, {
+      "display" : "Manaus",
+      "value" : 18
+    }, {
+      "display" : "Santiago",
+      "value" : 19
+    }, {
+      "display" : "Newfoundland",
+      "value" : 20
+    }, {
+      "display" : "Brasilia",
+      "value" : 21
+    }, {
+      "display" : "Buenos",
+      "value" : 22
+    }, {
+      "display" : "Greenland",
+      "value" : 23
+    }, {
+      "display" : "Montevideo",
+      "value" : 24
+    }, {
+      "display" : "Mid_Atlantic",
+      "value" : 25
+    }, {
+      "display" : "Cape",
+      "value" : 26
+    }, {
+      "display" : "Azores",
+      "value" : 27
+    }, {
+      "display" : "Casablanca",
+      "value" : 28
+    }, {
+      "display" : "Greenwich",
+      "value" : 29
+    }, {
+      "display" : "Amsterdam",
+      "value" : 30
+    }, {
+      "display" : "Belgrade",
+      "value" : 31
+    }, {
+      "display" : "Brussels",
+      "value" : 32
+    }, {
+      "display" : "Sarajevo",
+      "value" : 33
+    }, {
+      "display" : "West",
+      "value" : 34
+    }, {
+      "display" : "Amman",
+      "value" : 35
+    }, {
+      "display" : "Athens",
+      "value" : 36
+    }, {
+      "display" : "Beirut",
+      "value" : 37
+    }, {
+      "display" : "Cairo",
+      "value" : 38
+    }, {
+      "display" : "Harare",
+      "value" : 39
+    }, {
+      "display" : "Helsinki",
+      "value" : 40
+    }, {
+      "display" : "Jerusalem",
+      "value" : 41
+    }, {
+      "display" : "Minsk",
+      "value" : 42
+    }, {
+      "display" : "Windhoek",
+      "value" : 43
+    }, {
+      "display" : "Kuwait",
+      "value" : 44
+    }, {
+      "display" : "Moscow",
+      "value" : 45
+    }, {
+      "display" : "Nairobi",
+      "value" : 46
+    }, {
+      "display" : "Tbilisi",
+      "value" : 47
+    }, {
+      "display" : "Tehran",
+      "value" : 48
+    }, {
+      "display" : "Abu",
+      "value" : 49
+    }, {
+      "display" : "Baku",
+      "value" : 50
+    }, {
+      "display" : "Yerevan",
+      "value" : 51
+    }, {
+      "display" : "Kabul",
+      "value" : 52
+    }, {
+      "display" : "Yekaterinburg",
+      "value" : 53
+    }, {
+      "display" : "Islamabad",
+      "value" : 54
+    }, {
+      "display" : "Sri",
+      "value" : 55
+    }, {
+      "display" : "Chennai",
+      "value" : 56
+    }, {
+      "display" : "Kathmandu",
+      "value" : 57
+    }, {
+      "display" : "Almaty",
+      "value" : 58
+    }, {
+      "display" : "Astana",
+      "value" : 59
+    }, {
+      "display" : "Yangon",
+      "value" : 60
+    }, {
+      "display" : "Bangkok",
+      "value" : 61
+    }, {
+      "display" : "Krasnoyarsk",
+      "value" : 62
+    }, {
+      "display" : "Beijing",
+      "value" : 63
+    }, {
+      "display" : "Kuala",
+      "value" : 64
+    }, {
+      "display" : "Irkutsk",
+      "value" : 65
+    }, {
+      "display" : "Perth",
+      "value" : 66
+    }, {
+      "display" : "Taipei",
+      "value" : 67
+    }, {
+      "display" : "Osaka",
+      "value" : 68
+    }, {
+      "display" : "Seoul",
+      "value" : 69
+    }, {
+      "display" : "Yakutsk",
+      "value" : 70
+    }, {
+      "display" : "Adelaide",
+      "value" : 71
+    }, {
+      "display" : "Darwin",
+      "value" : 72
+    }, {
+      "display" : "Brisbane",
+      "value" : 73
+    }, {
+      "display" : "Canberra",
+      "value" : 74
+    }, {
+      "display" : "Hobart",
+      "value" : 75
+    }, {
+      "display" : "Guam",
+      "value" : 76
+    }, {
+      "display" : "Vladivostok",
+      "value" : 77
+    }, {
+      "display" : "Magadan",
+      "value" : 78
+    }, {
+      "display" : "Auckland",
+      "value" : 79
+    }, {
+      "display" : "Fiji",
+      "value" : 80
+    }, {
+      "display" : "Nuku",
+      "value" : 81
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "Buenos" : "(UTC-3) Buenos Aires, Georgetown",
+      "Belgrade" : "(UTC+1) Belgrade, Bratislava, Budapest, Ljubljana, Prague",
+      "MMDD" : "MM.DD",
+      "Indiana" : "(UTC-5) Indiana (East)",
+      "kmmilesTitle" : "DISTANCE UNITS km/miles: select distance units",
+      "Central_America" : "(UTC-6) Central America",
+      "Black" : "Black",
+      "Beirut" : "(UTC+2) Beirut",
+      "dateNextToThreeFontTitle" : "DATE [Takes priority over seconds if they overlap]: (Right) font size",
+      "Baku" : "(UTC+4) Baku",
+      "dateFontTitle" : "TOP FIELD: font size (ICON FONT option above overrides this where icons are used)",
+      "textNextToNineNumberTitle" : "LEFT FIELD: Data field or OFF(notifications/alarms only show if not 0)",
+      "DateMonthDay" : "Date Month Day",
+      "LtGray" : "Light Gray",
+      "textBox" : "BOTTOM FIELD: If enabled draws a box around the Bottom fields",
+      "preset6" : "Elegant",
+      "preset5" : "Steps, Distance and heart",
+      "preset4" : "Dark Blue",
+      "preset3" : "Evening Contrast",
+      "timeZoneOnTitle" : "DIGITAL CLOCK SECOND TIME ZONE: Use second time zone for digital clock (not the main digital clock), off to use local time",
+      "Irkutsk" : "(UTC+8) Irkutsk, Ulaan Bataar",
+      "preset2" : "Smart",
+      "preset1" : "Default",
+      "Mid_Atlantic" : "(UTC-2) Mid-Atlantic",
+      "Eastern" : "(UTC-5) Eastern Time (US and Canada)",
+      "preset9" : "MoveArc (Move-Circle)",
+      "Atlantic" : "(UTC-4) Atlantic Time (Canada)",
+      "preset8" : "Latitude Longitude",
+      "preset7" : "Sunrise Sunset",
+      "DDMM" : "DD.MM",
+      "totalWeekDistance" : "Total 7 day distance (km/miles)",
+      "textNextToNineColourTitle" : "LEFT FIELD: Colour or OFF (if field is Body/Battery then below 25% red, below 50% orange, below 75% yellow and above 75% green)",
+      "sunrise" : "Sunrise",
+      "latitude" : "Latitude",
+      "EvenThicker" : "Even thicker",
+      "Amman" : "(UTC+2) Amman",
+      "rightTextTitle" : "BOTTOM RIGHT: data field or OFF(notifications/alarms only show if not 0)",
+      "DayMonthDate" : "Day Month Date",
+      "Yakutsk" : "(UTC+9) Yakutsk",
+      "handsOnTopTitle" : "TOUCH SETTINGS: Enable on-watch touchscreen settings menu",
+      "Abu" : "(UTC+4) Abu Dhabi, Muscat",
+      "temperature" : "Temperature(C/F)",
+      "Yekaterinburg" : "(UTC+5) Yekaterinburg",
+      "YYYYMMDD" : "YYYY.MM.DD",
+      "Helsinki" : "(UTC+2) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius",
+      "Minsk" : "(UTC+2) Minsk",
+      "Blue" : "Blue",
+      "EvenEvenThicker" : "Thickest",
+      "Hawaii" : "(UTC-10) Hawaii",
+      "flipFieldsTitle" : "FLIP: Flip the Top and Bottom fields",
+      "metersfeetTitle" : "DISTANCE UNITS m/ft: select distance units",
+      "MonthDateDay" : "Month Date Day",
+      "celsiusfahrenheitTitle" : "TEMPERATURE UNITS C/F: select temperature units",
+      "Tbilisi" : "(UTC+3) Tbilisi",
+      "Red" : "Red",
+      "latitudeLongitude" : "Latitude_Longitude",
+      "licenseKey" : "License Key",
+      "sunset" : "Sunset",
+      "hPa" : "hPa",
+      "Azores" : "(UTC-1) Azores",
+      "Osaka" : "(UTC+9) Osaka, Sapporo, Tokyo",
+      "activityMinutesWeek" : "Activity minutes week(m)",
+      "digitalColourTitle" : "DIGIAL CLOCK COLOUR: Set the digital clock colour",
+      "DD" : "Date",
+      "twelvehourtimeUpperTitle" : "12 HOUR TIME UPPERCASE: Display AM/PM in uppercase",
+      "dateNotificationOnTitle" : "TOP FIELD NOTIFICATIONS: If set and notifications waiting, replaces Top field with number of notifications until there are none",
+      "mmHg" : "mm.Hg",
+      "historyPressure" : "History pressure(hPa,mb,mH,iH)",
+      "wakeTimeTitle" : "BATTERY SAVER: Enabled for seconds to be off between Normal Bed Time and Normal Wake Time",
+      "Nairobi" : "(UTC+3) Nairobi",
+      "Brisbane" : "(UTC+10) Brisbane",
+      "digitalClock" : "Digital clock",
+      "Battery" : "Battery(%)",
+      "Guadalajara" : "(UTC-6) Guadalajara, Mexico City, Monterrey",
+      "millibar" : "millibar",
+      "Midway" : "(UTC-11) Midway Island, Samoa",
+      "Thin" : "Thin",
+      "notificationNumber" : "Notifications(n)",
+      "Sarajevo" : "(UTC+1) Sarajevo, Skopje, Warsaw, Zagreb",
+      "DDMMYYYY" : "DD.MM.YYYY",
+      "Jerusalem" : "(UTC+2) Jerusalem",
+      "Perth" : "(UTC+8) Perth",
+      "sunsetOnTitle" : "SUNSET SUNRISE: If enabled then sunset and sunrise is automatically calculated and between sunset and sunrise ALL black and white colours are interchanged including custom and presets.",
+      "minuteSecondSeparatorTitle" : "MINUTES/SECOND SEPARATOR: Enable minutes and seconds separator",
+      "Greenwich" : "(UTC+0) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London",
+      "Medium" : "Medium",
+      "totalCal" : "Total calories for day(kC)",
+      "Yerevan" : "(UTC+4) Yerevan",
+      "timeToRecovery" : "Time to Recovery(h)",
+      "secondsColourTitle" : "SECONDS COLOUR(ON)/OFF [Date takes priority if overlap]: Set the seconds colour (Bluetooth status overrides this colour unless OFF is selected)",
+      "psi" : "psi",
+      "dateNextToThreeBoxColourTitle" : "DATE [Takes priority over seconds if they overlap]: (Right) Box Colour or OFF",
+      "Taipei" : "(UTC+8) Taipei",
+      "medium" : "Medium",
+      "dateNextToThreeFillColourTitle" : "DATE [Takes priority over seconds if they overlap]: (Right) Background Fill Colour or OFF for transparent",
+      "DateMonth" : "Date Month",
+      "miles" : "Miles",
+      "dateNextToThreeColourTitle" : "DATE [Takes priority over seconds if they overlap]: (Right) Colour or OFF",
+      "Thinest" : "Thinest",
+      "activityMinutesDay" : "Activity minutes day(m)",
+      "Mountain" : "(UTC-7) Mountain Time (US and Canada)",
+      "Thickest" : "Thicker",
+      "textNextToNineBoxTitle" : "LEFT FIELD: If enabled draws box around Centre Left field",
+      "DateTitle" : "Date field on",
+      "ambientPressure" : "Ambient pressure(hPa,mb,mH,iH)",
+      "preset10" : "Just for me",
+      "Alaska" : "(UTC-9) Alaska",
+      "daylightSavingTitle" : "SECOND TIME ZONE CORRECTION: Correct second time zone by 1 hour for daylight saving (only if other time zone enabled)",
+      "batteryColourLevelOnTitle" : "BATTERY COLOUR: Colour code the battery level (green/yellow/red)",
+      "International" : "(UTC-12) International Date Line West",
+      "nextToNineNotificationOnTitle" : "LEFT FIELD: If enabled and there is a notification waiting, replace Left field with number of notifications unless there are none",
+      "batteryCircleOnTitle" : "BATTERY/BODY WIDGET CIRCLE: Draw battery or body battery as a circular arc widget",
+      "custom" : "Font with symbols",
+      "Almaty" : "(UTC+6) Almaty, Novosibirsk",
+      "pressureTitle" : "PRESSURE UNITS: select pressure units",
+      "Chihuahua" : "(UTC-7) Chihuahua, La Paz, Mazatlan",
+      "Cape" : "(UTC-1) Cape Verde Is.",
+      "Central_Time" : "(UTC-6) Central Time (US and Canada)",
+      "White" : "White",
+      "Purple" : "Purple",
+      "Cairo" : "(UTC+2) Cairo",
+      "dateFormatTitle" : "TOP FIELD: date, data or OFF(notifications/alarms only show if not 0)",
+      "Green" : "Green",
+      "big" : "Big",
+      "bodyBattery" : "Body Battery(%)",
+      "Casablanca" : "(UTC+0) Casablanca, Monrovia, Reykjavik",
+      "totalSteps" : "Total steps for day(s)",
+      "Orange" : "Orange",
+      "Kabul" : "(UTC+4:30) Kabul",
+      "digitalFontTitle" : "DIGITAL CLOCK FONT [if too large then seconds/date/left data are turned off if outside the available space]: Digital clock font size",
+      "hourMinuteSeparatorTitle" : "HOURS/MINUTES SEPARATOR: Enable hours and minutes separator",
+      "DayDD" : "Day Date",
+      "Chennai" : "(UTC+5:30) Chennai, Kolkata, Mumbai, New Delhi",
+      "Kathmandu" : "(UTC+5:45) Kathmandu",
+      "donotdisturbTitle" : "DO NOT DISTURB: Show Do Not Disturb indicator on watch face",
+      "nextsunevent" : "Next sun event",
+      "Arizona" : "(UTC-7) Arizona",
+      "AppVersionTitle" : "CleanDigitalPremium Version:",
+      "productId" : "Product ID for purchasing license key (press and hold to copy)",
+      "large" : "Large",
+      "Saskatchewan" : "(UTC-6) Saskatchewan",
+      "Athens" : "(UTC+2) Athens, Bucharest, Istanbul",
+      "backgroundColourSleepTitle" : "BACKGROUND COLOUR LOW POWER: Set the Background colour for low power/sleep mode",
+      "Bangkok" : "(UTC+7) Bangkok, Hanoi, Jakarta",
+      "Beijing" : "(UTC+8) Beijing, Chongqing, Hong Kong, Urumqi",
+      "Santiago" : "(UTC-4) Santiago",
+      "celsius" : "Celsius",
+      "inHg" : "in.Hg",
+      "Yellow" : "Yellow",
+      "tiny" : "Tiny",
+      "appVersionNumber" : "CleanAnalog Version",
+      "Canberra" : "(UTC+10) Canberra, Melbourne, Sydney",
+      "presetsTitle" : "CUSTOM OR PRESETS: select [Customise] or presets for specific watch layouts (these will disable the custom settings), Presets do not require a license",
+      "dateBox" : "TOP FIELD: If enabled draws a box around the Top field",
+      "nextToNineFontTitle" : "LEFT FIELD: font size (ICON FONT option above overrides this where icons are used)",
+      "DkGreen" : "Dark Green",
+      "larger" : "Larger",
+      "Fiji" : "(UTC+12) Fiji, Kamchatka, Marshall Is.",
+      "Astana" : "(UTC+6) Astana, Dhaka",
+      "Adelaide" : "(UTC+9:30) Adelaide",
+      "altitudeft" : "Altitude(ft)",
+      "presetsOnTitle" : "USE PRESETS: Enable or disable preset watch face styles",
+      "Moscow" : "(UTC+3) Moscow, St. Petersburg, Volgograd",
+      "Windhoek" : "(UTC+2) Windhoek",
+      "Hobart" : "(UTC+10) Hobart",
+      "sunriseSunset" : "Sunrise_Sunset",
+      "Harare" : "(UTC+2) Harare, Pretoria",
+      "Amsterdam" : "(UTC+1) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna",
+      "Seoul" : "(UTC+9) Seoul",
+      "leftTextTitle" : "BOTTOM LEFT: data field or OFF(notifications/alarms only show if not 0)",
+      "Kuwait" : "(UTC+3) Kuwait, Riyadh, Baghdad",
+      "textFontTitle" : "BOTTOM FIELD: font size (ICON FONT option above overrides this where icons are used)",
+      "userInfoTitle" : "If settings do not match what is seen on the watch face uninstall and reinstall watch app",
+      "bigger" : "Bigger",
+      "alarmNumber" : "Alarms(a)",
+      "Islamabad" : "(UTC+5) Islamabad, Karachi, Tashkent",
+      "twelvehourtimeTitle" : "Set digital time to 12 hour time",
+      "Pacific" : "(UTC-8) Pacific Time (US and Canada)",
+      "DayDateMonth" : "Day Date Month",
+      "None" : "(OFF)",
+      "small" : "Small",
+      "feet" : "Feet",
+      "Brasilia" : "(UTC-3) Brasilia",
+      "totalWeekDistanceMiles" : "Total 7 day distance (today+6)(miles)",
+      "Vladivostok" : "(UTC+10) Vladivostok",
+      "MMDDYYYY" : "MM.DD.YYYY",
+      "Guam" : "(UTC+10) Guam, Port Moresby",
+      "totalDistanceMiles" : "Total distance day(miles)",
+      "DkRed" : "DkRed",
+      "Kuala" : "(UTC+8) Kuala Lumpur, Singapore",
+      "fahrenheit" : "Fahrenheit",
+      "totalDistance" : "Total distance day(km/miles)",
+      "longitude" : "Longitude",
+      "Brussels" : "(UTC+1) Brussels, Copenhagen, Madrid, Paris",
+      "dateColourTitle" : "TOP FIELD: colour",
+      "DkGray" : "Dark Gray",
+      "bodyBatteryColourLevelOnTitle" : "BODY BATTERY COLOUR: Colour code the body battery level (green/yellow/orange/red)",
+      "Manaus" : "(UTC-4) Manaus",
+      "DkBlue" : "Dark Blue",
+      "Thick" : "Thick",
+      "Bogota" : "(UTC-5) Bogota, Lima, Quito, Rio Branco",
+      "Pink" : "Pink",
+      "Caracas" : "(UTC-4) Caracas, La Paz",
+      "heartRate" : "Heart Rate (bpm)",
+      "Nuku" : "(UTC+13) Nuku'alofa",
+      "largest" : "Largest",
+      "altitude" : "Altitude(m/ft)",
+      "moveBarOnTitle" : "ENABLE MOVE CIRCLE: track daily movement (green=1 hour, red=15min x4)",
+      "customstyle" : "Customise",
+      "leftNotificationOnTitle" : "BOTTOM LEFT FIELD NOTIFICATONS: If set and there is a notification waiting, replace below Left field with number of notifications unless there are none",
+      "Sri" : "(UTC+5:30) Sri Jayawardenapura",
+      "totalFloors" : "Total floors climbed for day(f)",
+      "Auckland" : "(UTC+12) Auckland, Wellington",
+      "AppName" : "CleanDigitalPremium",
+      "meters" : "Meters",
+      "outsideTemperature" : "Outside Temperature(C/F)",
+      "Darwin" : "(UTC+9:30) Darwin",
+      "customFontTitle" : "ICON FONT [Legacy setting]: if selected then icon symbols used in fields where possible (overrides the following font sizes for fields)",
+      "DateMonthWeek" : "Date Month WeekNum",
+      "bluetoothStatusTitle" : "BLUETOOTH STATUS: Bluetooth phone connection status indicated with BLUE seconds",
+      "backgroundColourTitle" : "BACKGROUND COLOUR: Set the Background colour",
+      "Magadan" : "(UTC+11) Magadan, Solomon Is., New Caledonia",
+      "Montevideo" : "(UTC-3) Montevideo",
+      "secondsFontSizeTitle" : "SECONDS FONT SIZE: font size compared to Digital Clock Font (large=same as hours and minutes)",
+      "MonthDate" : "Month Date",
+      "Tehran" : "(UTC+3:30) Tehran",
+      "timeZoneTitle" : "SECOND TIME ZONE: Select second time zone offset from UTC",
+      "textColourTitle" : "BOTTOM FIELD: colour",
+      "West" : "(UTC+1) West Central Africa",
+      "Yangon" : "(UTC+6:30) Yangon (Rangoon)",
+      "Newfoundland" : "(UTC-3:30) Newfoundland",
+      "meanSeaLevelPressure" : "Barometric pressure(hPa,mb,mH,iH)",
+      "Tijuana" : "(UTC-8) Tijuana, Baja California",
+      "Krasnoyarsk" : "(UTC+7) Krasnoyarsk",
+      "rightNotificationOnTitle" : "BOTTOM RIGHT FIELD NOTIFICATONS: If set and there is a notification waiting, replace below Right field with number of notifications unless there are none",
+      "kilometers" : "Kilometers",
+      "Greenland" : "(UTC-3) Greenland"
+    }
+  }
+}

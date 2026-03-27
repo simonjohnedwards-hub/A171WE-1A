@@ -1,0 +1,2033 @@
+[ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Math,1,13,17]; ]
+using Toybox.Math;
+[ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 4; @symbol_classdef = [SunCal,4,6,12]; ]
+class SunCal {
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 7; @position = 5; @symbol_vardef = [latitude,7,5,13]; ]
+    var latitude;
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 8; @position = 5; @symbol_vardef = [longitude,8,5,14]; ]
+    var longitude;
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 9; @position = 5; @symbol_vardef = [julianDate,9,5,15]; ]
+    var julianDate;
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 10; @position = 5; @symbol_vardef = [m_year,10,5,11]; ]
+    var m_year;
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 11; @position = 5; @symbol_vardef = [m_month,11,5,12]; ]
+    var m_month;
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 12; @position = 5; @symbol_vardef = [m_day,12,5,10]; ]
+    var m_day;
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 13; @position = 5; @symbol_vardef = [tzOffset,13,5,13]; ]
+    var tzOffset;
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 15; @symbol_functiondef = [SunSet,15,10,16]; @symbol_param<0> = [lat,15,17,20]; @symbol_param<1> = [lon,15,21,24]; @symbol_param<2> = [tz,15,25,27]; ]
+    function SunSet(lat, lon, tz) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_16_1_21_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 17 1 ]
+        %tmp.1 = lgetv %lat;
+        symbol [ lat %tmp.1 17 12 15 ];
+        symbol [ latitude ? 17 1 9 ];
+        putv self :latitude %tmp.1;
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 18 1 ]
+        %tmp.2 = lgetv %lon;
+        symbol [ lon %tmp.2 18 14 17 ];
+        %tmp.3 = sub 0 %tmp.2;
+        symbol [ longitude ? 18 1 10 ];
+        putv self :longitude %tmp.3;
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 19 1 ]
+        %tmp.4 = 0.0;
+        symbol [ julianDate ? 19 1 11 ];
+        putv self :julianDate %tmp.4;
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 20 1 ]
+        %tmp.5 = lgetv %tz;
+        symbol [ tz %tmp.5 20 12 14 ];
+        symbol [ tzOffset ? 20 1 9 ];
+        putv self :tzOffset %tmp.5;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_16_1_21_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 23; @symbol_functiondef = [setPosition,23,10,21]; @symbol_param<0> = [lat,23,22,25]; @symbol_param<1> = [lon,23,26,29]; @symbol_param<2> = [tz,23,30,32]; ]
+    function setPosition(lat, lon, tz) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_24_1_28_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 25 2 ]
+        %tmp.1 = lgetv %lat;
+        symbol [ lat %tmp.1 25 13 16 ];
+        symbol [ latitude ? 25 2 10 ];
+        putv self :latitude %tmp.1;
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 26 2 ]
+        %tmp.2 = lgetv %lon;
+        symbol [ lon %tmp.2 26 15 18 ];
+        %tmp.3 = sub 0 %tmp.2;
+        symbol [ longitude ? 26 2 11 ];
+        putv self :longitude %tmp.3;
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 27 2 ]
+        %tmp.4 = lgetv %tz;
+        symbol [ tz %tmp.4 27 13 15 ];
+        symbol [ tzOffset ? 27 2 10 ];
+        putv self :tzOffset %tmp.4;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_24_1_28_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 30; @symbol_functiondef = [degToRad,30,10,18]; @symbol_param<0> = [angleDeg,30,19,27]; ]
+    function degToRad(angleDeg) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_31_1_33_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 32 1 ]
+        symbol [ Math %tmp.1 32 9 13 ];
+        %tmp.1 = getm $.Toybox.Math;
+        symbol [ PI %tmp.2 32 14 16 ];
+        %tmp.2 = getv %tmp.1 :PI;
+        %tmp.3 = lgetv %angleDeg;
+        symbol [ angleDeg %tmp.3 32 19 27 ];
+        %tmp.4 = mul %tmp.2 %tmp.3;
+        %tmp.5 = 180.0;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        ret %tmp.6;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_31_1_33_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 35; @symbol_functiondef = [radToDeg,35,10,18]; @symbol_param<0> = [angleRad,35,19,27]; ]
+    function radToDeg(angleRad) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_36_1_38_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 37 1 ]
+        %tmp.1 = 180.0;
+        %tmp.2 = lgetv %angleRad;
+        symbol [ angleRad %tmp.2 37 17 25 ];
+        %tmp.3 = mul %tmp.1 %tmp.2;
+        symbol [ Math %tmp.4 37 28 32 ];
+        %tmp.4 = getm $.Toybox.Math;
+        symbol [ PI %tmp.5 37 33 35 ];
+        %tmp.5 = getv %tmp.4 :PI;
+        %tmp.6 = div %tmp.3 %tmp.5;
+        ret %tmp.6;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_36_1_38_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 40; @symbol_functiondef = [calcMeanObliquityOfEcliptic,40,10,37]; @symbol_param<0> = [t,40,38,39]; ]
+    function calcMeanObliquityOfEcliptic(t) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_41_1_45_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 42 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_41_1_45_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_41_1_45_1_stop" ]
+        %seconds.1 = local;
+        symbol [ seconds %seconds.1 42 5 12 ];
+        %tmp.1 = 21.448;
+        %tmp.2 = lgetv %t;
+        symbol [ t %tmp.2 42 24 25 ];
+        %tmp.3 = 46.8150;
+        %tmp.4 = lgetv %t;
+        symbol [ t %tmp.4 42 37 38 ];
+        %tmp.5 = 0.00059;
+        %tmp.6 = lgetv %t;
+        symbol [ t %tmp.6 42 50 51 ];
+        %tmp.7 = 0.001813;
+        %tmp.8 = mul %tmp.6 %tmp.7;
+        %tmp.9 = sub %tmp.5 %tmp.8;
+        %tmp.10 = mul %tmp.4 %tmp.9;
+        %tmp.11 = add %tmp.3 %tmp.10;
+        %tmp.12 = mul %tmp.2 %tmp.11;
+        %tmp.13 = sub %tmp.1 %tmp.12;
+        lputv %seconds.1 %tmp.13;
+        symbol [ seconds %seconds.1 42 5 12 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 43 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_41_1_45_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_41_1_45_1_stop" ]
+        %e0.2 = local;
+        symbol [ e0 %e0.2 43 5 7 ];
+        %tmp.14 = 23.0;
+        %tmp.15 = 26.0;
+        %tmp.16 = lgetv %seconds.1;
+        symbol [ seconds %tmp.16 43 26 33 ];
+        %tmp.17 = 60.0;
+        %tmp.18 = div %tmp.16 %tmp.17;
+        %tmp.19 = add %tmp.15 %tmp.18;
+        %tmp.20 = 60.0;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        %tmp.22 = add %tmp.14 %tmp.21;
+        lputv %e0.2 %tmp.22;
+        symbol [ e0 %e0.2 43 5 7 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 44 1 ]
+        %tmp.23 = lgetv %e0.2;
+        symbol [ e0 %tmp.23 44 8 10 ];
+        ret %tmp.23;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_41_1_45_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 47; @symbol_functiondef = [calcGeomMeanLongSun,47,10,29]; @symbol_param<0> = [t,47,30,31]; ]
+    function calcGeomMeanLongSun(t) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_48_1_57_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 49 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_48_1_57_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_48_1_57_1_stop" ]
+        %L.1 = local;
+        symbol [ L %L.1 49 5 6 ];
+        %tmp.1 = 280.46646;
+        %tmp.2 = lgetv %t;
+        symbol [ t %tmp.2 49 21 22 ];
+        %tmp.3 = 36000.76983;
+        %tmp.4 = 0.0003032;
+        %tmp.5 = lgetv %t;
+        symbol [ t %tmp.5 49 52 53 ];
+        %tmp.6 = mul %tmp.4 %tmp.5;
+        %tmp.7 = add %tmp.3 %tmp.6;
+        %tmp.8 = mul %tmp.2 %tmp.7;
+        %tmp.9 = add %tmp.1 %tmp.8;
+        lputv %L.1 %tmp.9;
+        symbol [ L %L.1 49 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 50 1 ]
+        while @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_50_1_52_1_while_test @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_50_1_52_1_while_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_50_1_52_1_while_test:
+        %tmp.10 = lgetv %L.1;
+        symbol [ L %tmp.10 50 9 10 ];
+        %tmp.11 = 360;
+        %tmp.12 = gt %tmp.10 %tmp.11;
+        bf %tmp.12 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_50_1_52_1_while_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_50_1_52_1_while_begin:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_50_18_52_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 51 2 ]
+        %tmp.13 = lgetv %L.1;
+        symbol [ L %tmp.13 51 2 3 ];
+        %tmp.14 = 360.0;
+        %tmp.15 = sub %tmp.13 %tmp.14;
+        lputv %L.1 %tmp.15;
+        symbol [ L %L.1 51 2 3 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_50_18_52_1_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_50_1_52_1_while_test;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_50_1_52_1_while_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 53 1 ]
+        while @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_53_1_55_1_while_test @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_53_1_55_1_while_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_53_1_55_1_while_test:
+        %tmp.16 = lgetv %L.1;
+        symbol [ L %tmp.16 53 8 9 ];
+        %tmp.17 = 0;
+        %tmp.18 = lt %tmp.16 %tmp.17;
+        bf %tmp.18 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_53_1_55_1_while_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_53_1_55_1_while_begin:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_53_16_55_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 54 2 ]
+        %tmp.19 = lgetv %L.1;
+        symbol [ L %tmp.19 54 2 3 ];
+        %tmp.20 = 360.0;
+        %tmp.21 = add %tmp.19 %tmp.20;
+        lputv %L.1 %tmp.21;
+        symbol [ L %L.1 54 2 3 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_53_16_55_1_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_53_1_55_1_while_test;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_53_1_55_1_while_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 56 1 ]
+        %tmp.22 = lgetv %L.1;
+        symbol [ L %tmp.22 56 8 9 ];
+        ret %tmp.22;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_48_1_57_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 59; @symbol_functiondef = [calcObliquityCorrection,59,10,33]; @symbol_param<0> = [t,59,34,35]; ]
+    function calcObliquityCorrection(t) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_60_1_65_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 61 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_60_1_65_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_60_1_65_1_stop" ]
+        %e0.1 = local;
+        symbol [ e0 %e0.1 61 5 7 ];
+        %tmp.1 = self;
+        symbol [ calcMeanObliquityOfEcliptic %tmp.2 61 10 37 ];
+        %tmp.2 = getv function %tmp.1 :calcMeanObliquityOfEcliptic;
+        %tmp.3 = lgetv %t;
+        symbol [ t %tmp.3 61 38 39 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %e0.1 %tmp.4;
+        symbol [ e0 %e0.1 61 5 7 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 62 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_60_1_65_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_60_1_65_1_stop" ]
+        %omega.2 = local;
+        symbol [ omega %omega.2 62 5 10 ];
+        %tmp.5 = 125.04;
+        %tmp.6 = 1934.136;
+        %tmp.7 = lgetv %t;
+        symbol [ t %tmp.7 62 33 34 ];
+        %tmp.8 = mul %tmp.6 %tmp.7;
+        %tmp.9 = sub %tmp.5 %tmp.8;
+        lputv %omega.2 %tmp.9;
+        symbol [ omega %omega.2 62 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 63 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_60_1_65_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_60_1_65_1_stop" ]
+        %e.3 = local;
+        symbol [ e %e.3 63 5 6 ];
+        %tmp.10 = lgetv %e0.1;
+        symbol [ e0 %tmp.10 63 9 11 ];
+        %tmp.11 = 0.00256;
+        symbol [ Math %tmp.12 63 24 28 ];
+        %tmp.12 = getm $.Toybox.Math;
+        symbol [ cos %tmp.13 63 29 32 ];
+        %tmp.13 = getv function %tmp.12 :cos;
+        %tmp.14 = self;
+        symbol [ degToRad %tmp.15 63 33 41 ];
+        %tmp.15 = getv function %tmp.14 :degToRad;
+        %tmp.16 = lgetv %omega.2;
+        symbol [ omega %tmp.16 63 42 47 ];
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        %tmp.18 = invoke %tmp.12 %tmp.13(%tmp.17);
+        %tmp.19 = mul %tmp.11 %tmp.18;
+        %tmp.20 = add %tmp.10 %tmp.19;
+        lputv %e.3 %tmp.20;
+        symbol [ e %e.3 63 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 64 1 ]
+        %tmp.21 = lgetv %e.3;
+        symbol [ e %tmp.21 64 8 9 ];
+        ret %tmp.21;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_60_1_65_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 67; @symbol_functiondef = [calcEccentricityEarthOrbit,67,10,36]; @symbol_param<0> = [t,67,37,38]; ]
+    function calcEccentricityEarthOrbit(t) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_68_1_71_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 69 1 ]
+        %tmp.1 = 0.016708634;
+        %tmp.2 = lgetv %t;
+        symbol [ t %tmp.2 69 23 24 ];
+        %tmp.3 = 0.000042037;
+        %tmp.4 = 0.0000001267;
+        %tmp.5 = lgetv %t;
+        symbol [ t %tmp.5 69 57 58 ];
+        %tmp.6 = mul %tmp.4 %tmp.5;
+        %tmp.7 = add %tmp.3 %tmp.6;
+        %tmp.8 = mul %tmp.2 %tmp.7;
+        %tmp.9 = sub %tmp.1 %tmp.8;
+        ret %tmp.9;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_68_1_71_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 73; @symbol_functiondef = [calcGeomMeanAnomalySun,73,10,32]; @symbol_param<0> = [t,73,33,34]; ]
+    function calcGeomMeanAnomalySun(t) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_74_1_77_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 75 1 ]
+        %tmp.1 = 357.52911;
+        %tmp.2 = lgetv %t;
+        symbol [ t %tmp.2 75 21 22 ];
+        %tmp.3 = 35999.05029;
+        %tmp.4 = 0.0001537;
+        %tmp.5 = lgetv %t;
+        symbol [ t %tmp.5 75 52 53 ];
+        %tmp.6 = mul %tmp.4 %tmp.5;
+        %tmp.7 = sub %tmp.3 %tmp.6;
+        %tmp.8 = mul %tmp.2 %tmp.7;
+        %tmp.9 = add %tmp.1 %tmp.8;
+        ret %tmp.9;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_74_1_77_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 78; @symbol_functiondef = [calcEquationOfTime,78,10,28]; @symbol_param<0> = [t,78,29,30]; ]
+    function calcEquationOfTime(t) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 80 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop" ]
+        %epsilon.1 = local;
+        symbol [ epsilon %epsilon.1 80 5 12 ];
+        %tmp.1 = self;
+        symbol [ calcObliquityCorrection %tmp.2 80 15 38 ];
+        %tmp.2 = getv function %tmp.1 :calcObliquityCorrection;
+        %tmp.3 = lgetv %t;
+        symbol [ t %tmp.3 80 39 40 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %epsilon.1 %tmp.4;
+        symbol [ epsilon %epsilon.1 80 5 12 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 81 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop" ]
+        %l0.2 = local;
+        symbol [ l0 %l0.2 81 5 7 ];
+        %tmp.5 = self;
+        symbol [ calcGeomMeanLongSun %tmp.6 81 10 29 ];
+        %tmp.6 = getv function %tmp.5 :calcGeomMeanLongSun;
+        %tmp.7 = lgetv %t;
+        symbol [ t %tmp.7 81 30 31 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        lputv %l0.2 %tmp.8;
+        symbol [ l0 %l0.2 81 5 7 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 82 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop" ]
+        %e.3 = local;
+        symbol [ e %e.3 82 5 6 ];
+        %tmp.9 = self;
+        symbol [ calcEccentricityEarthOrbit %tmp.10 82 9 35 ];
+        %tmp.10 = getv function %tmp.9 :calcEccentricityEarthOrbit;
+        %tmp.11 = lgetv %t;
+        symbol [ t %tmp.11 82 36 37 ];
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        lputv %e.3 %tmp.12;
+        symbol [ e %e.3 82 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 83 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop" ]
+        %m.4 = local;
+        symbol [ m %m.4 83 5 6 ];
+        %tmp.13 = self;
+        symbol [ calcGeomMeanAnomalySun %tmp.14 83 9 31 ];
+        %tmp.14 = getv function %tmp.13 :calcGeomMeanAnomalySun;
+        %tmp.15 = lgetv %t;
+        symbol [ t %tmp.15 83 32 33 ];
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        lputv %m.4 %tmp.16;
+        symbol [ m %m.4 83 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 84 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop" ]
+        %y.5 = local;
+        symbol [ y %y.5 84 5 6 ];
+        symbol [ Math %tmp.17 84 9 13 ];
+        %tmp.17 = getm $.Toybox.Math;
+        symbol [ tan %tmp.18 84 14 17 ];
+        %tmp.18 = getv function %tmp.17 :tan;
+        %tmp.19 = self;
+        symbol [ degToRad %tmp.20 84 18 26 ];
+        %tmp.20 = getv function %tmp.19 :degToRad;
+        %tmp.21 = lgetv %epsilon.1;
+        symbol [ epsilon %tmp.21 84 27 34 ];
+        %tmp.22 = invoke %tmp.19 %tmp.20(%tmp.21);
+        %tmp.23 = 2.0;
+        %tmp.24 = div %tmp.22 %tmp.23;
+        %tmp.25 = invoke %tmp.17 %tmp.18(%tmp.24);
+        lputv %y.5 %tmp.25;
+        symbol [ y %y.5 84 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 86 1 ]
+        %tmp.26 = lgetv %y.5;
+        symbol [ y %tmp.26 86 1 2 ];
+        %tmp.27 = lgetv %y.5;
+        symbol [ y %tmp.27 86 6 7 ];
+        %tmp.28 = mul %tmp.26 %tmp.27;
+        lputv %y.5 %tmp.28;
+        symbol [ y %y.5 86 1 2 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 88 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop" ]
+        %sin2l0.6 = local;
+        symbol [ sin2l0 %sin2l0.6 88 5 11 ];
+        symbol [ Math %tmp.29 88 14 18 ];
+        %tmp.29 = getm $.Toybox.Math;
+        symbol [ sin %tmp.30 88 19 22 ];
+        %tmp.30 = getv function %tmp.29 :sin;
+        %tmp.31 = 2.0;
+        %tmp.32 = self;
+        symbol [ degToRad %tmp.33 88 29 37 ];
+        %tmp.33 = getv function %tmp.32 :degToRad;
+        %tmp.34 = lgetv %l0.2;
+        symbol [ l0 %tmp.34 88 38 40 ];
+        %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
+        %tmp.36 = mul %tmp.31 %tmp.35;
+        %tmp.37 = invoke %tmp.29 %tmp.30(%tmp.36);
+        lputv %sin2l0.6 %tmp.37;
+        symbol [ sin2l0 %sin2l0.6 88 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 89 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop" ]
+        %sinm.7 = local;
+        symbol [ sinm %sinm.7 89 5 9 ];
+        symbol [ Math %tmp.38 89 14 18 ];
+        %tmp.38 = getm $.Toybox.Math;
+        symbol [ sin %tmp.39 89 19 22 ];
+        %tmp.39 = getv function %tmp.38 :sin;
+        %tmp.40 = self;
+        symbol [ degToRad %tmp.41 89 23 31 ];
+        %tmp.41 = getv function %tmp.40 :degToRad;
+        %tmp.42 = lgetv %m.4;
+        symbol [ m %tmp.42 89 32 33 ];
+        %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
+        %tmp.44 = invoke %tmp.38 %tmp.39(%tmp.43);
+        lputv %sinm.7 %tmp.44;
+        symbol [ sinm %sinm.7 89 5 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 90 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop" ]
+        %cos2l0.8 = local;
+        symbol [ cos2l0 %cos2l0.8 90 5 11 ];
+        symbol [ Math %tmp.45 90 14 18 ];
+        %tmp.45 = getm $.Toybox.Math;
+        symbol [ cos %tmp.46 90 19 22 ];
+        %tmp.46 = getv function %tmp.45 :cos;
+        %tmp.47 = 2.0;
+        %tmp.48 = self;
+        symbol [ degToRad %tmp.49 90 29 37 ];
+        %tmp.49 = getv function %tmp.48 :degToRad;
+        %tmp.50 = lgetv %l0.2;
+        symbol [ l0 %tmp.50 90 38 40 ];
+        %tmp.51 = invoke %tmp.48 %tmp.49(%tmp.50);
+        %tmp.52 = mul %tmp.47 %tmp.51;
+        %tmp.53 = invoke %tmp.45 %tmp.46(%tmp.52);
+        lputv %cos2l0.8 %tmp.53;
+        symbol [ cos2l0 %cos2l0.8 90 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 91 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop" ]
+        %sin4l0.9 = local;
+        symbol [ sin4l0 %sin4l0.9 91 5 11 ];
+        symbol [ Math %tmp.54 91 14 18 ];
+        %tmp.54 = getm $.Toybox.Math;
+        symbol [ sin %tmp.55 91 19 22 ];
+        %tmp.55 = getv function %tmp.54 :sin;
+        %tmp.56 = 4.0;
+        %tmp.57 = self;
+        symbol [ degToRad %tmp.58 91 29 37 ];
+        %tmp.58 = getv function %tmp.57 :degToRad;
+        %tmp.59 = lgetv %l0.2;
+        symbol [ l0 %tmp.59 91 38 40 ];
+        %tmp.60 = invoke %tmp.57 %tmp.58(%tmp.59);
+        %tmp.61 = mul %tmp.56 %tmp.60;
+        %tmp.62 = invoke %tmp.54 %tmp.55(%tmp.61);
+        lputv %sin4l0.9 %tmp.62;
+        symbol [ sin4l0 %sin4l0.9 91 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 92 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop" ]
+        %sin2m.10 = local;
+        symbol [ sin2m %sin2m.10 92 5 10 ];
+        symbol [ Math %tmp.63 92 14 18 ];
+        %tmp.63 = getm $.Toybox.Math;
+        symbol [ sin %tmp.64 92 19 22 ];
+        %tmp.64 = getv function %tmp.63 :sin;
+        %tmp.65 = 2.0;
+        %tmp.66 = self;
+        symbol [ degToRad %tmp.67 92 29 37 ];
+        %tmp.67 = getv function %tmp.66 :degToRad;
+        %tmp.68 = lgetv %m.4;
+        symbol [ m %tmp.68 92 38 39 ];
+        %tmp.69 = invoke %tmp.66 %tmp.67(%tmp.68);
+        %tmp.70 = mul %tmp.65 %tmp.69;
+        %tmp.71 = invoke %tmp.63 %tmp.64(%tmp.70);
+        lputv %sin2m.10 %tmp.71;
+        symbol [ sin2m %sin2m.10 92 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 93 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop" ]
+        %Etime.11 = local;
+        symbol [ Etime %Etime.11 93 5 10 ];
+        %tmp.72 = lgetv %y.5;
+        symbol [ y %tmp.72 93 13 14 ];
+        %tmp.73 = lgetv %sin2l0.6;
+        symbol [ sin2l0 %tmp.73 93 17 23 ];
+        %tmp.74 = mul %tmp.72 %tmp.73;
+        %tmp.75 = 2.0;
+        %tmp.76 = lgetv %e.3;
+        symbol [ e %tmp.76 93 32 33 ];
+        %tmp.77 = mul %tmp.75 %tmp.76;
+        %tmp.78 = lgetv %sinm.7;
+        symbol [ sinm %tmp.78 93 36 40 ];
+        %tmp.79 = mul %tmp.77 %tmp.78;
+        %tmp.80 = sub %tmp.74 %tmp.79;
+        %tmp.81 = 4.0;
+        %tmp.82 = lgetv %e.3;
+        symbol [ e %tmp.82 93 49 50 ];
+        %tmp.83 = mul %tmp.81 %tmp.82;
+        %tmp.84 = lgetv %y.5;
+        symbol [ y %tmp.84 93 53 54 ];
+        %tmp.85 = mul %tmp.83 %tmp.84;
+        %tmp.86 = lgetv %sinm.7;
+        symbol [ sinm %tmp.86 93 57 61 ];
+        %tmp.87 = mul %tmp.85 %tmp.86;
+        %tmp.88 = lgetv %cos2l0.8;
+        symbol [ cos2l0 %tmp.88 93 64 70 ];
+        %tmp.89 = mul %tmp.87 %tmp.88;
+        %tmp.90 = add %tmp.80 %tmp.89;
+        %tmp.91 = 0.5;
+        %tmp.92 = lgetv %y.5;
+        symbol [ y %tmp.92 93 79 80 ];
+        %tmp.93 = mul %tmp.91 %tmp.92;
+        %tmp.94 = lgetv %y.5;
+        symbol [ y %tmp.94 93 83 84 ];
+        %tmp.95 = mul %tmp.93 %tmp.94;
+        %tmp.96 = lgetv %sin4l0.9;
+        symbol [ sin4l0 %tmp.96 93 87 93 ];
+        %tmp.97 = mul %tmp.95 %tmp.96;
+        %tmp.98 = sub %tmp.90 %tmp.97;
+        %tmp.99 = 1.25;
+        %tmp.100 = lgetv %e.3;
+        symbol [ e %tmp.100 93 103 104 ];
+        %tmp.101 = mul %tmp.99 %tmp.100;
+        %tmp.102 = lgetv %e.3;
+        symbol [ e %tmp.102 93 107 108 ];
+        %tmp.103 = mul %tmp.101 %tmp.102;
+        %tmp.104 = lgetv %sin2m.10;
+        symbol [ sin2m %tmp.104 93 111 116 ];
+        %tmp.105 = mul %tmp.103 %tmp.104;
+        %tmp.106 = sub %tmp.98 %tmp.105;
+        lputv %Etime.11 %tmp.106;
+        symbol [ Etime %Etime.11 93 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 94 1 ]
+        %tmp.107 = self;
+        symbol [ radToDeg %tmp.108 94 8 16 ];
+        %tmp.108 = getv function %tmp.107 :radToDeg;
+        %tmp.109 = lgetv %Etime.11;
+        symbol [ Etime %tmp.109 94 17 22 ];
+        %tmp.110 = invoke %tmp.107 %tmp.108(%tmp.109);
+        %tmp.111 = 4.0;
+        %tmp.112 = mul %tmp.110 %tmp.111;
+        ret %tmp.112;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_79_1_95_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 97; @symbol_functiondef = [calcTimeJulianCent,97,10,28]; @symbol_param<0> = [jd,97,29,31]; ]
+    function calcTimeJulianCent(jd) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_98_1_101_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 99 1 ]
+        %tmp.1 = lgetv %jd;
+        symbol [ jd %tmp.1 99 11 13 ];
+        %tmp.2 = 2451545.0;
+        %tmp.3 = sub %tmp.1 %tmp.2;
+        %tmp.4 = 36525.0;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        ret %tmp.5;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_98_1_101_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 103; @symbol_functiondef = [calcSunTrueLong,103,10,25]; @symbol_param<0> = [t,103,26,27]; ]
+    function calcSunTrueLong(t) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_104_1_109_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 105 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_104_1_109_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_104_1_109_1_stop" ]
+        %l0.1 = local;
+        symbol [ l0 %l0.1 105 5 7 ];
+        %tmp.1 = self;
+        symbol [ calcGeomMeanLongSun %tmp.2 105 10 29 ];
+        %tmp.2 = getv function %tmp.1 :calcGeomMeanLongSun;
+        %tmp.3 = lgetv %t;
+        symbol [ t %tmp.3 105 30 31 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %l0.1 %tmp.4;
+        symbol [ l0 %l0.1 105 5 7 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 106 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_104_1_109_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_104_1_109_1_stop" ]
+        %c.2 = local;
+        symbol [ c %c.2 106 5 6 ];
+        %tmp.5 = self;
+        symbol [ calcSunEqOfCenter %tmp.6 106 9 26 ];
+        %tmp.6 = getv function %tmp.5 :calcSunEqOfCenter;
+        %tmp.7 = lgetv %t;
+        symbol [ t %tmp.7 106 27 28 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        lputv %c.2 %tmp.8;
+        symbol [ c %c.2 106 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 107 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_104_1_109_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_104_1_109_1_stop" ]
+        %O.3 = local;
+        symbol [ O %O.3 107 5 6 ];
+        %tmp.9 = lgetv %l0.1;
+        symbol [ l0 %tmp.9 107 9 11 ];
+        %tmp.10 = lgetv %c.2;
+        symbol [ c %tmp.10 107 14 15 ];
+        %tmp.11 = add %tmp.9 %tmp.10;
+        lputv %O.3 %tmp.11;
+        symbol [ O %O.3 107 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 108 1 ]
+        %tmp.12 = lgetv %O.3;
+        symbol [ O %tmp.12 108 8 9 ];
+        ret %tmp.12;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_104_1_109_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 111; @symbol_functiondef = [calcSunApparentLong,111,10,29]; @symbol_param<0> = [t,111,30,31]; ]
+    function calcSunApparentLong(t) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_112_1_117_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 113 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_112_1_117_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_112_1_117_1_stop" ]
+        %o.1 = local;
+        symbol [ o %o.1 113 5 6 ];
+        %tmp.1 = self;
+        symbol [ calcSunTrueLong %tmp.2 113 9 24 ];
+        %tmp.2 = getv function %tmp.1 :calcSunTrueLong;
+        %tmp.3 = lgetv %t;
+        symbol [ t %tmp.3 113 25 26 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %o.1 %tmp.4;
+        symbol [ o %o.1 113 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 114 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_112_1_117_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_112_1_117_1_stop" ]
+        %omega.2 = local;
+        symbol [ omega %omega.2 114 5 10 ];
+        %tmp.5 = 125.04;
+        %tmp.6 = 1934.136;
+        %tmp.7 = lgetv %t;
+        symbol [ t %tmp.7 114 33 34 ];
+        %tmp.8 = mul %tmp.6 %tmp.7;
+        %tmp.9 = sub %tmp.5 %tmp.8;
+        lputv %omega.2 %tmp.9;
+        symbol [ omega %omega.2 114 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 115 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_112_1_117_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_112_1_117_1_stop" ]
+        %lambda.3 = local;
+        symbol [ lambda %lambda.3 115 5 11 ];
+        %tmp.10 = lgetv %o.1;
+        symbol [ o %tmp.10 115 14 15 ];
+        %tmp.11 = 0.00569;
+        %tmp.12 = sub %tmp.10 %tmp.11;
+        %tmp.13 = 0.00478;
+        symbol [ Math %tmp.14 115 38 42 ];
+        %tmp.14 = getm $.Toybox.Math;
+        symbol [ sin %tmp.15 115 43 46 ];
+        %tmp.15 = getv function %tmp.14 :sin;
+        %tmp.16 = self;
+        symbol [ degToRad %tmp.17 115 47 55 ];
+        %tmp.17 = getv function %tmp.16 :degToRad;
+        %tmp.18 = lgetv %omega.2;
+        symbol [ omega %tmp.18 115 56 61 ];
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        %tmp.20 = invoke %tmp.14 %tmp.15(%tmp.19);
+        %tmp.21 = mul %tmp.13 %tmp.20;
+        %tmp.22 = sub %tmp.12 %tmp.21;
+        lputv %lambda.3 %tmp.22;
+        symbol [ lambda %lambda.3 115 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 116 1 ]
+        %tmp.23 = lgetv %lambda.3;
+        symbol [ lambda %tmp.23 116 8 14 ];
+        ret %tmp.23;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_112_1_117_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 119; @symbol_functiondef = [calcSunDeclination,119,10,28]; @symbol_param<0> = [t,119,29,30]; ]
+    function calcSunDeclination(t) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_120_1_126_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 121 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_120_1_126_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_120_1_126_1_stop" ]
+        %e.1 = local;
+        symbol [ e %e.1 121 5 6 ];
+        %tmp.1 = self;
+        symbol [ calcObliquityCorrection %tmp.2 121 9 32 ];
+        %tmp.2 = getv function %tmp.1 :calcObliquityCorrection;
+        %tmp.3 = lgetv %t;
+        symbol [ t %tmp.3 121 33 34 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %e.1 %tmp.4;
+        symbol [ e %e.1 121 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 122 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_120_1_126_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_120_1_126_1_stop" ]
+        %lambda.2 = local;
+        symbol [ lambda %lambda.2 122 5 11 ];
+        %tmp.5 = self;
+        symbol [ calcSunApparentLong %tmp.6 122 14 33 ];
+        %tmp.6 = getv function %tmp.5 :calcSunApparentLong;
+        %tmp.7 = lgetv %t;
+        symbol [ t %tmp.7 122 34 35 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        lputv %lambda.2 %tmp.8;
+        symbol [ lambda %lambda.2 122 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 123 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_120_1_126_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_120_1_126_1_stop" ]
+        %sint.3 = local;
+        symbol [ sint %sint.3 123 5 9 ];
+        symbol [ Math %tmp.9 123 12 16 ];
+        %tmp.9 = getm $.Toybox.Math;
+        symbol [ sin %tmp.10 123 17 20 ];
+        %tmp.10 = getv function %tmp.9 :sin;
+        %tmp.11 = self;
+        symbol [ degToRad %tmp.12 123 21 29 ];
+        %tmp.12 = getv function %tmp.11 :degToRad;
+        %tmp.13 = lgetv %e.1;
+        symbol [ e %tmp.13 123 30 31 ];
+        %tmp.14 = invoke %tmp.11 %tmp.12(%tmp.13);
+        %tmp.15 = invoke %tmp.9 %tmp.10(%tmp.14);
+        symbol [ Math %tmp.16 123 36 40 ];
+        %tmp.16 = getm $.Toybox.Math;
+        symbol [ sin %tmp.17 123 41 44 ];
+        %tmp.17 = getv function %tmp.16 :sin;
+        %tmp.18 = self;
+        symbol [ degToRad %tmp.19 123 45 53 ];
+        %tmp.19 = getv function %tmp.18 :degToRad;
+        %tmp.20 = lgetv %lambda.2;
+        symbol [ lambda %tmp.20 123 54 60 ];
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        %tmp.22 = invoke %tmp.16 %tmp.17(%tmp.21);
+        %tmp.23 = mul %tmp.15 %tmp.22;
+        lputv %sint.3 %tmp.23;
+        symbol [ sint %sint.3 123 5 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 124 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_120_1_126_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_120_1_126_1_stop" ]
+        %theta.4 = local;
+        symbol [ theta %theta.4 124 5 10 ];
+        %tmp.24 = self;
+        symbol [ radToDeg %tmp.25 124 13 21 ];
+        %tmp.25 = getv function %tmp.24 :radToDeg;
+        symbol [ Math %tmp.26 124 22 26 ];
+        %tmp.26 = getm $.Toybox.Math;
+        symbol [ asin %tmp.27 124 27 31 ];
+        %tmp.27 = getv function %tmp.26 :asin;
+        %tmp.28 = lgetv %sint.3;
+        symbol [ sint %tmp.28 124 32 36 ];
+        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
+        %tmp.30 = invoke %tmp.24 %tmp.25(%tmp.29);
+        lputv %theta.4 %tmp.30;
+        symbol [ theta %theta.4 124 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 125 1 ]
+        %tmp.31 = lgetv %theta.4;
+        symbol [ theta %tmp.31 125 8 13 ];
+        ret %tmp.31;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_120_1_126_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 128; @symbol_functiondef = [calcHourAngleSunrise,128,10,30]; @symbol_param<0> = [lat,128,31,34]; @symbol_param<1> = [solarDec,128,36,44]; ]
+    function calcHourAngleSunrise(lat, solarDec) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 130 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_stop" ]
+        %latRad.1 = local;
+        symbol [ latRad %latRad.1 130 5 11 ];
+        %tmp.1 = self;
+        symbol [ degToRad %tmp.2 130 14 22 ];
+        %tmp.2 = getv function %tmp.1 :degToRad;
+        %tmp.3 = lgetv %lat;
+        symbol [ lat %tmp.3 130 23 26 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %latRad.1 %tmp.4;
+        symbol [ latRad %latRad.1 130 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 131 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_stop" ]
+        %sdRad.2 = local;
+        symbol [ sdRad %sdRad.2 131 5 10 ];
+        %tmp.5 = self;
+        symbol [ degToRad %tmp.6 131 14 22 ];
+        %tmp.6 = getv function %tmp.5 :degToRad;
+        %tmp.7 = lgetv %solarDec;
+        symbol [ solarDec %tmp.7 131 23 31 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        lputv %sdRad.2 %tmp.8;
+        symbol [ sdRad %sdRad.2 131 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 133 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_stop" ]
+        %cosLat.3 = local;
+        symbol [ cosLat %cosLat.3 133 5 11 ];
+        symbol [ Math %tmp.9 133 14 18 ];
+        %tmp.9 = getm $.Toybox.Math;
+        symbol [ cos %tmp.10 133 19 22 ];
+        %tmp.10 = getv function %tmp.9 :cos;
+        %tmp.11 = lgetv %latRad.1;
+        symbol [ latRad %tmp.11 133 23 29 ];
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        lputv %cosLat.3 %tmp.12;
+        symbol [ cosLat %cosLat.3 133 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 134 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_stop" ]
+        %cosDec.4 = local;
+        symbol [ cosDec %cosDec.4 134 5 11 ];
+        symbol [ Math %tmp.13 134 14 18 ];
+        %tmp.13 = getm $.Toybox.Math;
+        symbol [ cos %tmp.14 134 19 22 ];
+        %tmp.14 = getv function %tmp.13 :cos;
+        %tmp.15 = lgetv %sdRad.2;
+        symbol [ sdRad %tmp.15 134 23 28 ];
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        lputv %cosDec.4 %tmp.16;
+        symbol [ cosDec %cosDec.4 134 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 135 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_1_135_45_if_stmt:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_5_135_30_begin:
+        %tmp.17 = lgetv %cosLat.3;
+        symbol [ cosLat %tmp.17 135 5 11 ];
+        %tmp.18 = 0;
+        %tmp.19 = eq %tmp.17 %tmp.18;
+        bt %tmp.19 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_1_135_45_if_true;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_20_135_30_false:
+        %tmp.20 = lgetv %cosDec.4;
+        symbol [ cosDec %tmp.20 135 20 26 ];
+        %tmp.21 = 0;
+        %tmp.22 = eq %tmp.20 %tmp.21;
+        push %tmp.22;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_20_135_30_end:
+        %tmp.23 = phi [%tmp.19 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_5_135_30_begin] [%tmp.22 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_20_135_30_false] [%tmp.23 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_20_135_30_end];
+        bf %tmp.23 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_1_135_45_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_1_135_45_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_33_135_45_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 135 35 ]
+        %tmp.24 = 0;
+        ret %tmp.24;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_33_135_45_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_1_135_45_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_135_1_135_45_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 140 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_stop" ]
+        %cosHA.5 = local;
+        symbol [ cosHA %cosHA.5 140 5 10 ];
+        symbol [ Math %tmp.25 140 13 17 ];
+        %tmp.25 = getm $.Toybox.Math;
+        symbol [ cos %tmp.26 140 18 21 ];
+        %tmp.26 = getv function %tmp.25 :cos;
+        %tmp.27 = self;
+        symbol [ degToRad %tmp.28 140 22 30 ];
+        %tmp.28 = getv function %tmp.27 :degToRad;
+        %tmp.29 = 90.833;
+        %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
+        %tmp.31 = invoke %tmp.25 %tmp.26(%tmp.30);
+        %tmp.32 = lgetv %cosLat.3;
+        symbol [ cosLat %tmp.32 140 41 47 ];
+        %tmp.33 = lgetv %cosDec.4;
+        symbol [ cosDec %tmp.33 140 48 54 ];
+        %tmp.34 = mul %tmp.32 %tmp.33;
+        %tmp.35 = div %tmp.31 %tmp.34;
+        symbol [ Math %tmp.36 140 56 60 ];
+        %tmp.36 = getm $.Toybox.Math;
+        symbol [ tan %tmp.37 140 61 64 ];
+        %tmp.37 = getv function %tmp.36 :tan;
+        %tmp.38 = lgetv %latRad.1;
+        symbol [ latRad %tmp.38 140 65 71 ];
+        %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
+        symbol [ Math %tmp.40 140 75 79 ];
+        %tmp.40 = getm $.Toybox.Math;
+        symbol [ tan %tmp.41 140 80 83 ];
+        %tmp.41 = getv function %tmp.40 :tan;
+        %tmp.42 = lgetv %sdRad.2;
+        symbol [ sdRad %tmp.42 140 84 89 ];
+        %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
+        %tmp.44 = mul %tmp.39 %tmp.43;
+        %tmp.45 = sub %tmp.35 %tmp.44;
+        lputv %cosHA.5 %tmp.45;
+        symbol [ cosHA %cosHA.5 140 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 143 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_143_1_143_31_if_stmt:
+        %tmp.46 = lgetv %cosHA.5;
+        symbol [ cosHA %tmp.46 143 5 10 ];
+        %tmp.47 = -1;
+        %tmp.48 = lt %tmp.46 %tmp.47;
+        bf %tmp.48 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_143_1_143_31_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_143_1_143_31_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_143_17_143_31_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 143 19 ]
+        %tmp.49 = -1;
+        lputv %cosHA.5 %tmp.49;
+        symbol [ cosHA %cosHA.5 143 19 24 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_143_17_143_31_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_143_1_143_31_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_143_1_143_31_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 144 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_144_1_144_29_if_stmt:
+        %tmp.50 = lgetv %cosHA.5;
+        symbol [ cosHA %tmp.50 144 5 10 ];
+        %tmp.51 = 1;
+        %tmp.52 = gt %tmp.50 %tmp.51;
+        bf %tmp.52 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_144_1_144_29_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_144_1_144_29_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_144_16_144_29_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 144 18 ]
+        %tmp.53 = 1;
+        lputv %cosHA.5 %tmp.53;
+        symbol [ cosHA %cosHA.5 144 18 23 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_144_16_144_29_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_144_1_144_29_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_144_1_144_29_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 145 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_stop" ]
+        %HA.6 = local;
+        symbol [ HA %HA.6 145 5 7 ];
+        symbol [ Math %tmp.54 145 10 14 ];
+        %tmp.54 = getm $.Toybox.Math;
+        symbol [ acos %tmp.55 145 15 19 ];
+        %tmp.55 = getv function %tmp.54 :acos;
+        %tmp.56 = lgetv %cosHA.5;
+        symbol [ cosHA %tmp.56 145 20 25 ];
+        %tmp.57 = invoke %tmp.54 %tmp.55(%tmp.56);
+        lputv %HA.6 %tmp.57;
+        symbol [ HA %HA.6 145 5 7 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 146 1 ]
+        %tmp.58 = lgetv %HA.6;
+        symbol [ HA %tmp.58 146 8 10 ];
+        ret %tmp.58;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_129_1_147_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 149; @symbol_functiondef = [calcHourAngleSunset,149,10,29]; @symbol_param<0> = [lat,149,30,33]; @symbol_param<1> = [solarDec,149,35,43]; ]
+    function calcHourAngleSunset(lat, solarDec) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 151 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_stop" ]
+        %latRad.1 = local;
+        symbol [ latRad %latRad.1 151 5 11 ];
+        %tmp.1 = self;
+        symbol [ degToRad %tmp.2 151 14 22 ];
+        %tmp.2 = getv function %tmp.1 :degToRad;
+        %tmp.3 = lgetv %lat;
+        symbol [ lat %tmp.3 151 23 26 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %latRad.1 %tmp.4;
+        symbol [ latRad %latRad.1 151 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 152 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_stop" ]
+        %sdRad.2 = local;
+        symbol [ sdRad %sdRad.2 152 5 10 ];
+        %tmp.5 = self;
+        symbol [ degToRad %tmp.6 152 14 22 ];
+        %tmp.6 = getv function %tmp.5 :degToRad;
+        %tmp.7 = lgetv %solarDec;
+        symbol [ solarDec %tmp.7 152 23 31 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        lputv %sdRad.2 %tmp.8;
+        symbol [ sdRad %sdRad.2 152 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 154 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_stop" ]
+        %cosLat.3 = local;
+        symbol [ cosLat %cosLat.3 154 5 11 ];
+        symbol [ Math %tmp.9 154 14 18 ];
+        %tmp.9 = getm $.Toybox.Math;
+        symbol [ cos %tmp.10 154 19 22 ];
+        %tmp.10 = getv function %tmp.9 :cos;
+        %tmp.11 = lgetv %latRad.1;
+        symbol [ latRad %tmp.11 154 23 29 ];
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        lputv %cosLat.3 %tmp.12;
+        symbol [ cosLat %cosLat.3 154 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 155 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_stop" ]
+        %cosDec.4 = local;
+        symbol [ cosDec %cosDec.4 155 5 11 ];
+        symbol [ Math %tmp.13 155 14 18 ];
+        %tmp.13 = getm $.Toybox.Math;
+        symbol [ cos %tmp.14 155 19 22 ];
+        %tmp.14 = getv function %tmp.13 :cos;
+        %tmp.15 = lgetv %sdRad.2;
+        symbol [ sdRad %tmp.15 155 23 28 ];
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        lputv %cosDec.4 %tmp.16;
+        symbol [ cosDec %cosDec.4 155 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 156 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_1_156_45_if_stmt:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_5_156_30_begin:
+        %tmp.17 = lgetv %cosLat.3;
+        symbol [ cosLat %tmp.17 156 5 11 ];
+        %tmp.18 = 0;
+        %tmp.19 = eq %tmp.17 %tmp.18;
+        bt %tmp.19 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_1_156_45_if_true;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_20_156_30_false:
+        %tmp.20 = lgetv %cosDec.4;
+        symbol [ cosDec %tmp.20 156 20 26 ];
+        %tmp.21 = 0;
+        %tmp.22 = eq %tmp.20 %tmp.21;
+        push %tmp.22;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_20_156_30_end:
+        %tmp.23 = phi [%tmp.19 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_5_156_30_begin] [%tmp.22 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_20_156_30_false] [%tmp.23 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_20_156_30_end];
+        bf %tmp.23 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_1_156_45_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_1_156_45_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_33_156_45_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 156 35 ]
+        %tmp.24 = 0;
+        ret %tmp.24;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_33_156_45_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_1_156_45_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_156_1_156_45_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 161 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_stop" ]
+        %cosHA.5 = local;
+        symbol [ cosHA %cosHA.5 161 5 10 ];
+        symbol [ Math %tmp.25 161 13 17 ];
+        %tmp.25 = getm $.Toybox.Math;
+        symbol [ cos %tmp.26 161 18 21 ];
+        %tmp.26 = getv function %tmp.25 :cos;
+        %tmp.27 = self;
+        symbol [ degToRad %tmp.28 161 22 30 ];
+        %tmp.28 = getv function %tmp.27 :degToRad;
+        %tmp.29 = 90.833;
+        %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
+        %tmp.31 = invoke %tmp.25 %tmp.26(%tmp.30);
+        %tmp.32 = lgetv %cosLat.3;
+        symbol [ cosLat %tmp.32 161 41 47 ];
+        %tmp.33 = lgetv %cosDec.4;
+        symbol [ cosDec %tmp.33 161 48 54 ];
+        %tmp.34 = mul %tmp.32 %tmp.33;
+        %tmp.35 = div %tmp.31 %tmp.34;
+        symbol [ Math %tmp.36 161 56 60 ];
+        %tmp.36 = getm $.Toybox.Math;
+        symbol [ tan %tmp.37 161 61 64 ];
+        %tmp.37 = getv function %tmp.36 :tan;
+        %tmp.38 = lgetv %latRad.1;
+        symbol [ latRad %tmp.38 161 65 71 ];
+        %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
+        symbol [ Math %tmp.40 161 75 79 ];
+        %tmp.40 = getm $.Toybox.Math;
+        symbol [ tan %tmp.41 161 80 83 ];
+        %tmp.41 = getv function %tmp.40 :tan;
+        %tmp.42 = lgetv %sdRad.2;
+        symbol [ sdRad %tmp.42 161 84 89 ];
+        %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
+        %tmp.44 = mul %tmp.39 %tmp.43;
+        %tmp.45 = sub %tmp.35 %tmp.44;
+        lputv %cosHA.5 %tmp.45;
+        symbol [ cosHA %cosHA.5 161 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 164 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_164_1_164_31_if_stmt:
+        %tmp.46 = lgetv %cosHA.5;
+        symbol [ cosHA %tmp.46 164 5 10 ];
+        %tmp.47 = -1;
+        %tmp.48 = lt %tmp.46 %tmp.47;
+        bf %tmp.48 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_164_1_164_31_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_164_1_164_31_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_164_17_164_31_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 164 19 ]
+        %tmp.49 = -1;
+        lputv %cosHA.5 %tmp.49;
+        symbol [ cosHA %cosHA.5 164 19 24 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_164_17_164_31_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_164_1_164_31_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_164_1_164_31_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 165 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_165_1_165_29_if_stmt:
+        %tmp.50 = lgetv %cosHA.5;
+        symbol [ cosHA %tmp.50 165 5 10 ];
+        %tmp.51 = 1;
+        %tmp.52 = gt %tmp.50 %tmp.51;
+        bf %tmp.52 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_165_1_165_29_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_165_1_165_29_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_165_16_165_29_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 165 18 ]
+        %tmp.53 = 1;
+        lputv %cosHA.5 %tmp.53;
+        symbol [ cosHA %cosHA.5 165 18 23 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_165_16_165_29_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_165_1_165_29_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_165_1_165_29_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 166 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_stop" ]
+        %HA.6 = local;
+        symbol [ HA %HA.6 166 5 7 ];
+        symbol [ Math %tmp.54 166 10 14 ];
+        %tmp.54 = getm $.Toybox.Math;
+        symbol [ acos %tmp.55 166 15 19 ];
+        %tmp.55 = getv function %tmp.54 :acos;
+        %tmp.56 = lgetv %cosHA.5;
+        symbol [ cosHA %tmp.56 166 20 25 ];
+        %tmp.57 = invoke %tmp.54 %tmp.55(%tmp.56);
+        lputv %HA.6 %tmp.57;
+        symbol [ HA %HA.6 166 5 7 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 167 1 ]
+        %tmp.58 = lgetv %HA.6;
+        symbol [ HA %tmp.58 167 9 11 ];
+        %tmp.59 = sub 0 %tmp.58;
+        ret %tmp.59;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_150_1_168_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 170; @symbol_functiondef = [calcJD,170,10,16]; @symbol_param<0> = [y,170,17,18]; @symbol_param<1> = [m,170,20,21]; @symbol_param<2> = [d,170,23,24]; ]
+    function calcJD(y, m, d) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_171_1_180_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 172 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_172_1_175_1_if_stmt:
+        %tmp.1 = lgetv %m;
+        symbol [ m %tmp.1 172 5 6 ];
+        %tmp.2 = 2;
+        %tmp.3 = lte %tmp.1 %tmp.2;
+        bf %tmp.3 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_172_1_175_1_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_172_1_175_1_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_172_13_175_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 173 2 ]
+        %tmp.4 = lgetv %y;
+        symbol [ y %tmp.4 173 2 3 ];
+        %tmp.5 = 1;
+        %tmp.6 = sub %tmp.4 %tmp.5;
+        lputv %y %tmp.6;
+        symbol [ y %y 173 2 3 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 174 2 ]
+        %tmp.7 = lgetv %m;
+        symbol [ m %tmp.7 174 2 3 ];
+        %tmp.8 = 12;
+        %tmp.9 = add %tmp.7 %tmp.8;
+        lputv %m %tmp.9;
+        symbol [ m %m 174 2 3 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_172_13_175_1_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_172_1_175_1_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_172_1_175_1_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 176 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_171_1_180_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_171_1_180_1_stop" ]
+        %A.1 = local;
+        symbol [ A %A.1 176 5 6 ];
+        symbol [ Math %tmp.10 176 9 13 ];
+        %tmp.10 = getm $.Toybox.Math;
+        symbol [ floor %tmp.11 176 14 19 ];
+        %tmp.11 = getv function %tmp.10 :floor;
+        %tmp.12 = lgetv %y;
+        symbol [ y %tmp.12 176 20 21 ];
+        %tmp.13 = 100;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        %tmp.15 = invoke %tmp.10 %tmp.11(%tmp.14);
+        lputv %A.1 %tmp.15;
+        symbol [ A %A.1 176 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 177 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_171_1_180_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_171_1_180_1_stop" ]
+        %B.2 = local;
+        symbol [ B %B.2 177 5 6 ];
+        %tmp.16 = 2;
+        %tmp.17 = lgetv %A.1;
+        symbol [ A %tmp.17 177 13 14 ];
+        %tmp.18 = sub %tmp.16 %tmp.17;
+        symbol [ Math %tmp.19 177 17 21 ];
+        %tmp.19 = getm $.Toybox.Math;
+        symbol [ floor %tmp.20 177 22 27 ];
+        %tmp.20 = getv function %tmp.19 :floor;
+        %tmp.21 = lgetv %A.1;
+        symbol [ A %tmp.21 177 28 29 ];
+        %tmp.22 = 4;
+        %tmp.23 = div %tmp.21 %tmp.22;
+        %tmp.24 = invoke %tmp.19 %tmp.20(%tmp.23);
+        %tmp.25 = add %tmp.18 %tmp.24;
+        lputv %B.2 %tmp.25;
+        symbol [ B %B.2 177 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 178 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_171_1_180_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_171_1_180_1_stop" ]
+        %JD.3 = local;
+        symbol [ JD %JD.3 178 5 7 ];
+        symbol [ Math %tmp.26 178 10 14 ];
+        %tmp.26 = getm $.Toybox.Math;
+        symbol [ floor %tmp.27 178 15 20 ];
+        %tmp.27 = getv function %tmp.26 :floor;
+        %tmp.28 = 365.25;
+        %tmp.29 = lgetv %y;
+        symbol [ y %tmp.29 178 29 30 ];
+        %tmp.30 = 4716;
+        %tmp.31 = add %tmp.29 %tmp.30;
+        %tmp.32 = mul %tmp.28 %tmp.31;
+        %tmp.33 = invoke %tmp.26 %tmp.27(%tmp.32);
+        symbol [ Math %tmp.34 178 42 46 ];
+        %tmp.34 = getm $.Toybox.Math;
+        symbol [ floor %tmp.35 178 47 52 ];
+        %tmp.35 = getv function %tmp.34 :floor;
+        %tmp.36 = 30.6001;
+        %tmp.37 = lgetv %m;
+        symbol [ m %tmp.37 178 62 63 ];
+        %tmp.38 = 1;
+        %tmp.39 = add %tmp.37 %tmp.38;
+        %tmp.40 = mul %tmp.36 %tmp.39;
+        %tmp.41 = invoke %tmp.34 %tmp.35(%tmp.40);
+        %tmp.42 = add %tmp.33 %tmp.41;
+        %tmp.43 = lgetv %d;
+        symbol [ d %tmp.43 178 70 71 ];
+        %tmp.44 = add %tmp.42 %tmp.43;
+        %tmp.45 = lgetv %B.2;
+        symbol [ B %tmp.45 178 74 75 ];
+        %tmp.46 = add %tmp.44 %tmp.45;
+        %tmp.47 = 1524.5;
+        %tmp.48 = sub %tmp.46 %tmp.47;
+        lputv %JD.3 %tmp.48;
+        symbol [ JD %JD.3 178 5 7 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 179 1 ]
+        %tmp.49 = lgetv %JD.3;
+        symbol [ JD %tmp.49 179 8 10 ];
+        ret %tmp.49;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_171_1_180_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 182; @symbol_functiondef = [calcJDFromJulianCent,182,10,30]; @symbol_param<0> = [t,182,31,32]; ]
+    function calcJDFromJulianCent(t) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_183_1_186_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 184 1 ]
+        %tmp.1 = lgetv %t;
+        symbol [ t %tmp.1 184 9 10 ];
+        %tmp.2 = 36525.0;
+        %tmp.3 = mul %tmp.1 %tmp.2;
+        %tmp.4 = 2451545.0;
+        %tmp.5 = add %tmp.3 %tmp.4;
+        ret %tmp.5;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_183_1_186_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 188; @symbol_functiondef = [calcSunEqOfCenter,188,10,27]; @symbol_param<0> = [t,188,28,29]; ]
+    function calcSunEqOfCenter(t) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 190 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_stop" ]
+        %m.1 = local;
+        symbol [ m %m.1 190 5 6 ];
+        %tmp.1 = self;
+        symbol [ calcGeomMeanAnomalySun %tmp.2 190 9 31 ];
+        %tmp.2 = getv function %tmp.1 :calcGeomMeanAnomalySun;
+        %tmp.3 = lgetv %t;
+        symbol [ t %tmp.3 190 32 33 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %m.1 %tmp.4;
+        symbol [ m %m.1 190 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 191 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_stop" ]
+        %mrad.2 = local;
+        symbol [ mrad %mrad.2 191 5 9 ];
+        %tmp.5 = self;
+        symbol [ degToRad %tmp.6 191 12 20 ];
+        %tmp.6 = getv function %tmp.5 :degToRad;
+        %tmp.7 = lgetv %m.1;
+        symbol [ m %tmp.7 191 21 22 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        lputv %mrad.2 %tmp.8;
+        symbol [ mrad %mrad.2 191 5 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 192 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_stop" ]
+        %sinm.3 = local;
+        symbol [ sinm %sinm.3 192 5 9 ];
+        symbol [ Math %tmp.9 192 12 16 ];
+        %tmp.9 = getm $.Toybox.Math;
+        symbol [ sin %tmp.10 192 17 20 ];
+        %tmp.10 = getv function %tmp.9 :sin;
+        %tmp.11 = lgetv %mrad.2;
+        symbol [ mrad %tmp.11 192 21 25 ];
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        lputv %sinm.3 %tmp.12;
+        symbol [ sinm %sinm.3 192 5 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 193 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_stop" ]
+        %sin2m.4 = local;
+        symbol [ sin2m %sin2m.4 193 5 10 ];
+        symbol [ Math %tmp.13 193 13 17 ];
+        %tmp.13 = getm $.Toybox.Math;
+        symbol [ sin %tmp.14 193 18 21 ];
+        %tmp.14 = getv function %tmp.13 :sin;
+        %tmp.15 = lgetv %mrad.2;
+        symbol [ mrad %tmp.15 193 22 26 ];
+        %tmp.16 = lgetv %mrad.2;
+        symbol [ mrad %tmp.16 193 27 31 ];
+        %tmp.17 = add %tmp.15 %tmp.16;
+        %tmp.18 = invoke %tmp.13 %tmp.14(%tmp.17);
+        lputv %sin2m.4 %tmp.18;
+        symbol [ sin2m %sin2m.4 193 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 194 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_stop" ]
+        %sin3m.5 = local;
+        symbol [ sin3m %sin3m.5 194 5 10 ];
+        symbol [ Math %tmp.19 194 13 17 ];
+        %tmp.19 = getm $.Toybox.Math;
+        symbol [ sin %tmp.20 194 18 21 ];
+        %tmp.20 = getv function %tmp.19 :sin;
+        %tmp.21 = lgetv %mrad.2;
+        symbol [ mrad %tmp.21 194 22 26 ];
+        %tmp.22 = lgetv %mrad.2;
+        symbol [ mrad %tmp.22 194 27 31 ];
+        %tmp.23 = add %tmp.21 %tmp.22;
+        %tmp.24 = lgetv %mrad.2;
+        symbol [ mrad %tmp.24 194 32 36 ];
+        %tmp.25 = add %tmp.23 %tmp.24;
+        %tmp.26 = invoke %tmp.19 %tmp.20(%tmp.25);
+        lputv %sin3m.5 %tmp.26;
+        symbol [ sin3m %sin3m.5 194 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 195 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_stop" ]
+        %C.6 = local;
+        symbol [ C %C.6 195 5 6 ];
+        %tmp.27 = lgetv %sinm.3;
+        symbol [ sinm %tmp.27 195 9 13 ];
+        %tmp.28 = 1.914602;
+        %tmp.29 = lgetv %t;
+        symbol [ t %tmp.29 195 28 29 ];
+        %tmp.30 = 0.004817;
+        %tmp.31 = 0.000014;
+        %tmp.32 = lgetv %t;
+        symbol [ t %tmp.32 195 55 56 ];
+        %tmp.33 = mul %tmp.31 %tmp.32;
+        %tmp.34 = add %tmp.30 %tmp.33;
+        %tmp.35 = mul %tmp.29 %tmp.34;
+        %tmp.36 = sub %tmp.28 %tmp.35;
+        %tmp.37 = mul %tmp.27 %tmp.36;
+        %tmp.38 = lgetv %sin2m.4;
+        symbol [ sin2m %tmp.38 195 61 66 ];
+        %tmp.39 = 0.019993;
+        %tmp.40 = 0.000101;
+        %tmp.41 = lgetv %t;
+        symbol [ t %tmp.41 195 92 93 ];
+        %tmp.42 = mul %tmp.40 %tmp.41;
+        %tmp.43 = sub %tmp.39 %tmp.42;
+        %tmp.44 = mul %tmp.38 %tmp.43;
+        %tmp.45 = add %tmp.37 %tmp.44;
+        %tmp.46 = lgetv %sin3m.5;
+        symbol [ sin3m %tmp.46 195 97 102 ];
+        %tmp.47 = 0.000289;
+        %tmp.48 = mul %tmp.46 %tmp.47;
+        %tmp.49 = add %tmp.45 %tmp.48;
+        lputv %C.6 %tmp.49;
+        symbol [ C %C.6 195 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 196 1 ]
+        %tmp.50 = lgetv %C.6;
+        symbol [ C %tmp.50 196 8 9 ];
+        ret %tmp.50;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_189_1_197_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 199; @symbol_functiondef = [calcSunrise,199,10,21]; ]
+    function calcSunrise() {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 201 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_stop" ]
+        %t.1 = local;
+        symbol [ t %t.1 201 5 6 ];
+        %tmp.1 = self;
+        symbol [ calcTimeJulianCent %tmp.2 201 9 27 ];
+        %tmp.2 = getv function %tmp.1 :calcTimeJulianCent;
+        symbol [ julianDate %tmp.4 201 28 38 ];
+        %tmp.4 = getv ? :julianDate;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+        lputv %t.1 %tmp.5;
+        symbol [ t %t.1 201 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 203 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_stop" ]
+        %eqTime.2 = local;
+        symbol [ eqTime %eqTime.2 203 5 11 ];
+        %tmp.6 = self;
+        symbol [ calcEquationOfTime %tmp.7 203 14 32 ];
+        %tmp.7 = getv function %tmp.6 :calcEquationOfTime;
+        %tmp.8 = lgetv %t.1;
+        symbol [ t %tmp.8 203 33 34 ];
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        lputv %eqTime.2 %tmp.9;
+        symbol [ eqTime %eqTime.2 203 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 204 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_stop" ]
+        %solarDec.3 = local;
+        symbol [ solarDec %solarDec.3 204 5 13 ];
+        %tmp.10 = self;
+        symbol [ calcSunDeclination %tmp.11 204 16 34 ];
+        %tmp.11 = getv function %tmp.10 :calcSunDeclination;
+        %tmp.12 = lgetv %t.1;
+        symbol [ t %tmp.12 204 35 36 ];
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        lputv %solarDec.3 %tmp.13;
+        symbol [ solarDec %solarDec.3 204 5 13 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 205 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_stop" ]
+        %hourAngle.4 = local;
+        symbol [ hourAngle %hourAngle.4 205 5 14 ];
+        %tmp.14 = self;
+        symbol [ calcHourAngleSunrise %tmp.15 205 17 37 ];
+        %tmp.15 = getv function %tmp.14 :calcHourAngleSunrise;
+        symbol [ latitude %tmp.17 205 38 46 ];
+        %tmp.17 = getv ? :latitude;
+        %tmp.18 = lgetv %solarDec.3;
+        symbol [ solarDec %tmp.18 205 48 56 ];
+        %tmp.19 = invoke %tmp.14 %tmp.15(%tmp.17, %tmp.18);
+        lputv %hourAngle.4 %tmp.19;
+        symbol [ hourAngle %hourAngle.4 205 5 14 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 206 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_stop" ]
+        %delta.5 = local;
+        symbol [ delta %delta.5 206 5 10 ];
+        symbol [ longitude %tmp.21 206 13 22 ];
+        %tmp.21 = getv ? :longitude;
+        %tmp.22 = self;
+        symbol [ radToDeg %tmp.23 206 25 33 ];
+        %tmp.23 = getv function %tmp.22 :radToDeg;
+        %tmp.24 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.24 206 34 43 ];
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        %tmp.26 = sub %tmp.21 %tmp.25;
+        lputv %delta.5 %tmp.26;
+        symbol [ delta %delta.5 206 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 207 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_stop" ]
+        %timeDiff.6 = local;
+        symbol [ timeDiff %timeDiff.6 207 5 13 ];
+        %tmp.27 = 4;
+        %tmp.28 = lgetv %delta.5;
+        symbol [ delta %tmp.28 207 20 25 ];
+        %tmp.29 = mul %tmp.27 %tmp.28;
+        lputv %timeDiff.6 %tmp.29;
+        symbol [ timeDiff %timeDiff.6 207 5 13 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 208 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_stop" ]
+        %timeUTC.7 = local;
+        symbol [ timeUTC %timeUTC.7 208 5 12 ];
+        %tmp.30 = 720;
+        %tmp.31 = lgetv %timeDiff.6;
+        symbol [ timeDiff %tmp.31 208 21 29 ];
+        %tmp.32 = add %tmp.30 %tmp.31;
+        %tmp.33 = lgetv %eqTime.2;
+        symbol [ eqTime %tmp.33 208 32 38 ];
+        %tmp.34 = sub %tmp.32 %tmp.33;
+        lputv %timeUTC.7 %tmp.34;
+        symbol [ timeUTC %timeUTC.7 208 5 12 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 209 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_stop" ]
+        %newt.8 = local;
+        symbol [ newt %newt.8 209 5 9 ];
+        %tmp.35 = self;
+        symbol [ calcTimeJulianCent %tmp.36 209 12 30 ];
+        %tmp.36 = getv function %tmp.35 :calcTimeJulianCent;
+        %tmp.37 = self;
+        symbol [ calcJDFromJulianCent %tmp.38 209 31 51 ];
+        %tmp.38 = getv function %tmp.37 :calcJDFromJulianCent;
+        %tmp.39 = lgetv %t.1;
+        symbol [ t %tmp.39 209 52 53 ];
+        %tmp.40 = invoke %tmp.37 %tmp.38(%tmp.39);
+        %tmp.41 = lgetv %timeUTC.7;
+        symbol [ timeUTC %tmp.41 209 57 64 ];
+        %tmp.42 = 1440.0;
+        %tmp.43 = div %tmp.41 %tmp.42;
+        %tmp.44 = add %tmp.40 %tmp.43;
+        %tmp.45 = invoke %tmp.35 %tmp.36(%tmp.44);
+        lputv %newt.8 %tmp.45;
+        symbol [ newt %newt.8 209 5 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 211 1 ]
+        %tmp.46 = self;
+        symbol [ calcEquationOfTime %tmp.47 211 10 28 ];
+        %tmp.47 = getv function %tmp.46 :calcEquationOfTime;
+        %tmp.48 = lgetv %newt.8;
+        symbol [ newt %tmp.48 211 29 33 ];
+        %tmp.49 = invoke %tmp.46 %tmp.47(%tmp.48);
+        lputv %eqTime.2 %tmp.49;
+        symbol [ eqTime %eqTime.2 211 1 7 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 212 1 ]
+        %tmp.50 = self;
+        symbol [ calcSunDeclination %tmp.51 212 12 30 ];
+        %tmp.51 = getv function %tmp.50 :calcSunDeclination;
+        %tmp.52 = lgetv %newt.8;
+        symbol [ newt %tmp.52 212 31 35 ];
+        %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
+        lputv %solarDec.3 %tmp.53;
+        symbol [ solarDec %solarDec.3 212 1 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 213 1 ]
+        %tmp.54 = self;
+        symbol [ calcHourAngleSunrise %tmp.55 213 13 33 ];
+        %tmp.55 = getv function %tmp.54 :calcHourAngleSunrise;
+        symbol [ latitude %tmp.57 213 34 42 ];
+        %tmp.57 = getv ? :latitude;
+        %tmp.58 = lgetv %solarDec.3;
+        symbol [ solarDec %tmp.58 213 44 52 ];
+        %tmp.59 = invoke %tmp.54 %tmp.55(%tmp.57, %tmp.58);
+        lputv %hourAngle.4 %tmp.59;
+        symbol [ hourAngle %hourAngle.4 213 1 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 214 1 ]
+        symbol [ longitude %tmp.61 214 9 18 ];
+        %tmp.61 = getv ? :longitude;
+        %tmp.62 = self;
+        symbol [ radToDeg %tmp.63 214 21 29 ];
+        %tmp.63 = getv function %tmp.62 :radToDeg;
+        %tmp.64 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.64 214 30 39 ];
+        %tmp.65 = invoke %tmp.62 %tmp.63(%tmp.64);
+        %tmp.66 = sub %tmp.61 %tmp.65;
+        lputv %delta.5 %tmp.66;
+        symbol [ delta %delta.5 214 1 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 215 1 ]
+        %tmp.67 = 4;
+        %tmp.68 = lgetv %delta.5;
+        symbol [ delta %tmp.68 215 16 21 ];
+        %tmp.69 = mul %tmp.67 %tmp.68;
+        lputv %timeDiff.6 %tmp.69;
+        symbol [ timeDiff %timeDiff.6 215 1 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 216 1 ]
+        %tmp.70 = 720;
+        %tmp.71 = lgetv %timeDiff.6;
+        symbol [ timeDiff %tmp.71 216 17 25 ];
+        %tmp.72 = add %tmp.70 %tmp.71;
+        %tmp.73 = lgetv %eqTime.2;
+        symbol [ eqTime %tmp.73 216 28 34 ];
+        %tmp.74 = sub %tmp.72 %tmp.73;
+        lputv %timeUTC.7 %tmp.74;
+        symbol [ timeUTC %timeUTC.7 216 1 8 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 217 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_stop" ]
+        %localTime.9 = local;
+        symbol [ localTime %localTime.9 217 5 14 ];
+        %tmp.75 = lgetv %timeUTC.7;
+        symbol [ timeUTC %tmp.75 217 17 24 ];
+        %tmp.76 = 60;
+        symbol [ tzOffset %tmp.78 217 33 41 ];
+        %tmp.78 = getv ? :tzOffset;
+        %tmp.79 = mul %tmp.76 %tmp.78;
+        %tmp.80 = add %tmp.75 %tmp.79;
+        lputv %localTime.9 %tmp.80;
+        symbol [ localTime %localTime.9 217 5 14 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 218 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_218_1_218_47_if_stmt:
+        %tmp.81 = lgetv %localTime.9;
+        symbol [ localTime %tmp.81 218 5 14 ];
+        %tmp.82 = 1440;
+        %tmp.83 = gt %tmp.81 %tmp.82;
+        bf %tmp.83 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_218_1_218_47_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_218_1_218_47_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_218_21_218_47_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 218 22 ]
+        %tmp.84 = lgetv %localTime.9;
+        symbol [ localTime %tmp.84 218 32 41 ];
+        %tmp.85 = 1440;
+        %tmp.86 = sub %tmp.84 %tmp.85;
+        lputv %localTime.9 %tmp.86;
+        symbol [ localTime %localTime.9 218 22 31 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_218_21_218_47_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_218_1_218_47_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_218_1_218_47_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 219 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_219_1_219_44_if_stmt:
+        %tmp.87 = lgetv %localTime.9;
+        symbol [ localTime %tmp.87 219 5 14 ];
+        %tmp.88 = 0;
+        %tmp.89 = lt %tmp.87 %tmp.88;
+        bf %tmp.89 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_219_1_219_44_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_219_1_219_44_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_219_18_219_44_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 219 19 ]
+        %tmp.90 = lgetv %localTime.9;
+        symbol [ localTime %tmp.90 219 29 38 ];
+        %tmp.91 = 1440;
+        %tmp.92 = add %tmp.90 %tmp.91;
+        lputv %localTime.9 %tmp.92;
+        symbol [ localTime %localTime.9 219 19 28 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_219_18_219_44_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_219_1_219_44_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_219_1_219_44_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 220 1 ]
+        %tmp.93 = lgetv %localTime.9;
+        symbol [ localTime %tmp.93 220 8 17 ];
+        ret %tmp.93;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_200_1_221_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 223; @symbol_functiondef = [calcSunriseTomorrow,223,10,29]; ]
+    function calcSunriseTomorrow() {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 225 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_stop" ]
+        %t.1 = local;
+        symbol [ t %t.1 225 5 6 ];
+        %tmp.1 = self;
+        symbol [ calcTimeJulianCent %tmp.2 225 9 27 ];
+        %tmp.2 = getv function %tmp.1 :calcTimeJulianCent;
+        symbol [ julianDate %tmp.4 225 28 38 ];
+        %tmp.4 = getv ? :julianDate;
+        %tmp.5 = 1;
+        %tmp.6 = add %tmp.4 %tmp.5;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        lputv %t.1 %tmp.7;
+        symbol [ t %t.1 225 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 227 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_stop" ]
+        %eqTime.2 = local;
+        symbol [ eqTime %eqTime.2 227 5 11 ];
+        %tmp.8 = self;
+        symbol [ calcEquationOfTime %tmp.9 227 14 32 ];
+        %tmp.9 = getv function %tmp.8 :calcEquationOfTime;
+        %tmp.10 = lgetv %t.1;
+        symbol [ t %tmp.10 227 33 34 ];
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        lputv %eqTime.2 %tmp.11;
+        symbol [ eqTime %eqTime.2 227 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 228 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_stop" ]
+        %solarDec.3 = local;
+        symbol [ solarDec %solarDec.3 228 5 13 ];
+        %tmp.12 = self;
+        symbol [ calcSunDeclination %tmp.13 228 16 34 ];
+        %tmp.13 = getv function %tmp.12 :calcSunDeclination;
+        %tmp.14 = lgetv %t.1;
+        symbol [ t %tmp.14 228 35 36 ];
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        lputv %solarDec.3 %tmp.15;
+        symbol [ solarDec %solarDec.3 228 5 13 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 229 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_stop" ]
+        %hourAngle.4 = local;
+        symbol [ hourAngle %hourAngle.4 229 5 14 ];
+        %tmp.16 = self;
+        symbol [ calcHourAngleSunrise %tmp.17 229 17 37 ];
+        %tmp.17 = getv function %tmp.16 :calcHourAngleSunrise;
+        symbol [ latitude %tmp.19 229 38 46 ];
+        %tmp.19 = getv ? :latitude;
+        %tmp.20 = lgetv %solarDec.3;
+        symbol [ solarDec %tmp.20 229 48 56 ];
+        %tmp.21 = invoke %tmp.16 %tmp.17(%tmp.19, %tmp.20);
+        lputv %hourAngle.4 %tmp.21;
+        symbol [ hourAngle %hourAngle.4 229 5 14 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 230 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_stop" ]
+        %delta.5 = local;
+        symbol [ delta %delta.5 230 5 10 ];
+        symbol [ longitude %tmp.23 230 13 22 ];
+        %tmp.23 = getv ? :longitude;
+        %tmp.24 = self;
+        symbol [ radToDeg %tmp.25 230 25 33 ];
+        %tmp.25 = getv function %tmp.24 :radToDeg;
+        %tmp.26 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.26 230 34 43 ];
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        %tmp.28 = sub %tmp.23 %tmp.27;
+        lputv %delta.5 %tmp.28;
+        symbol [ delta %delta.5 230 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 231 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_stop" ]
+        %timeDiff.6 = local;
+        symbol [ timeDiff %timeDiff.6 231 5 13 ];
+        %tmp.29 = 4;
+        %tmp.30 = lgetv %delta.5;
+        symbol [ delta %tmp.30 231 20 25 ];
+        %tmp.31 = mul %tmp.29 %tmp.30;
+        lputv %timeDiff.6 %tmp.31;
+        symbol [ timeDiff %timeDiff.6 231 5 13 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 232 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_stop" ]
+        %timeUTC.7 = local;
+        symbol [ timeUTC %timeUTC.7 232 5 12 ];
+        %tmp.32 = 720;
+        %tmp.33 = lgetv %timeDiff.6;
+        symbol [ timeDiff %tmp.33 232 21 29 ];
+        %tmp.34 = add %tmp.32 %tmp.33;
+        %tmp.35 = lgetv %eqTime.2;
+        symbol [ eqTime %tmp.35 232 32 38 ];
+        %tmp.36 = sub %tmp.34 %tmp.35;
+        lputv %timeUTC.7 %tmp.36;
+        symbol [ timeUTC %timeUTC.7 232 5 12 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 233 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_stop" ]
+        %newt.8 = local;
+        symbol [ newt %newt.8 233 5 9 ];
+        %tmp.37 = self;
+        symbol [ calcTimeJulianCent %tmp.38 233 12 30 ];
+        %tmp.38 = getv function %tmp.37 :calcTimeJulianCent;
+        %tmp.39 = self;
+        symbol [ calcJDFromJulianCent %tmp.40 233 31 51 ];
+        %tmp.40 = getv function %tmp.39 :calcJDFromJulianCent;
+        %tmp.41 = lgetv %t.1;
+        symbol [ t %tmp.41 233 52 53 ];
+        %tmp.42 = invoke %tmp.39 %tmp.40(%tmp.41);
+        %tmp.43 = lgetv %timeUTC.7;
+        symbol [ timeUTC %tmp.43 233 57 64 ];
+        %tmp.44 = 1440.0;
+        %tmp.45 = div %tmp.43 %tmp.44;
+        %tmp.46 = add %tmp.42 %tmp.45;
+        %tmp.47 = invoke %tmp.37 %tmp.38(%tmp.46);
+        lputv %newt.8 %tmp.47;
+        symbol [ newt %newt.8 233 5 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 235 1 ]
+        %tmp.48 = self;
+        symbol [ calcEquationOfTime %tmp.49 235 10 28 ];
+        %tmp.49 = getv function %tmp.48 :calcEquationOfTime;
+        %tmp.50 = lgetv %newt.8;
+        symbol [ newt %tmp.50 235 29 33 ];
+        %tmp.51 = invoke %tmp.48 %tmp.49(%tmp.50);
+        lputv %eqTime.2 %tmp.51;
+        symbol [ eqTime %eqTime.2 235 1 7 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 236 1 ]
+        %tmp.52 = self;
+        symbol [ calcSunDeclination %tmp.53 236 12 30 ];
+        %tmp.53 = getv function %tmp.52 :calcSunDeclination;
+        %tmp.54 = lgetv %newt.8;
+        symbol [ newt %tmp.54 236 31 35 ];
+        %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
+        lputv %solarDec.3 %tmp.55;
+        symbol [ solarDec %solarDec.3 236 1 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 237 1 ]
+        %tmp.56 = self;
+        symbol [ calcHourAngleSunrise %tmp.57 237 13 33 ];
+        %tmp.57 = getv function %tmp.56 :calcHourAngleSunrise;
+        symbol [ latitude %tmp.59 237 34 42 ];
+        %tmp.59 = getv ? :latitude;
+        %tmp.60 = lgetv %solarDec.3;
+        symbol [ solarDec %tmp.60 237 44 52 ];
+        %tmp.61 = invoke %tmp.56 %tmp.57(%tmp.59, %tmp.60);
+        lputv %hourAngle.4 %tmp.61;
+        symbol [ hourAngle %hourAngle.4 237 1 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 238 1 ]
+        symbol [ longitude %tmp.63 238 9 18 ];
+        %tmp.63 = getv ? :longitude;
+        %tmp.64 = self;
+        symbol [ radToDeg %tmp.65 238 21 29 ];
+        %tmp.65 = getv function %tmp.64 :radToDeg;
+        %tmp.66 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.66 238 30 39 ];
+        %tmp.67 = invoke %tmp.64 %tmp.65(%tmp.66);
+        %tmp.68 = sub %tmp.63 %tmp.67;
+        lputv %delta.5 %tmp.68;
+        symbol [ delta %delta.5 238 1 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 239 1 ]
+        %tmp.69 = 4;
+        %tmp.70 = lgetv %delta.5;
+        symbol [ delta %tmp.70 239 16 21 ];
+        %tmp.71 = mul %tmp.69 %tmp.70;
+        lputv %timeDiff.6 %tmp.71;
+        symbol [ timeDiff %timeDiff.6 239 1 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 240 1 ]
+        %tmp.72 = 720;
+        %tmp.73 = lgetv %timeDiff.6;
+        symbol [ timeDiff %tmp.73 240 17 25 ];
+        %tmp.74 = add %tmp.72 %tmp.73;
+        %tmp.75 = lgetv %eqTime.2;
+        symbol [ eqTime %tmp.75 240 28 34 ];
+        %tmp.76 = sub %tmp.74 %tmp.75;
+        lputv %timeUTC.7 %tmp.76;
+        symbol [ timeUTC %timeUTC.7 240 1 8 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 241 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_stop" ]
+        %localTime.9 = local;
+        symbol [ localTime %localTime.9 241 5 14 ];
+        %tmp.77 = lgetv %timeUTC.7;
+        symbol [ timeUTC %tmp.77 241 17 24 ];
+        %tmp.78 = 60;
+        symbol [ tzOffset %tmp.80 241 33 41 ];
+        %tmp.80 = getv ? :tzOffset;
+        %tmp.81 = mul %tmp.78 %tmp.80;
+        %tmp.82 = add %tmp.77 %tmp.81;
+        lputv %localTime.9 %tmp.82;
+        symbol [ localTime %localTime.9 241 5 14 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 242 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_242_1_242_47_if_stmt:
+        %tmp.83 = lgetv %localTime.9;
+        symbol [ localTime %tmp.83 242 5 14 ];
+        %tmp.84 = 1440;
+        %tmp.85 = gt %tmp.83 %tmp.84;
+        bf %tmp.85 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_242_1_242_47_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_242_1_242_47_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_242_21_242_47_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 242 22 ]
+        %tmp.86 = lgetv %localTime.9;
+        symbol [ localTime %tmp.86 242 32 41 ];
+        %tmp.87 = 1440;
+        %tmp.88 = sub %tmp.86 %tmp.87;
+        lputv %localTime.9 %tmp.88;
+        symbol [ localTime %localTime.9 242 22 31 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_242_21_242_47_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_242_1_242_47_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_242_1_242_47_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 243 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_243_1_243_44_if_stmt:
+        %tmp.89 = lgetv %localTime.9;
+        symbol [ localTime %tmp.89 243 5 14 ];
+        %tmp.90 = 0;
+        %tmp.91 = lt %tmp.89 %tmp.90;
+        bf %tmp.91 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_243_1_243_44_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_243_1_243_44_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_243_18_243_44_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 243 19 ]
+        %tmp.92 = lgetv %localTime.9;
+        symbol [ localTime %tmp.92 243 29 38 ];
+        %tmp.93 = 1440;
+        %tmp.94 = add %tmp.92 %tmp.93;
+        lputv %localTime.9 %tmp.94;
+        symbol [ localTime %localTime.9 243 19 28 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_243_18_243_44_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_243_1_243_44_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_243_1_243_44_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 244 1 ]
+        %tmp.95 = lgetv %localTime.9;
+        symbol [ localTime %tmp.95 244 8 17 ];
+        ret %tmp.95;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_224_1_245_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 247; @symbol_functiondef = [calcSunset,247,10,20]; ]
+    function calcSunset() {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 249 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_stop" ]
+        %t.1 = local;
+        symbol [ t %t.1 249 5 6 ];
+        %tmp.1 = self;
+        symbol [ calcTimeJulianCent %tmp.2 249 9 27 ];
+        %tmp.2 = getv function %tmp.1 :calcTimeJulianCent;
+        symbol [ julianDate %tmp.4 249 28 38 ];
+        %tmp.4 = getv ? :julianDate;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+        lputv %t.1 %tmp.5;
+        symbol [ t %t.1 249 5 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 251 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_stop" ]
+        %eqTime.2 = local;
+        symbol [ eqTime %eqTime.2 251 5 11 ];
+        %tmp.6 = self;
+        symbol [ calcEquationOfTime %tmp.7 251 14 32 ];
+        %tmp.7 = getv function %tmp.6 :calcEquationOfTime;
+        %tmp.8 = lgetv %t.1;
+        symbol [ t %tmp.8 251 33 34 ];
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        lputv %eqTime.2 %tmp.9;
+        symbol [ eqTime %eqTime.2 251 5 11 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 252 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_stop" ]
+        %solarDec.3 = local;
+        symbol [ solarDec %solarDec.3 252 5 13 ];
+        %tmp.10 = self;
+        symbol [ calcSunDeclination %tmp.11 252 16 34 ];
+        %tmp.11 = getv function %tmp.10 :calcSunDeclination;
+        %tmp.12 = lgetv %t.1;
+        symbol [ t %tmp.12 252 35 36 ];
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        lputv %solarDec.3 %tmp.13;
+        symbol [ solarDec %solarDec.3 252 5 13 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 253 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_stop" ]
+        %hourAngle.4 = local;
+        symbol [ hourAngle %hourAngle.4 253 5 14 ];
+        %tmp.14 = self;
+        symbol [ calcHourAngleSunset %tmp.15 253 17 36 ];
+        %tmp.15 = getv function %tmp.14 :calcHourAngleSunset;
+        symbol [ latitude %tmp.17 253 37 45 ];
+        %tmp.17 = getv ? :latitude;
+        %tmp.18 = lgetv %solarDec.3;
+        symbol [ solarDec %tmp.18 253 47 55 ];
+        %tmp.19 = invoke %tmp.14 %tmp.15(%tmp.17, %tmp.18);
+        lputv %hourAngle.4 %tmp.19;
+        symbol [ hourAngle %hourAngle.4 253 5 14 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 254 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_stop" ]
+        %delta.5 = local;
+        symbol [ delta %delta.5 254 5 10 ];
+        symbol [ longitude %tmp.21 254 13 22 ];
+        %tmp.21 = getv ? :longitude;
+        %tmp.22 = self;
+        symbol [ radToDeg %tmp.23 254 25 33 ];
+        %tmp.23 = getv function %tmp.22 :radToDeg;
+        %tmp.24 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.24 254 34 43 ];
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        %tmp.26 = sub %tmp.21 %tmp.25;
+        lputv %delta.5 %tmp.26;
+        symbol [ delta %delta.5 254 5 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 255 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_stop" ]
+        %timeDiff.6 = local;
+        symbol [ timeDiff %timeDiff.6 255 5 13 ];
+        %tmp.27 = 4;
+        %tmp.28 = lgetv %delta.5;
+        symbol [ delta %tmp.28 255 20 25 ];
+        %tmp.29 = mul %tmp.27 %tmp.28;
+        lputv %timeDiff.6 %tmp.29;
+        symbol [ timeDiff %timeDiff.6 255 5 13 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 256 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_stop" ]
+        %timeUTC.7 = local;
+        symbol [ timeUTC %timeUTC.7 256 5 12 ];
+        %tmp.30 = 720;
+        %tmp.31 = lgetv %timeDiff.6;
+        symbol [ timeDiff %tmp.31 256 21 29 ];
+        %tmp.32 = add %tmp.30 %tmp.31;
+        %tmp.33 = lgetv %eqTime.2;
+        symbol [ eqTime %tmp.33 256 32 38 ];
+        %tmp.34 = sub %tmp.32 %tmp.33;
+        lputv %timeUTC.7 %tmp.34;
+        symbol [ timeUTC %timeUTC.7 256 5 12 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 257 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_stop" ]
+        %newt.8 = local;
+        symbol [ newt %newt.8 257 5 9 ];
+        %tmp.35 = self;
+        symbol [ calcTimeJulianCent %tmp.36 257 12 30 ];
+        %tmp.36 = getv function %tmp.35 :calcTimeJulianCent;
+        %tmp.37 = self;
+        symbol [ calcJDFromJulianCent %tmp.38 257 31 51 ];
+        %tmp.38 = getv function %tmp.37 :calcJDFromJulianCent;
+        %tmp.39 = lgetv %t.1;
+        symbol [ t %tmp.39 257 52 53 ];
+        %tmp.40 = invoke %tmp.37 %tmp.38(%tmp.39);
+        %tmp.41 = lgetv %timeUTC.7;
+        symbol [ timeUTC %tmp.41 257 57 64 ];
+        %tmp.42 = 1440.0;
+        %tmp.43 = div %tmp.41 %tmp.42;
+        %tmp.44 = add %tmp.40 %tmp.43;
+        %tmp.45 = invoke %tmp.35 %tmp.36(%tmp.44);
+        lputv %newt.8 %tmp.45;
+        symbol [ newt %newt.8 257 5 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 259 1 ]
+        %tmp.46 = self;
+        symbol [ calcEquationOfTime %tmp.47 259 10 28 ];
+        %tmp.47 = getv function %tmp.46 :calcEquationOfTime;
+        %tmp.48 = lgetv %newt.8;
+        symbol [ newt %tmp.48 259 29 33 ];
+        %tmp.49 = invoke %tmp.46 %tmp.47(%tmp.48);
+        lputv %eqTime.2 %tmp.49;
+        symbol [ eqTime %eqTime.2 259 1 7 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 260 1 ]
+        %tmp.50 = self;
+        symbol [ calcSunDeclination %tmp.51 260 12 30 ];
+        %tmp.51 = getv function %tmp.50 :calcSunDeclination;
+        %tmp.52 = lgetv %newt.8;
+        symbol [ newt %tmp.52 260 31 35 ];
+        %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
+        lputv %solarDec.3 %tmp.53;
+        symbol [ solarDec %solarDec.3 260 1 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 261 1 ]
+        %tmp.54 = self;
+        symbol [ calcHourAngleSunset %tmp.55 261 13 32 ];
+        %tmp.55 = getv function %tmp.54 :calcHourAngleSunset;
+        symbol [ latitude %tmp.57 261 33 41 ];
+        %tmp.57 = getv ? :latitude;
+        %tmp.58 = lgetv %solarDec.3;
+        symbol [ solarDec %tmp.58 261 43 51 ];
+        %tmp.59 = invoke %tmp.54 %tmp.55(%tmp.57, %tmp.58);
+        lputv %hourAngle.4 %tmp.59;
+        symbol [ hourAngle %hourAngle.4 261 1 10 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 262 1 ]
+        symbol [ longitude %tmp.61 262 9 18 ];
+        %tmp.61 = getv ? :longitude;
+        %tmp.62 = self;
+        symbol [ radToDeg %tmp.63 262 21 29 ];
+        %tmp.63 = getv function %tmp.62 :radToDeg;
+        %tmp.64 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.64 262 30 39 ];
+        %tmp.65 = invoke %tmp.62 %tmp.63(%tmp.64);
+        %tmp.66 = sub %tmp.61 %tmp.65;
+        lputv %delta.5 %tmp.66;
+        symbol [ delta %delta.5 262 1 6 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 263 1 ]
+        %tmp.67 = 4;
+        %tmp.68 = lgetv %delta.5;
+        symbol [ delta %tmp.68 263 16 21 ];
+        %tmp.69 = mul %tmp.67 %tmp.68;
+        lputv %timeDiff.6 %tmp.69;
+        symbol [ timeDiff %timeDiff.6 263 1 9 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 264 1 ]
+        %tmp.70 = 720;
+        %tmp.71 = lgetv %timeDiff.6;
+        symbol [ timeDiff %tmp.71 264 17 25 ];
+        %tmp.72 = add %tmp.70 %tmp.71;
+        %tmp.73 = lgetv %eqTime.2;
+        symbol [ eqTime %tmp.73 264 28 34 ];
+        %tmp.74 = sub %tmp.72 %tmp.73;
+        lputv %timeUTC.7 %tmp.74;
+        symbol [ timeUTC %timeUTC.7 264 1 8 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 265 1 ]
+        [ "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_stop" ]
+        %localTime.9 = local;
+        symbol [ localTime %localTime.9 265 5 14 ];
+        %tmp.75 = lgetv %timeUTC.7;
+        symbol [ timeUTC %tmp.75 265 17 24 ];
+        %tmp.76 = 60;
+        symbol [ tzOffset %tmp.78 265 33 41 ];
+        %tmp.78 = getv ? :tzOffset;
+        %tmp.79 = mul %tmp.76 %tmp.78;
+        %tmp.80 = add %tmp.75 %tmp.79;
+        lputv %localTime.9 %tmp.80;
+        symbol [ localTime %localTime.9 265 5 14 ];
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 266 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_266_1_266_47_if_stmt:
+        %tmp.81 = lgetv %localTime.9;
+        symbol [ localTime %tmp.81 266 5 14 ];
+        %tmp.82 = 1440;
+        %tmp.83 = gt %tmp.81 %tmp.82;
+        bf %tmp.83 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_266_1_266_47_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_266_1_266_47_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_266_21_266_47_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 266 22 ]
+        %tmp.84 = lgetv %localTime.9;
+        symbol [ localTime %tmp.84 266 32 41 ];
+        %tmp.85 = 1440;
+        %tmp.86 = sub %tmp.84 %tmp.85;
+        lputv %localTime.9 %tmp.86;
+        symbol [ localTime %localTime.9 266 22 31 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_266_21_266_47_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_266_1_266_47_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_266_1_266_47_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 267 1 ]
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_267_1_267_44_if_stmt:
+        %tmp.87 = lgetv %localTime.9;
+        symbol [ localTime %tmp.87 267 5 14 ];
+        %tmp.88 = 0;
+        %tmp.89 = lt %tmp.87 %tmp.88;
+        bf %tmp.89 @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_267_1_267_44_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_267_1_267_44_if_true:
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_267_18_267_44_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 267 19 ]
+        %tmp.90 = lgetv %localTime.9;
+        symbol [ localTime %tmp.90 267 29 38 ];
+        %tmp.91 = 1440;
+        %tmp.92 = add %tmp.90 %tmp.91;
+        lputv %localTime.9 %tmp.92;
+        symbol [ localTime %localTime.9 267 19 28 ];
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_267_18_267_44_stop:
+        goto @D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_267_1_267_44_if_end;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_267_1_267_44_if_end:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 268 1 ]
+        %tmp.93 = lgetv %localTime.9;
+        symbol [ localTime %tmp.93 268 8 17 ];
+        ret %tmp.93;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_248_1_269_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 271; @symbol_functiondef = [setCurrentDate,271,10,24]; @symbol_param<0> = [y,271,25,26]; @symbol_param<1> = [m,271,28,29]; @symbol_param<2> = [d,271,31,32]; ]
+    function setCurrentDate(y, m, d) {
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_272_1_278_1_start:
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 273 1 ]
+        %tmp.1 = lgetv %y;
+        symbol [ y %tmp.1 273 10 11 ];
+        symbol [ m_year ? 273 1 7 ];
+        putv self :m_year %tmp.1;
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 274 1 ]
+        %tmp.2 = lgetv %m;
+        symbol [ m %tmp.2 274 11 12 ];
+        symbol [ m_month ? 274 1 8 ];
+        putv self :m_month %tmp.2;
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 275 1 ]
+        %tmp.3 = lgetv %d;
+        symbol [ d %tmp.3 275 9 10 ];
+        symbol [ m_day ? 275 1 6 ];
+        putv self :m_day %tmp.3;
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 276 1 ]
+        %tmp.4 = self;
+        symbol [ calcJD %tmp.5 276 14 20 ];
+        %tmp.5 = getv function %tmp.4 :calcJD;
+        %tmp.6 = lgetv %y;
+        symbol [ y %tmp.6 276 21 22 ];
+        %tmp.7 = lgetv %m;
+        symbol [ m %tmp.7 276 24 25 ];
+        %tmp.8 = lgetv %d;
+        symbol [ d %tmp.8 276 27 28 ];
+        %tmp.9 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.7, %tmp.8);
+        symbol [ julianDate ? 276 1 11 ];
+        putv self :julianDate %tmp.9;
+[ "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc" 277 1 ]
+        symbol [ julianDate %tmp.11 277 8 18 ];
+        %tmp.11 = getv ? :julianDate;
+        ret %tmp.11;
+D__OneDrive_Garmin_Source_CleanCasio_source_suncal_mc_272_1_278_1_stop:
+    }
+}
+[ @file = "D:\OneDrive\Garmin\Source\CleanCasio\source\suncal.mc"; @line = 1; ]
+<init> {
+}

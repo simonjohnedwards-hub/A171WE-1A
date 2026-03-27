@@ -1,0 +1,194 @@
+[settings.xml]
+
+ <setting propertyKey="@Properties.timeZoneOn" title="@Strings.timeZoneOnTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+
+<setting propertyKey="@Properties.timeZone" title="@Strings.timeZoneTitle" prompt="@Strings.timeZonePrompt">
+<settingConfig type="list">
+	<listEntry value="-12">@Strings.International</listEntry> 
+	<listEntry value="-11">@Strings.Midway</listEntry> 
+	<listEntry value="-10">@Strings.Hawaii</listEntry> 
+	<listEntry value="-9">@Strings.Alaska</listEntry> 
+	<listEntry value="-8">@Strings.Pacific</listEntry> 
+	<listEntry value="-8">@Strings.Tijuana</listEntry> 
+	<listEntry value="-7">@Strings.Arizona</listEntry> 
+	<listEntry value="-7">@Strings.Chihuahua</listEntry> 
+	<listEntry value="-7">@Strings.Mountain</listEntry> 
+	<listEntry value="-6">@Strings.Central_America</listEntry> 
+	<listEntry value="-6">@Strings.Central_Time</listEntry> 
+	<listEntry value="-6">@Strings.Guadalajara</listEntry> 
+	<listEntry value="-6">@Strings.Saskatchewan</listEntry> 
+	<listEntry value="-5">@Strings.Bogota</listEntry> 
+	<listEntry value="-5">@Strings.Eastern</listEntry> 
+	<listEntry value="-5">@Strings.Indiana</listEntry> 
+	<listEntry value="-4">@Strings.Atlantic</listEntry> 
+	<listEntry value="-4">@Strings.Caracas</listEntry> 
+	<listEntry value="-4">@Strings.Manaus</listEntry> 
+	<listEntry value="-4">@Strings.Santiago</listEntry> 
+	<listEntry value="-3.5">@Strings.Newfoundland</listEntry> 
+	<listEntry value="-3">@Strings.Brasilia</listEntry> 
+	<listEntry value="-3">@Strings.Buenos</listEntry> 
+	<listEntry value="-3">@Strings.Greenland</listEntry> 
+	<listEntry value="-3">@Strings.Montevideo</listEntry> 
+	<listEntry value="-2">@Strings.Mid_Atlantic</listEntry> 
+	<listEntry value="-1">@Strings.Cape</listEntry> 
+	<listEntry value="-1">@Strings.Azores</listEntry> 
+	<listEntry value="0">@Strings.Casablanca</listEntry> 
+	<listEntry value="0">@Strings.Greenwich</listEntry> 
+	<listEntry value="1">@Strings.Amsterdam</listEntry> 
+	<listEntry value="1">@Strings.Belgrade</listEntry> 
+	<listEntry value="1">@Strings.Brussels</listEntry> 
+	<listEntry value="1">@Strings.Sarajevo</listEntry> 
+	<listEntry value="1">@Strings.West</listEntry> 
+	<listEntry value="2">@Strings.Amman</listEntry> 
+	<listEntry value="2">@Strings.Athens</listEntry> 
+	<listEntry value="2">@Strings.Beirut</listEntry> 
+	<listEntry value="2">@Strings.Cairo</listEntry> 
+	<listEntry value="2">@Strings.Harare</listEntry> 
+	<listEntry value="2">@Strings.Helsinki</listEntry> 
+	<listEntry value="2">@Strings.Jerusalem</listEntry> 
+	<listEntry value="2">@Strings.Minsk</listEntry> 
+	<listEntry value="2">@Strings.Windhoek</listEntry> 
+	<listEntry value="3">@Strings.Kuwait</listEntry> 
+	<listEntry value="3">@Strings.Moscow</listEntry> 
+	<listEntry value="3">@Strings.Nairobi</listEntry> 
+	<listEntry value="3">@Strings.Tbilisi</listEntry> 
+	<listEntry value="3.5">@Strings.Tehran</listEntry> 
+	<listEntry value="4">@Strings.Abu</listEntry> 
+	<listEntry value="4">@Strings.Baku</listEntry> 
+	<listEntry value="4">@Strings.Yerevan</listEntry> 
+	<listEntry value="4.5">@Strings.Kabul</listEntry> 
+	<listEntry value="5">@Strings.Yekaterinburg</listEntry> 
+	<listEntry value="5">@Strings.Islamabad</listEntry> 
+	<listEntry value="5.5">@Strings.Sri</listEntry> 
+	<listEntry value="5.5">@Strings.Chennai</listEntry> 
+	<listEntry value="5.75">@Strings.Kathmandu</listEntry> 
+	<listEntry value="6">@Strings.Almaty</listEntry> 
+	<listEntry value="6">@Strings.Astana</listEntry> 
+	<listEntry value="6.5">@Strings.Yangon</listEntry> 
+	<listEntry value="7">@Strings.Bangkok</listEntry> 
+	<listEntry value="7">@Strings.Krasnoyarsk</listEntry> 
+	<listEntry value="8">@Strings.Beijing</listEntry> 
+	<listEntry value="8">@Strings.Kuala Lumpur</listEntry> 
+	<listEntry value="8">@Strings.Irkutsk</listEntry> 
+	<listEntry value="8">@Strings.Perth</listEntry> 
+	<listEntry value="8">@Strings.Taipei</listEntry> 
+	<listEntry value="9">@Strings.Osaka</listEntry> 
+	<listEntry value="9">@Strings.Seoul</listEntry> 
+	<listEntry value="9">@Strings.Yakutsk</listEntry> 
+	<listEntry value="9.5">@Strings.Adelaide</listEntry> 
+	<listEntry value="9.5">@Strings.Darwin</listEntry> 
+	<listEntry value="10">@Strings.Brisbane</listEntry> 
+	<listEntry value="10">@Strings.Canberra</listEntry> 
+	<listEntry value="10">@Strings.Hobart</listEntry> 
+	<listEntry value="10">@Strings.Guam</listEntry> 
+	<listEntry value="10">@Strings.Vladivostok</listEntry> 
+	<listEntry value="11">@Strings.Magadan</listEntry> 
+	<listEntry value="12">@Strings.Auckland</listEntry> 
+	<listEntry value="12">@Strings.Fiji</listEntry> 
+	<listEntry value="13">@Strings.Nuku</listEntry> 
+	</settingConfig>
+    </setting>	
+
+[/settings.xml]
+
+[properties.xml]
+
+    <property id="timeZoneOn" type="boolean">false</property>
+    <property id="timeZone" type="number">0</property>
+
+
+[/properties.xml]
+
+
+[strings.xml]
+
+	<string id="timeZoneOnTitle">Use other time zone for digital clock</string>
+	<string id="timeZoneTitle">Select alternative time zone</string>
+	<string id="timeZonePrompt">Select alternative time zone</string>
+	<string id=“International”>(-12:00) International Date Line West</string>  	
+	<string id=“Midway”>(-11:00) Midway Island, Samoa</string> 
+	<string id=“Hawaii”>(-10:00) Hawaii</string> 
+	<string id=“Alaska”>(-09:00) Alaska</string> 
+	<string id=“Pacific”>(-08:00) Pacific Time (US & Canada)</string> 
+	<string id=“Tijuana”>(-08:00) Tijuana, Baja California</string> 
+	<string id=“Arizona”>(-07:00) Arizona</string> 
+	<string id=“Chihuahua”>(-07:00) Chihuahua, La Paz, Mazatlan</string> 
+	<string id=“Mountain”>(-07:00) Mountain Time (US & Canada)</string> 
+	<string id=“Central_America”>(-06:00) Central America</string> 
+	<string id=“Central_Time”>(-06:00) Central Time (US & Canada)</string> 
+	<string id=“Guadalajara”>(-06:00) Guadalajara, Mexico City, Monterrey</string> 
+	<string id=“Saskatchewan”>(-06:00) Saskatchewan</string> 
+	<string id=“Bogota”>(-05:00) Bogota, Lima, Quito, Rio Branco</string> 
+	<string id=“Eastern”>(-05:00) Eastern Time (US & Canada)</string> 
+	<string id=“Indiana”>(-05:00) Indiana (East)</string> 
+	<string id=“Atlantic”>(-04:00) Atlantic Time (Canada)</string> 
+	<string id=“Caracas”>(-04:00) Caracas, La Paz</string> 
+	<string id=“Manaus”>(-04:00) Manaus</string> 
+	<string id=“Santiago”>(-04:00) Santiago</string> 
+	<string id=“Newfoundland”>(-03:30) Newfoundland</string> 
+	<string id=“Brasilia”>(-03:00) Brasilia</string> 
+	<string id=“Buenos”>(-03:00) Buenos Aires, Georgetown</string> 
+	<string id=“Greenland”>(-03:00) Greenland</string> 
+	<string id=“Montevideo”>(-03:00) Montevideo</string> 
+	<string id=“Mid_Atlantic”>(-02:00) Mid-Atlantic</string> 
+	<string id=“Cape”>(-01:00) Cape Verde Is.</string> 
+	<string id=“Azores”>(-01:00) Azores</string> 
+	<string id=“Casablanca”>(+00:00) Casablanca, Monrovia, Reykjavik</string> 
+	<string id=“Greenwich”>(+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</string> 
+	<string id=“Amsterdam”>(+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</string> 
+	<string id=“Belgrade”>(+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</string> 
+	<string id=“Brussels”>(+01:00) Brussels, Copenhagen, Madrid, Paris</string> 
+	<string id=“Sarajevo”>(+01:00) Sarajevo, Skopje, Warsaw, Zagreb</string> 
+	<string id=“West”>(+01:00) West Central Africa</string> 
+	<string id=“Amman”>(+02:00) Amman</string> 
+	<string id=“Athens”>(+02:00) Athens, Bucharest, Istanbul</string> 
+	<string id=“Beirut”>(+02:00) Beirut</string> 
+	<string id=“Cairo”>(+02:00) Cairo</string> 
+	<string id=“Harare”>(+02:00) Harare, Pretoria</string> 
+	<string id=“Helsinki”>(+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</string> 
+	<string id=“Jerusalem”>(+02:00) Jerusalem</string> 
+	<string id=“Minsk”>(+02:00) Minsk</string> 
+	<string id=“Windhoek”>(+02:00) Windhoek</string> 
+	<string id=“Kuwait”>(+03:00) Kuwait, Riyadh, Baghdad</string> 
+	<string id=“Moscow”>(+03:00) Moscow, St. Petersburg, Volgograd</string> 
+	<string id=“Nairobi”>(+03:00) Nairobi</string> 
+	<string id=“Tbilisi”>(+03:00) Tbilisi</string> 
+	<string id=“Tehran”>(+03:30) Tehran</string> 
+	<string id=“Abu”>(+04:00) Abu Dhabi, Muscat</string> 
+	<string id=“Baku”>(+04:00) Baku</string> 
+	<string id=“Yerevan”>(+04:00) Yerevan</string> 
+	<string id=“Kabul”>(+04:30) Kabul</string> 
+	<string id=“Yekaterinburg”>(+05:00) Yekaterinburg</string> 
+	<string id=“Islamabad”>(+05:00) Islamabad, Karachi, Tashkent</string> 
+	<string id=“Sri”>(+05:30) Sri Jayawardenapura</string> 
+	<string id=“Chennai”>(+05:30) Chennai, Kolkata, Mumbai, New Delhi</string> 
+	<string id=“Kathmandu”>(+05:45) Kathmandu</string> 
+	<string id=“Almaty”>(+06:00) Almaty, Novosibirsk</string> 
+	<string id=“Astana”>(+06:00) Astana, Dhaka</string> 
+	<string id=“Yangon”>(+06:30) Yangon (Rangoon)</string> 
+	<string id=“Bangkok”>(+07:00) Bangkok, Hanoi, Jakarta</string> 
+	<string id=“Krasnoyarsk”>(+07:00) Krasnoyarsk</string> 
+	<string id=“Beijing”>(+08:00) Beijing, Chongqing, Hong Kong, Urumqi</string> 
+	<string id=“Kuala Lumpur”>(+08:00) Kuala Lumpur, Singapore</string> 
+	<string id=“Irkutsk”>(+08:00) Irkutsk, Ulaan Bataar</string> 
+	<string id=“Perth”>(+08:00) Perth</string> 
+	<string id=“Taipei”>(+08:00) Taipei</string> 
+	<string id=“Osaka”>(+09:00) Osaka, Sapporo, Tokyo</string> 
+	<string id=“Seoul”>(+09:00) Seoul</string> 
+	<string id=“Yakutsk”>(+09:00) Yakutsk</string> 
+	<string id=“Adelaide”>(+09:30) Adelaide</string> 
+	<string id=“Darwin”>(+09:30) Darwin</string> 
+	<string id=“Brisbane”>(+10:00) Brisbane</string> 
+	<string id=“Canberra”>(+10:00) Canberra, Melbourne, Sydney</string> 
+	<string id=“Hobart”>(+10:00) Hobart</string> 
+	<string id=“Guam”>(+10:00) Guam, Port Moresby</string> 
+	<string id=“Vladivostok”>(+10:00) Vladivostok</string> 
+	<string id=“Magadan”>(+11:00) Magadan, Solomon Is., New Caledonia</string> 
+	<string id=“Auckland”>(+12:00) Auckland, Wellington</string> 
+	<string id=“Fiji”>(+12:00) Fiji, Kamchatka, Marshall Is.</string> 
+	<string id=“Nuku”>(+13:00) Nuku'alofa</string> 
+
+[/strings.xml]			

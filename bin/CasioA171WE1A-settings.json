@@ -1,0 +1,773 @@
+{
+  "settings" : [ {
+    "key" : "topText",
+    "valueType" : "string",
+    "defaultValue" : "NOMIS",
+    "configTitle" : "topTextTitle",
+    "configPrompt" : null,
+    "configType" : "alphaNumeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : 10
+  }, {
+    "key" : "twelvehourtime",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "twelvehourtimeTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "fontSizeAdjust",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "fontSizeAdjustTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "fontSizeSmaller",
+      "value" : -1
+    }, {
+      "display" : "fontSizeDefault",
+      "value" : 0
+    }, {
+      "display" : "fontSizeLarger",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "casioDataField",
+    "valueType" : "number",
+    "defaultValue" : 2,
+    "configTitle" : "casioDataFieldTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "None",
+      "value" : 0
+    }, {
+      "display" : "digitalClock",
+      "value" : 1
+    }, {
+      "display" : "Battery",
+      "value" : 2
+    }, {
+      "display" : "bodyBattery",
+      "value" : 23
+    }, {
+      "display" : "totalDistance",
+      "value" : 3
+    }, {
+      "display" : "totalWeekDistance",
+      "value" : 4
+    }, {
+      "display" : "totalCal",
+      "value" : 5
+    }, {
+      "display" : "totalSteps",
+      "value" : 6
+    }, {
+      "display" : "totalFloors",
+      "value" : 7
+    }, {
+      "display" : "activityMinutesDay",
+      "value" : 26
+    }, {
+      "display" : "activityMinutesWeek",
+      "value" : 27
+    }, {
+      "display" : "heartRate",
+      "value" : 8
+    }, {
+      "display" : "notificationNumber",
+      "value" : 9
+    }, {
+      "display" : "alarmNumber",
+      "value" : 10
+    }, {
+      "display" : "nextsunevent",
+      "value" : 11
+    }, {
+      "display" : "sunrise",
+      "value" : 12
+    }, {
+      "display" : "sunset",
+      "value" : 13
+    }, {
+      "display" : "sunriseSunset",
+      "value" : 21
+    }, {
+      "display" : "latitude",
+      "value" : 14
+    }, {
+      "display" : "longitude",
+      "value" : 15
+    }, {
+      "display" : "latitudeLongitude",
+      "value" : 22
+    }, {
+      "display" : "altitude",
+      "value" : 16
+    }, {
+      "display" : "meanSeaLevelPressure",
+      "value" : 17
+    }, {
+      "display" : "ambientPressure",
+      "value" : 18
+    }, {
+      "display" : "historyPressure",
+      "value" : 19
+    }, {
+      "display" : "temperature",
+      "value" : 20
+    }, {
+      "display" : "outsideTemperature",
+      "value" : 25
+    }, {
+      "display" : "timeToRecovery",
+      "value" : 24
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "casioDataFieldLeft",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "casioDataFieldLeftTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "None",
+      "value" : 0
+    }, {
+      "display" : "digitalClock",
+      "value" : 1
+    }, {
+      "display" : "Battery",
+      "value" : 2
+    }, {
+      "display" : "bodyBattery",
+      "value" : 23
+    }, {
+      "display" : "totalDistance",
+      "value" : 3
+    }, {
+      "display" : "totalWeekDistance",
+      "value" : 4
+    }, {
+      "display" : "totalCal",
+      "value" : 5
+    }, {
+      "display" : "totalSteps",
+      "value" : 6
+    }, {
+      "display" : "totalFloors",
+      "value" : 7
+    }, {
+      "display" : "activityMinutesDay",
+      "value" : 26
+    }, {
+      "display" : "activityMinutesWeek",
+      "value" : 27
+    }, {
+      "display" : "heartRate",
+      "value" : 8
+    }, {
+      "display" : "notificationNumber",
+      "value" : 9
+    }, {
+      "display" : "alarmNumber",
+      "value" : 10
+    }, {
+      "display" : "nextsunevent",
+      "value" : 11
+    }, {
+      "display" : "sunrise",
+      "value" : 12
+    }, {
+      "display" : "sunset",
+      "value" : 13
+    }, {
+      "display" : "sunriseSunset",
+      "value" : 21
+    }, {
+      "display" : "latitude",
+      "value" : 14
+    }, {
+      "display" : "longitude",
+      "value" : 15
+    }, {
+      "display" : "latitudeLongitude",
+      "value" : 22
+    }, {
+      "display" : "altitude",
+      "value" : 16
+    }, {
+      "display" : "meanSeaLevelPressure",
+      "value" : 17
+    }, {
+      "display" : "ambientPressure",
+      "value" : 18
+    }, {
+      "display" : "historyPressure",
+      "value" : 19
+    }, {
+      "display" : "temperature",
+      "value" : 20
+    }, {
+      "display" : "outsideTemperature",
+      "value" : 25
+    }, {
+      "display" : "timeToRecovery",
+      "value" : 24
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "kmmiles",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "kmmilesTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "kilometers",
+      "value" : 0
+    }, {
+      "display" : "miles",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "metersfeet",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "metersfeetTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "meters",
+      "value" : 0
+    }, {
+      "display" : "feet",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "pressure",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "pressureTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "hPa",
+      "value" : 0
+    }, {
+      "display" : "millibar",
+      "value" : 1
+    }, {
+      "display" : "mmHg",
+      "value" : 2
+    }, {
+      "display" : "inHg",
+      "value" : 3
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "celsiusfahrenheit",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "celsiusfahrenheitTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "celsius",
+      "value" : 0
+    }, {
+      "display" : "fahrenheit",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "moveBarOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "moveBarOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "doNotDisturbOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "donotdisturbTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "batteryColourLevelOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "batteryColourLevelOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "lowPowerSeconds",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "lowPowerSecondsTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "bluetoothStatus",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "bluetoothStatusTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "touchOn",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "touchOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "timeZoneOn",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "timeZoneOnTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "daylightSaving",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "daylightSavingTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "timeZone",
+    "valueType" : "number",
+    "defaultValue" : 15,
+    "configTitle" : "timeZoneTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "International",
+      "value" : 0
+    }, {
+      "display" : "Midway",
+      "value" : 1
+    }, {
+      "display" : "Hawaii",
+      "value" : 2
+    }, {
+      "display" : "Alaska",
+      "value" : 3
+    }, {
+      "display" : "Pacific",
+      "value" : 4
+    }, {
+      "display" : "Mountain",
+      "value" : 5
+    }, {
+      "display" : "Central_America",
+      "value" : 6
+    }, {
+      "display" : "Central_Time",
+      "value" : 7
+    }, {
+      "display" : "Eastern",
+      "value" : 8
+    }, {
+      "display" : "Atlantic",
+      "value" : 9
+    }, {
+      "display" : "Newfoundland",
+      "value" : 10
+    }, {
+      "display" : "Brasilia",
+      "value" : 11
+    }, {
+      "display" : "Mid_Atlantic",
+      "value" : 12
+    }, {
+      "display" : "Azores",
+      "value" : 13
+    }, {
+      "display" : "Casablanca",
+      "value" : 14
+    }, {
+      "display" : "Greenwich",
+      "value" : 15
+    }, {
+      "display" : "Amsterdam",
+      "value" : 16
+    }, {
+      "display" : "Belgrade",
+      "value" : 17
+    }, {
+      "display" : "Brussels",
+      "value" : 18
+    }, {
+      "display" : "Sarajevo",
+      "value" : 19
+    }, {
+      "display" : "West",
+      "value" : 20
+    }, {
+      "display" : "Athens",
+      "value" : 21
+    }, {
+      "display" : "Beirut",
+      "value" : 22
+    }, {
+      "display" : "Helsinki",
+      "value" : 23
+    }, {
+      "display" : "Jerusalem",
+      "value" : 24
+    }, {
+      "display" : "Kuwait",
+      "value" : 25
+    }, {
+      "display" : "Moscow",
+      "value" : 26
+    }, {
+      "display" : "Nairobi",
+      "value" : 27
+    }, {
+      "display" : "Tehran",
+      "value" : 28
+    }, {
+      "display" : "Abu",
+      "value" : 29
+    }, {
+      "display" : "Baku",
+      "value" : 30
+    }, {
+      "display" : "Kabul",
+      "value" : 31
+    }, {
+      "display" : "Yekaterinburg",
+      "value" : 32
+    }, {
+      "display" : "Islamabad",
+      "value" : 33
+    }, {
+      "display" : "Sri",
+      "value" : 34
+    }, {
+      "display" : "Chennai",
+      "value" : 35
+    }, {
+      "display" : "Kathmandu",
+      "value" : 36
+    }, {
+      "display" : "Almaty",
+      "value" : 37
+    }, {
+      "display" : "Astana",
+      "value" : 38
+    }, {
+      "display" : "Yangon",
+      "value" : 39
+    }, {
+      "display" : "Bangkok",
+      "value" : 40
+    }, {
+      "display" : "Krasnoyarsk",
+      "value" : 41
+    }, {
+      "display" : "Beijing",
+      "value" : 42
+    }, {
+      "display" : "Kuala",
+      "value" : 43
+    }, {
+      "display" : "Irkutsk",
+      "value" : 44
+    }, {
+      "display" : "Perth",
+      "value" : 45
+    }, {
+      "display" : "Osaka",
+      "value" : 46
+    }, {
+      "display" : "Seoul",
+      "value" : 47
+    }, {
+      "display" : "Adelaide",
+      "value" : 48
+    }, {
+      "display" : "Darwin",
+      "value" : 49
+    }, {
+      "display" : "Brisbane",
+      "value" : 50
+    }, {
+      "display" : "Guam",
+      "value" : 51
+    }, {
+      "display" : "Vladivostok",
+      "value" : 52
+    }, {
+      "display" : "Magadan",
+      "value" : 53
+    }, {
+      "display" : "Auckland",
+      "value" : 54
+    }, {
+      "display" : "Fiji",
+      "value" : 55
+    }, {
+      "display" : "Nuku",
+      "value" : 56
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "Belgrade" : "(UTC+1) Belgrade, Bratislava, Budapest, Ljubljana, Prague",
+      "lowPowerSecondsTitle" : "LOW POWER SECONDS: Show and update seconds in low power mode (increases battery usage)",
+      "bodyBattery" : "Body Battery(%)",
+      "kmmilesTitle" : "DISTANCE UNITS km/miles: select distance units",
+      "Casablanca" : "(UTC+0) Casablanca, Monrovia, Reykjavik",
+      "totalSteps" : "Total steps for day(s)",
+      "Central_America" : "(UTC-6) Central America",
+      "Beirut" : "(UTC+2) Beirut",
+      "Kabul" : "(UTC+4:30) Kabul",
+      "Chennai" : "(UTC+5:30) Chennai, Kolkata, Mumbai, New Delhi",
+      "Baku" : "(UTC+4) Baku",
+      "Kathmandu" : "(UTC+5:45) Kathmandu",
+      "donotdisturbTitle" : "DO NOT DISTURB: Show Do Not Disturb indicator on watch face",
+      "nextsunevent" : "Next sun event",
+      "Athens" : "(UTC+2) Athens, Bucharest, Istanbul",
+      "Bangkok" : "(UTC+7) Bangkok, Hanoi, Jakarta",
+      "Beijing" : "(UTC+8) Beijing, Chongqing, Hong Kong, Urumqi",
+      "timeZoneOnTitle" : "DIGITAL CLOCK SECOND TIME ZONE: Use second time zone for digital clock (not the main digital clock), off to use local time",
+      "Irkutsk" : "(UTC+8) Irkutsk, Ulaan Bataar",
+      "celsius" : "Celsius",
+      "inHg" : "in.Hg",
+      "Mid_Atlantic" : "(UTC-2) Mid-Atlantic",
+      "Eastern" : "(UTC-5) Eastern Time (US and Canada)",
+      "Atlantic" : "(UTC-4) Atlantic Time (Canada)",
+      "totalWeekDistance" : "Total 7 day distance (km/miles)",
+      "sunrise" : "Sunrise",
+      "Fiji" : "(UTC+12) Fiji, Kamchatka, Marshall Is.",
+      "latitude" : "Latitude",
+      "Astana" : "(UTC+6) Astana, Dhaka",
+      "Adelaide" : "(UTC+9:30) Adelaide",
+      "Moscow" : "(UTC+3) Moscow, St. Petersburg, Volgograd",
+      "sunriseSunset" : "Sunrise_Sunset",
+      "Amsterdam" : "(UTC+1) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna",
+      "Abu" : "(UTC+4) Abu Dhabi, Muscat",
+      "Seoul" : "(UTC+9) Seoul",
+      "fontSizeDefault" : "Default",
+      "temperature" : "Temperature(C/F)",
+      "Yekaterinburg" : "(UTC+5) Yekaterinburg",
+      "Helsinki" : "(UTC+2) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius",
+      "Kuwait" : "(UTC+3) Kuwait, Riyadh, Baghdad",
+      "alarmNumber" : "Alarms(a)",
+      "Hawaii" : "(UTC-10) Hawaii",
+      "casioDataFieldLeftTitle" : "DATA FIELD LEFT: Select the data shown in the top-left of the LCD panel",
+      "metersfeetTitle" : "DISTANCE UNITS m/ft: select distance units",
+      "celsiusfahrenheitTitle" : "TEMPERATURE UNITS C/F: select temperature units",
+      "Islamabad" : "(UTC+5) Islamabad, Karachi, Tashkent",
+      "twelvehourtimeTitle" : "Set digital time to 12 hour time",
+      "latitudeLongitude" : "Latitude_Longitude",
+      "Pacific" : "(UTC-8) Pacific Time (US and Canada)",
+      "sunset" : "Sunset",
+      "hPa" : "hPa",
+      "Azores" : "(UTC-1) Azores",
+      "Osaka" : "(UTC+9) Osaka, Sapporo, Tokyo",
+      "None" : "(OFF)",
+      "activityMinutesWeek" : "Activity minutes week(m)",
+      "feet" : "Feet",
+      "Brasilia" : "(UTC-3) Brasilia",
+      "Vladivostok" : "(UTC+10) Vladivostok",
+      "mmHg" : "mm.Hg",
+      "historyPressure" : "History pressure(hPa,mb,mH,iH)",
+      "topTextTitle" : "TOP TEXT: Text shown above the LCD panel (e.g. NOMIS)",
+      "Nairobi" : "(UTC+3) Nairobi",
+      "Brisbane" : "(UTC+10) Brisbane",
+      "digitalClock" : "Digital clock",
+      "Battery" : "Battery(%)",
+      "Guam" : "(UTC+10) Guam, Port Moresby",
+      "millibar" : "millibar",
+      "Midway" : "(UTC-11) Midway Island, Samoa",
+      "Kuala" : "(UTC+8) Kuala Lumpur, Singapore",
+      "fahrenheit" : "Fahrenheit",
+      "totalDistance" : "Total distance day(km/miles)",
+      "notificationNumber" : "Notifications(n)",
+      "Sarajevo" : "(UTC+1) Sarajevo, Skopje, Warsaw, Zagreb",
+      "longitude" : "Longitude",
+      "Brussels" : "(UTC+1) Brussels, Copenhagen, Madrid, Paris",
+      "Jerusalem" : "(UTC+2) Jerusalem",
+      "Perth" : "(UTC+8) Perth",
+      "fontSizeSmaller" : "Smaller",
+      "Greenwich" : "(UTC+0) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London",
+      "heartRate" : "Heart Rate (bpm)",
+      "Nuku" : "(UTC+13) Nuku'alofa",
+      "totalCal" : "Total calories for day(kC)",
+      "altitude" : "Altitude(m/ft)",
+      "fontSizeLarger" : "Larger",
+      "timeToRecovery" : "Time to Recovery(h)",
+      "moveBarOnTitle" : "ENABLE MOVE CIRCLE: track daily movement (green=1 hour, red=15min x4)",
+      "touchOnTitle" : "TOUCHSCREEN: Enable touch to open calculator from bottom of screen and stopwatch from right of screen",
+      "Sri" : "(UTC+5:30) Sri Jayawardenapura",
+      "totalFloors" : "Total floors climbed for day(f)",
+      "Auckland" : "(UTC+12) Auckland, Wellington",
+      "AppName" : "A171WE-1A",
+      "miles" : "Miles",
+      "meters" : "Meters",
+      "outsideTemperature" : "Outside Temperature(C/F)",
+      "Darwin" : "(UTC+9:30) Darwin",
+      "activityMinutesDay" : "Activity minutes day(m)",
+      "Mountain" : "(UTC-7) Mountain Time (US and Canada)",
+      "ambientPressure" : "Ambient pressure(hPa,mb,mH,iH)",
+      "bluetoothStatusTitle" : "BLUETOOTH STATUS: Bluetooth phone connection status indicated with BLUE seconds",
+      "Alaska" : "(UTC-9) Alaska",
+      "casioDataFieldTitle" : "DATA FIELD RIGHT: Select the data shown in the top-right of the LCD panel",
+      "daylightSavingTitle" : "SECOND TIME ZONE CORRECTION: Correct second time zone by 1 hour for daylight saving (only if other time zone enabled)",
+      "batteryColourLevelOnTitle" : "BATTERY COLOUR: Colour code the battery level (green/yellow/red)",
+      "Magadan" : "(UTC+11) Magadan, Solomon Is., New Caledonia",
+      "International" : "(UTC-12) International Date Line West",
+      "Tehran" : "(UTC+3:30) Tehran",
+      "timeZoneTitle" : "SECOND TIME ZONE: Select second time zone offset from UTC",
+      "West" : "(UTC+1) West Central Africa",
+      "Yangon" : "(UTC+6:30) Yangon (Rangoon)",
+      "Newfoundland" : "(UTC-3:30) Newfoundland",
+      "Almaty" : "(UTC+6) Almaty, Novosibirsk",
+      "pressureTitle" : "PRESSURE UNITS: select pressure units",
+      "Central_Time" : "(UTC-6) Central Time (US and Canada)",
+      "meanSeaLevelPressure" : "Barometric pressure(hPa,mb,mH,iH)",
+      "Krasnoyarsk" : "(UTC+7) Krasnoyarsk",
+      "fontSizeAdjustTitle" : "CLOCK FONT SIZE: Adjust digital clock and seconds font size",
+      "kilometers" : "Kilometers"
+    }
+  }
+}

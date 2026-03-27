@@ -1,0 +1,209 @@
+<settings>
+  	<setting propertyKey="@Properties.topText" title="@Strings.topTextTitle">
+        <settingConfig type="alphaNumeric" maxLength="10" />
+    </setting>
+
+  	<setting propertyKey="@Properties.twelvehourtime" title="@Strings.twelvehourtimeTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+   	<setting propertyKey="@Properties.fontSizeAdjust" title="@Strings.fontSizeAdjustTitle">
+		<settingConfig type="list">
+		<listEntry value="-1">@Strings.fontSizeSmaller</listEntry>
+		<listEntry value="0">@Strings.fontSizeDefault</listEntry>
+		<listEntry value="1">@Strings.fontSizeLarger</listEntry>
+		</settingConfig>
+  	</setting>
+
+  	<setting propertyKey="@Properties.casioDataField" title="@Strings.casioDataFieldTitle">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.None</listEntry>
+			<listEntry value="1">@Strings.digitalClock</listEntry>
+			<listEntry value="2">@Strings.Battery</listEntry>
+			<listEntry value="23">@Strings.bodyBattery</listEntry>
+			<listEntry value="3">@Strings.totalDistance</listEntry>
+			<listEntry value="4">@Strings.totalWeekDistance</listEntry>
+			<listEntry value="5">@Strings.totalCal</listEntry>
+			<listEntry value="6">@Strings.totalSteps</listEntry>
+			<listEntry value="7">@Strings.totalFloors</listEntry>
+			<listEntry value="26">@Strings.activityMinutesDay</listEntry>
+			<listEntry value="27">@Strings.activityMinutesWeek</listEntry>
+			<listEntry value="8">@Strings.heartRate</listEntry>
+			<listEntry value="9">@Strings.notificationNumber</listEntry>
+			<listEntry value="10">@Strings.alarmNumber</listEntry>
+			<listEntry value="11">@Strings.nextsunevent</listEntry>
+			<listEntry value="12">@Strings.sunrise</listEntry>
+			<listEntry value="13">@Strings.sunset</listEntry>
+			<listEntry value="21">@Strings.sunriseSunset</listEntry>
+			<listEntry value="14">@Strings.latitude</listEntry>
+			<listEntry value="15">@Strings.longitude</listEntry>
+			<listEntry value="22">@Strings.latitudeLongitude</listEntry>
+			<listEntry value="16">@Strings.altitude</listEntry>
+			<listEntry value="17">@Strings.meanSeaLevelPressure</listEntry>
+			<listEntry value="18">@Strings.ambientPressure</listEntry>
+			<listEntry value="19">@Strings.historyPressure</listEntry>
+			<listEntry value="20">@Strings.temperature</listEntry>
+			<listEntry value="25">@Strings.outsideTemperature</listEntry>
+			<listEntry value="24">@Strings.timeToRecovery</listEntry>
+		</settingConfig>
+    </setting>
+
+  	<setting propertyKey="@Properties.casioDataFieldLeft" title="@Strings.casioDataFieldLeftTitle">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.None</listEntry>
+			<listEntry value="1">@Strings.digitalClock</listEntry>
+			<listEntry value="2">@Strings.Battery</listEntry>
+			<listEntry value="23">@Strings.bodyBattery</listEntry>
+			<listEntry value="3">@Strings.totalDistance</listEntry>
+			<listEntry value="4">@Strings.totalWeekDistance</listEntry>
+			<listEntry value="5">@Strings.totalCal</listEntry>
+			<listEntry value="6">@Strings.totalSteps</listEntry>
+			<listEntry value="7">@Strings.totalFloors</listEntry>
+			<listEntry value="26">@Strings.activityMinutesDay</listEntry>
+			<listEntry value="27">@Strings.activityMinutesWeek</listEntry>
+			<listEntry value="8">@Strings.heartRate</listEntry>
+			<listEntry value="9">@Strings.notificationNumber</listEntry>
+			<listEntry value="10">@Strings.alarmNumber</listEntry>
+			<listEntry value="11">@Strings.nextsunevent</listEntry>
+			<listEntry value="12">@Strings.sunrise</listEntry>
+			<listEntry value="13">@Strings.sunset</listEntry>
+			<listEntry value="21">@Strings.sunriseSunset</listEntry>
+			<listEntry value="14">@Strings.latitude</listEntry>
+			<listEntry value="15">@Strings.longitude</listEntry>
+			<listEntry value="22">@Strings.latitudeLongitude</listEntry>
+			<listEntry value="16">@Strings.altitude</listEntry>
+			<listEntry value="17">@Strings.meanSeaLevelPressure</listEntry>
+			<listEntry value="18">@Strings.ambientPressure</listEntry>
+			<listEntry value="19">@Strings.historyPressure</listEntry>
+			<listEntry value="20">@Strings.temperature</listEntry>
+			<listEntry value="25">@Strings.outsideTemperature</listEntry>
+			<listEntry value="24">@Strings.timeToRecovery</listEntry>
+		</settingConfig>
+    </setting>
+
+   	<setting propertyKey="@Properties.kmmiles" title="@Strings.kmmilesTitle">
+		<settingConfig type="list">
+		<listEntry value="0">@Strings.kilometers</listEntry>
+		<listEntry value="1">@Strings.miles</listEntry>
+		</settingConfig>
+  	</setting>
+
+   	<setting propertyKey="@Properties.metersfeet" title="@Strings.metersfeetTitle">
+		<settingConfig type="list">
+		<listEntry value="0">@Strings.meters</listEntry>
+		<listEntry value="1">@Strings.feet</listEntry>
+		</settingConfig>
+  	</setting>
+
+   	<setting propertyKey="@Properties.pressure" title="@Strings.pressureTitle">
+		<settingConfig type="list">
+		<listEntry value="0">@Strings.hPa</listEntry>
+		<listEntry value="1">@Strings.millibar</listEntry>
+		<listEntry value="2">@Strings.mmHg</listEntry>
+		<listEntry value="3">@Strings.inHg</listEntry>
+		</settingConfig>
+  	</setting>
+
+   	<setting propertyKey="@Properties.celsiusfahrenheit" title="@Strings.celsiusfahrenheitTitle">
+		<settingConfig type="list">
+		<listEntry value="0">@Strings.celsius</listEntry>
+		<listEntry value="1">@Strings.fahrenheit</listEntry>
+		</settingConfig>
+  	</setting>
+
+  	<setting propertyKey="@Properties.moveBarOn" title="@Strings.moveBarOnTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+
+   	<setting propertyKey="@Properties.doNotDisturbOn" title="@Strings.donotdisturbTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+   	<setting propertyKey="@Properties.batteryColourLevelOn" title="@Strings.batteryColourLevelOnTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+   	<setting propertyKey="@Properties.lowPowerSeconds" title="@Strings.lowPowerSecondsTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+   	<setting propertyKey="@Properties.bluetoothStatus" title="@Strings.bluetoothStatusTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+   	<setting propertyKey="@Properties.touchOn" title="@Strings.touchOnTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+  	<setting propertyKey="@Properties.timeZoneOn" title="@Strings.timeZoneOnTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+  	<setting propertyKey="@Properties.daylightSaving" title="@Strings.daylightSavingTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+  	<setting propertyKey="@Properties.timeZone" title="@Strings.timeZoneTitle">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.International</listEntry>
+			<listEntry value="1">@Strings.Midway</listEntry>
+			<listEntry value="2">@Strings.Hawaii</listEntry>
+			<listEntry value="3">@Strings.Alaska</listEntry>
+			<listEntry value="4">@Strings.Pacific</listEntry>
+			<listEntry value="5">@Strings.Mountain</listEntry>
+			<listEntry value="6">@Strings.Central_America</listEntry>
+			<listEntry value="7">@Strings.Central_Time</listEntry>
+			<listEntry value="8">@Strings.Eastern</listEntry>
+			<listEntry value="9">@Strings.Atlantic</listEntry>
+			<listEntry value="10">@Strings.Newfoundland</listEntry>
+			<listEntry value="11">@Strings.Brasilia</listEntry>
+			<listEntry value="12">@Strings.Mid_Atlantic</listEntry>
+			<listEntry value="13">@Strings.Azores</listEntry>
+			<listEntry value="14">@Strings.Casablanca</listEntry>
+			<listEntry value="15">@Strings.Greenwich</listEntry>
+			<listEntry value="16">@Strings.Amsterdam</listEntry>
+			<listEntry value="17">@Strings.Belgrade</listEntry>
+			<listEntry value="18">@Strings.Brussels</listEntry>
+			<listEntry value="19">@Strings.Sarajevo</listEntry>
+			<listEntry value="20">@Strings.West</listEntry>
+			<listEntry value="21">@Strings.Athens</listEntry>
+			<listEntry value="22">@Strings.Beirut</listEntry>
+			<listEntry value="23">@Strings.Helsinki</listEntry>
+			<listEntry value="24">@Strings.Jerusalem</listEntry>
+			<listEntry value="25">@Strings.Kuwait</listEntry>
+			<listEntry value="26">@Strings.Moscow</listEntry>
+			<listEntry value="27">@Strings.Nairobi</listEntry>
+			<listEntry value="28">@Strings.Tehran</listEntry>
+			<listEntry value="29">@Strings.Abu</listEntry>
+			<listEntry value="30">@Strings.Baku</listEntry>
+			<listEntry value="31">@Strings.Kabul</listEntry>
+			<listEntry value="32">@Strings.Yekaterinburg</listEntry>
+			<listEntry value="33">@Strings.Islamabad</listEntry>
+			<listEntry value="34">@Strings.Sri</listEntry>
+			<listEntry value="35">@Strings.Chennai</listEntry>
+			<listEntry value="36">@Strings.Kathmandu</listEntry>
+			<listEntry value="37">@Strings.Almaty</listEntry>
+			<listEntry value="38">@Strings.Astana</listEntry>
+			<listEntry value="39">@Strings.Yangon</listEntry>
+			<listEntry value="40">@Strings.Bangkok</listEntry>
+			<listEntry value="41">@Strings.Krasnoyarsk</listEntry>
+			<listEntry value="42">@Strings.Beijing</listEntry>
+			<listEntry value="43">@Strings.Kuala</listEntry>
+			<listEntry value="44">@Strings.Irkutsk</listEntry>
+			<listEntry value="45">@Strings.Perth</listEntry>
+			<listEntry value="46">@Strings.Osaka</listEntry>
+			<listEntry value="47">@Strings.Seoul</listEntry>
+			<listEntry value="48">@Strings.Adelaide</listEntry>
+			<listEntry value="49">@Strings.Darwin</listEntry>
+			<listEntry value="50">@Strings.Brisbane</listEntry>
+			<listEntry value="51">@Strings.Guam</listEntry>
+			<listEntry value="52">@Strings.Vladivostok</listEntry>
+			<listEntry value="53">@Strings.Magadan</listEntry>
+			<listEntry value="54">@Strings.Auckland</listEntry>
+			<listEntry value="55">@Strings.Fiji</listEntry>
+			<listEntry value="56">@Strings.Nuku</listEntry>
+		</settingConfig>
+    </setting>
+
+</settings>

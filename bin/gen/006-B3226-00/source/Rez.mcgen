@@ -1,0 +1,147 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var DoNotDisturbIcon as ResourceId;
+        (:initialized) var settingsIcon as ResourceId;
+        (:initialized) var LauncherIcon as ResourceId;
+    } // Drawables
+
+    module Fonts {
+        (:initialized) var id_font_black_diamond as ResourceId;
+        (:initialized) var id_font_CleanAnalogFont as ResourceId;
+    } // Fonts
+
+    module JsonData {
+        (:initialized) var arrayTimeZones as ResourceId;
+        (:initialized) var arrayColours as ResourceId;
+        (:initialized) var arrayDays as ResourceId;
+        (:initialized) var arrayPressureConvert as ResourceId;
+        (:initialized) var arrayPressureString as ResourceId;
+        (:initialized) var arrayBatteryString as ResourceId;
+    } // JsonData
+
+    module Strings {
+        (:initialized) var Belgrade as ResourceId;
+        (:initialized) var lowPowerSecondsTitle as ResourceId;
+        (:initialized) var bodyBattery as ResourceId;
+        (:initialized) var kmmilesTitle as ResourceId;
+        (:initialized) var Casablanca as ResourceId;
+        (:initialized) var totalSteps as ResourceId;
+        (:initialized) var Central_America as ResourceId;
+        (:initialized) var Beirut as ResourceId;
+        (:initialized) var Kabul as ResourceId;
+        (:initialized) var Chennai as ResourceId;
+        (:initialized) var Baku as ResourceId;
+        (:initialized) var Kathmandu as ResourceId;
+        (:initialized) var donotdisturbTitle as ResourceId;
+        (:initialized) var nextsunevent as ResourceId;
+        (:initialized) var Athens as ResourceId;
+        (:initialized) var Bangkok as ResourceId;
+        (:initialized) var Beijing as ResourceId;
+        (:initialized) var timeZoneOnTitle as ResourceId;
+        (:initialized) var Irkutsk as ResourceId;
+        (:initialized) var celsius as ResourceId;
+        (:initialized) var inHg as ResourceId;
+        (:initialized) var Mid_Atlantic as ResourceId;
+        (:initialized) var Eastern as ResourceId;
+        (:initialized) var Atlantic as ResourceId;
+        (:initialized) var totalWeekDistance as ResourceId;
+        (:initialized) var sunrise as ResourceId;
+        (:initialized) var Fiji as ResourceId;
+        (:initialized) var latitude as ResourceId;
+        (:initialized) var Astana as ResourceId;
+        (:initialized) var Adelaide as ResourceId;
+        (:initialized) var Moscow as ResourceId;
+        (:initialized) var sunriseSunset as ResourceId;
+        (:initialized) var Amsterdam as ResourceId;
+        (:initialized) var Abu as ResourceId;
+        (:initialized) var Seoul as ResourceId;
+        (:initialized) var fontSizeDefault as ResourceId;
+        (:initialized) var temperature as ResourceId;
+        (:initialized) var Yekaterinburg as ResourceId;
+        (:initialized) var Helsinki as ResourceId;
+        (:initialized) var Kuwait as ResourceId;
+        (:initialized) var alarmNumber as ResourceId;
+        (:initialized) var Hawaii as ResourceId;
+        (:initialized) var casioDataFieldLeftTitle as ResourceId;
+        (:initialized) var metersfeetTitle as ResourceId;
+        (:initialized) var celsiusfahrenheitTitle as ResourceId;
+        (:initialized) var Islamabad as ResourceId;
+        (:initialized) var twelvehourtimeTitle as ResourceId;
+        (:initialized) var latitudeLongitude as ResourceId;
+        (:initialized) var Pacific as ResourceId;
+        (:initialized) var sunset as ResourceId;
+        (:initialized) var hPa as ResourceId;
+        (:initialized) var Azores as ResourceId;
+        (:initialized) var Osaka as ResourceId;
+        (:initialized) var None as ResourceId;
+        (:initialized) var activityMinutesWeek as ResourceId;
+        (:initialized) var feet as ResourceId;
+        (:initialized) var Brasilia as ResourceId;
+        (:initialized) var Vladivostok as ResourceId;
+        (:initialized) var mmHg as ResourceId;
+        (:initialized) var historyPressure as ResourceId;
+        (:initialized) var topTextTitle as ResourceId;
+        (:initialized) var Nairobi as ResourceId;
+        (:initialized) var Brisbane as ResourceId;
+        (:initialized) var digitalClock as ResourceId;
+        (:initialized) var Battery as ResourceId;
+        (:initialized) var Guam as ResourceId;
+        (:initialized) var millibar as ResourceId;
+        (:initialized) var Midway as ResourceId;
+        (:initialized) var Kuala as ResourceId;
+        (:initialized) var fahrenheit as ResourceId;
+        (:initialized) var totalDistance as ResourceId;
+        (:initialized) var notificationNumber as ResourceId;
+        (:initialized) var Sarajevo as ResourceId;
+        (:initialized) var longitude as ResourceId;
+        (:initialized) var Brussels as ResourceId;
+        (:initialized) var Jerusalem as ResourceId;
+        (:initialized) var Perth as ResourceId;
+        (:initialized) var fontSizeSmaller as ResourceId;
+        (:initialized) var Greenwich as ResourceId;
+        (:initialized) var heartRate as ResourceId;
+        (:initialized) var Nuku as ResourceId;
+        (:initialized) var totalCal as ResourceId;
+        (:initialized) var altitude as ResourceId;
+        (:initialized) var fontSizeLarger as ResourceId;
+        (:initialized) var timeToRecovery as ResourceId;
+        (:initialized) var moveBarOnTitle as ResourceId;
+        (:initialized) var touchOnTitle as ResourceId;
+        (:initialized) var Sri as ResourceId;
+        (:initialized) var totalFloors as ResourceId;
+        (:initialized) var Auckland as ResourceId;
+        (:initialized) var AppName as ResourceId;
+        (:initialized) var miles as ResourceId;
+        (:initialized) var meters as ResourceId;
+        (:initialized) var outsideTemperature as ResourceId;
+        (:initialized) var Darwin as ResourceId;
+        (:initialized) var activityMinutesDay as ResourceId;
+        (:initialized) var Mountain as ResourceId;
+        (:initialized) var ambientPressure as ResourceId;
+        (:initialized) var bluetoothStatusTitle as ResourceId;
+        (:initialized) var Alaska as ResourceId;
+        (:initialized) var casioDataFieldTitle as ResourceId;
+        (:initialized) var daylightSavingTitle as ResourceId;
+        (:initialized) var batteryColourLevelOnTitle as ResourceId;
+        (:initialized) var Magadan as ResourceId;
+        (:initialized) var International as ResourceId;
+        (:initialized) var Tehran as ResourceId;
+        (:initialized) var timeZoneTitle as ResourceId;
+        (:initialized) var West as ResourceId;
+        (:initialized) var Yangon as ResourceId;
+        (:initialized) var Newfoundland as ResourceId;
+        (:initialized) var Almaty as ResourceId;
+        (:initialized) var pressureTitle as ResourceId;
+        (:initialized) var Central_Time as ResourceId;
+        (:initialized) var meanSeaLevelPressure as ResourceId;
+        (:initialized) var Krasnoyarsk as ResourceId;
+        (:initialized) var fontSizeAdjustTitle as ResourceId;
+        (:initialized) var kilometers as ResourceId;
+    } // Strings
+} // Rez

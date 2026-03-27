@@ -1,0 +1,6 @@
+@ = alram
+B = battery
+Q = Message
+H = Heart
+R = Step
+Z = Bluetooth

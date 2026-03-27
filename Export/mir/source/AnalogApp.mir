@@ -1,0 +1,92 @@
+[ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 7; ]
+using Toybox.Application;
+[ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 8; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 12; @position = 4; ]
+var settingsChanged = true;
+[ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 15; ]
+class AnalogWatch extends Application.AppBase{
+    [ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 15; ]
+    <init> {
+    }
+    [ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 15; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 19; ]
+    function initialize() as Void {
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_19_26_start:
+[ "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc" 20 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_19_26_stop:
+    }
+    [ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 23; ]
+    function onStart(state) {
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_23_28_start:
+[ "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc" 24 6 ]
+        %tmp.1 = true;
+        putv self :settingsChanged %tmp.1;
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_23_28_stop:
+    }
+    [ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 29; ]
+    function onStop(state) {
+    }
+    [ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 33; ]
+    function getInitialView() {
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_33_30_start:
+[ "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc" 36 5 ]
+        %tmp.1 = true;
+        putv self :settingsChanged %tmp.1;
+[ "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc" 39 8 ]
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_39_8_if_stmt:
+        %tmp.3 = getv ? :Toybox;
+        %tmp.4 = getv %tmp.3 :WatchUi;
+        %tmp.6 = const :WatchFaceDelegate;
+        %tmp.7 = canhazplz %tmp.4 %tmp.6;
+        bf %tmp.7 @C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_39_8_if_false;
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_39_8_if_true:
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_39_52_start:
+[ "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc" 40 12 ]
+        %tmp.8 = newa 2;
+        %tmp.12 = getv ? :AnalogView;
+        %tmp.9 = newc %tmp.12 ();
+        %tmp.13 = dup %tmp.8;
+        %tmp.14 = aputv %tmp.13 0 %tmp.9;
+        %tmp.18 = getv ? :AnalogDelegate;
+        %tmp.15 = newc %tmp.18 ();
+        %tmp.19 = dup %tmp.14;
+        %tmp.20 = aputv %tmp.19 1 %tmp.15;
+        ret %tmp.20;
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_39_52_stop:
+        goto @C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_39_8_if_end;
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_39_8_if_false:
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_41_15_start:
+[ "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc" 42 12 ]
+        %tmp.21 = newa 1;
+        %tmp.25 = getv ? :AnalogView;
+        %tmp.22 = newc %tmp.25 ();
+        %tmp.26 = dup %tmp.21;
+        %tmp.27 = aputv %tmp.26 0 %tmp.22;
+        ret %tmp.27;
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_41_15_stop:
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_39_8_if_end:
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_33_30_stop:
+    }
+    [ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 46; ]
+    function onSettingsChanged() {
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_46_33_start:
+[ "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc" 47 6 ]
+        %tmp.1 = true;
+        putv self :settingsChanged %tmp.1;
+[ "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc" 49 6 ]
+        %tmp.2 = getm $.Toybox.WatchUi;
+        %tmp.3 = getv function %tmp.2 :requestUpdate;
+        invoke %tmp.2 %tmp.3();
+C_Users_simon_OneDrive_Garmin_Source_CleanDigitalPremium_source_AnalogApp_mc_46_33_stop:
+    }
+}
+[ @file = "C:\Users\simon\OneDrive\Garmin\Source\CleanDigitalPremium\source\AnalogApp.mc"; @line = 7; ]
+<init> {
+}

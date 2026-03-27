@@ -1,0 +1,3030 @@
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 7; @symbol_usingdef<0> = [Toybox,7,6,12]; @symbol_usingdef<1> = [Application,7,13,24]; ]
+using Toybox.Application;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 8; @symbol_usingdef<0> = [Toybox,8,6,12]; @symbol_usingdef<1> = [WatchUi,8,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 10; @position = 4; @symbol_vardef = [settingsChanged,10,4,19]; ]
+var settingsChanged = true;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 12; @position = 4; @symbol_vardef = [_bluetoothStatus,12,4,20]; ]
+var _bluetoothStatus = false;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 13; @position = 4; @symbol_vardef = [_doNotDisturbOn,13,4,19]; ]
+var _doNotDisturbOn = false;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 14; @position = 4; @symbol_vardef = [_twelvehourtime,14,4,19]; ]
+var _twelvehourtime = true;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 15; @position = 4; @symbol_vardef = [_batteryColourLevelOn,15,4,25]; ]
+var _batteryColourLevelOn = true;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 16; @position = 4; @symbol_vardef = [_moveBarOn,16,4,14]; ]
+var _moveBarOn = false;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 17; @position = 4; @symbol_vardef = [_lowPowerSeconds,17,4,20]; ]
+var _lowPowerSeconds = false;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 18; @position = 4; @symbol_vardef = [_touchOn,18,4,12]; ]
+var _touchOn = true;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 19; @position = 4; @symbol_vardef = [_casioDataField,19,4,19]; ]
+var _casioDataField = 2;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 20; @position = 4; @symbol_vardef = [_casioDataFieldLeft,20,4,23]; ]
+var _casioDataFieldLeft = 0;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 21; @position = 4; @symbol_vardef = [_fontSizeAdjust,21,4,19]; ]
+var _fontSizeAdjust = 0;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 22; @position = 4; @symbol_vardef = [fontSizeAdjustNames,22,4,23]; ]
+var fontSizeAdjustNames;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 24; @position = 4; @symbol_vardef = [_kmmiles,24,4,12]; ]
+var _kmmiles = 0;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 25; @position = 4; @symbol_vardef = [kmmilesNames,25,4,16]; ]
+var kmmilesNames;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 27; @position = 4; @symbol_vardef = [_metersfeet,27,4,15]; ]
+var _metersfeet = 0;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 28; @position = 4; @symbol_vardef = [metersfeetNames,28,4,19]; ]
+var metersfeetNames;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 30; @position = 4; @symbol_vardef = [_pressure,30,4,13]; ]
+var _pressure = 0;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 31; @position = 4; @symbol_vardef = [pressureNames,31,4,17]; ]
+var pressureNames;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 33; @position = 4; @symbol_vardef = [_celsiusfahrenheit,33,4,22]; ]
+var _celsiusfahrenheit = 0;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 34; @position = 4; @symbol_vardef = [celsiusfahrenheitNames,34,4,26]; ]
+var celsiusfahrenheitNames;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 36; @position = 4; @symbol_vardef = [_timeZoneDigitalOn,36,4,22]; ]
+var _timeZoneDigitalOn = false;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 37; @position = 4; @symbol_vardef = [_daylightSavingOn,37,4,21]; ]
+var _daylightSavingOn = false;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 38; @position = 4; @symbol_vardef = [_timeZone,38,4,13]; ]
+var _timeZone = 15;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 40; @position = 4; @symbol_vardef = [timeZoneNames,40,4,17]; ]
+var timeZoneNames;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 101; @position = 4; @symbol_vardef = [casioDataFieldValues,101,4,24]; ]
+var casioDataFieldValues;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 102; @position = 4; @symbol_vardef = [casioDataFieldNames,102,4,23]; ]
+var casioDataFieldNames;
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 111; @symbol_classdef = [AnalogWatch,111,6,17]; @symbol_extends<0> = [Application,111,26,37]; @symbol_extends<1> = [AppBase,111,38,45]; ]
+class AnalogWatch extends Application.AppBase {
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 111; ]
+    <init> {
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 111; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 114; @symbol_functiondef = [initialize,114,13,23]; ]
+    function initialize() as Void {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_114_26_116_4_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 115 8 ]
+        symbol [ AppBase %tmp.2 115 8 15 ];
+        %tmp.2 = getv ? :AppBase;
+        symbol [ initialize %tmp.3 115 16 26 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_114_26_116_4_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 118; @symbol_functiondef = [onStart,118,13,20]; @symbol_param<0> = [state,118,21,26]; ]
+    function onStart(state) {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_118_28_120_4_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 119 6 ]
+        %tmp.1 = true;
+        symbol [ settingsChanged ? 119 6 21 ];
+        putv self :settingsChanged %tmp.1;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_118_28_120_4_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 122; @symbol_functiondef = [onStop,122,13,19]; @symbol_param<0> = [state,122,20,25]; ]
+    function onStop(state) {
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 126; @symbol_functiondef = [getInitialView,126,13,27]; ]
+    function getInitialView() {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_126_30_136_4_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 129 5 ]
+        %tmp.1 = true;
+        symbol [ settingsChanged ? 129 5 20 ];
+        putv self :settingsChanged %tmp.1;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 131 8 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_131_8_135_8_if_stmt:
+        symbol [ Toybox %tmp.3 131 12 18 ];
+        %tmp.3 = getv ? :Toybox;
+        symbol [ WatchUi %tmp.4 131 19 26 ];
+        %tmp.4 = getv %tmp.3 :WatchUi;
+        %tmp.6 = const :WatchFaceDelegate;
+        symbol [ WatchFaceDelegate %tmp.6 131 32 49 const ];
+        %tmp.7 = canhazplz %tmp.4 %tmp.6;
+        bf %tmp.7 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_131_8_135_8_if_else_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_131_8_135_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_131_52_133_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 132 12 ]
+        %tmp.8 = newa 2;
+        symbol [ AnalogView %tmp.12 132 24 34 ];
+        %tmp.12 = getv ? :AnalogView;
+        %tmp.9 = newc %tmp.12 ();
+        %tmp.13 = dup %tmp.8;
+        %tmp.14 = aputv %tmp.13 0 %tmp.9;
+        symbol [ AnalogDelegate %tmp.18 132 42 56 ];
+        %tmp.18 = getv ? :AnalogDelegate;
+        %tmp.15 = newc %tmp.18 ();
+        %tmp.19 = dup %tmp.14;
+        %tmp.20 = aputv %tmp.19 1 %tmp.15;
+        ret %tmp.20;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_131_52_133_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_131_8_135_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_131_8_135_8_if_else_false:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_133_15_135_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 134 12 ]
+        %tmp.21 = newa 1;
+        symbol [ AnalogView %tmp.25 134 24 34 ];
+        %tmp.25 = getv ? :AnalogView;
+        %tmp.22 = newc %tmp.25 ();
+        %tmp.26 = dup %tmp.21;
+        %tmp.27 = aputv %tmp.26 0 %tmp.22;
+        ret %tmp.27;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_133_15_135_8_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_131_8_135_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_126_30_136_4_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 138; @symbol_functiondef = [onSettingsChanged,138,13,30]; ]
+    function onSettingsChanged() {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_138_33_141_4_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 139 6 ]
+        %tmp.1 = true;
+        symbol [ settingsChanged ? 139 6 21 ];
+        putv self :settingsChanged %tmp.1;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 140 6 ]
+        symbol [ WatchUi %tmp.2 140 6 13 ];
+        %tmp.2 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.3 140 14 27 ];
+        %tmp.3 = getv function %tmp.2 :requestUpdate;
+        invoke %tmp.2 %tmp.3();
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_138_33_141_4_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 143; @symbol_functiondef = [getSettingsView,143,13,28]; ]
+    function getSettingsView() {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_143_31_145_4_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 144 8 ]
+        %tmp.1 = newa 2;
+        symbol [ MainMenu %tmp.5 144 20 28 ];
+        %tmp.5 = getv ? :MainMenu;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        symbol [ MainMenuDelegate %tmp.11 144 35 51 ];
+        %tmp.11 = getv ? :MainMenuDelegate;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 1 %tmp.8;
+        ret %tmp.13;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_143_31_145_4_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 147; @symbol_classdef = [MainMenu,147,6,14]; @symbol_extends<0> = [WatchUi,147,23,30]; @symbol_extends<1> = [Menu2,147,31,36]; ]
+    class MainMenu extends WatchUi.Menu2 {
+        [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 147; ]
+        <init> {
+        }
+        [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 147; ]
+        static
+        <init> {
+        }
+        [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 148; @symbol_functiondef = [initialize,148,13,23]; ]
+        function initialize() as Void {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_149_4_190_4_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 150 8 ]
+            symbol [ Menu2 %tmp.2 150 8 13 ];
+            %tmp.2 = getv ? :Menu2;
+            symbol [ initialize %tmp.3 150 14 24 ];
+            %tmp.3 = getv function %tmp.2 :initialize;
+            %tmp.4 = null;
+            invoke %tmp.2 %tmp.3(%tmp.4);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 151 8 ]
+            symbol [ Menu2 %tmp.6 151 8 13 ];
+            %tmp.6 = getv ? :Menu2;
+            symbol [ setTitle %tmp.7 151 14 22 ];
+            %tmp.7 = getv function %tmp.6 :setTitle;
+            %tmp.8 = "Settings";
+            invoke %tmp.6 %tmp.7(%tmp.8);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 154 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_12_154_83_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 154 14 ]
+            symbol [ Application %tmp.9 154 32 43 ];
+            %tmp.9 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.10 154 44 54 ];
+            %tmp.10 = getv %tmp.9 :Properties;
+            symbol [ getValue %tmp.11 154 55 63 ];
+            %tmp.11 = getv function %tmp.10 :getValue;
+            %tmp.12 = "twelvehourtime";
+            %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+            symbol [ _twelvehourtime ? 154 14 29 ];
+            putv self :_twelvehourtime %tmp.13;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_12_154_83_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_catch:
+            %tmp.14 = exception;
+            push %tmp.14;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 154 85 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_85_154_121_end" ]
+            %e.1 = local;
+            symbol [ e %e.1 154 92 93 ];
+            %tmp.15 = dup %tmp.14;
+            lputv %e.1 %tmp.15;
+            symbol [ e %e.1 154 92 93 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_95_154_121_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 154 97 ]
+            %tmp.16 = true;
+            symbol [ _twelvehourtime ? 154 97 112 ];
+            putv self :_twelvehourtime %tmp.16;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_95_154_121_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_85_154_121_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_85_154_121_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_85_154_121_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_finally;
+            throw %tmp.14;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_154_8_154_121_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 155 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_12_155_137_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 155 14 ]
+            symbol [ Application %tmp.17 155 32 43 ];
+            %tmp.17 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.18 155 44 54 ];
+            %tmp.18 = getv %tmp.17 :Properties;
+            symbol [ getValue %tmp.19 155 55 63 ];
+            %tmp.19 = getv function %tmp.18 :getValue;
+            %tmp.20 = "casioDataField";
+            %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+            symbol [ _casioDataField ? 155 14 29 ];
+            putv self :_casioDataField %tmp.21;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 155 83 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_83_155_135_if_stmt:
+            symbol [ _casioDataField %tmp.23 155 87 102 ];
+            %tmp.23 = getv ? :_casioDataField;
+            %tmp.24 = null;
+            %tmp.25 = eq %tmp.23 %tmp.24;
+            bf %tmp.25 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_83_155_135_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_83_155_135_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_112_155_135_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 155 114 ]
+            %tmp.26 = 2;
+            symbol [ _casioDataField ? 155 114 129 ];
+            putv self :_casioDataField %tmp.26;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_112_155_135_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_83_155_135_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_83_155_135_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_12_155_137_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_catch:
+            %tmp.27 = exception;
+            push %tmp.27;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 155 139 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_139_155_172_end" ]
+            %e.2 = local;
+            symbol [ e %e.2 155 146 147 ];
+            %tmp.28 = dup %tmp.27;
+            lputv %e.2 %tmp.28;
+            symbol [ e %e.2 155 146 147 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_149_155_172_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 155 151 ]
+            %tmp.29 = 2;
+            symbol [ _casioDataField ? 155 151 166 ];
+            putv self :_casioDataField %tmp.29;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_149_155_172_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_139_155_172_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_139_155_172_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_139_155_172_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_finally;
+            throw %tmp.27;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_155_8_155_172_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 156 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_12_156_153_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 156 14 ]
+            symbol [ Application %tmp.30 156 36 47 ];
+            %tmp.30 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.31 156 48 58 ];
+            %tmp.31 = getv %tmp.30 :Properties;
+            symbol [ getValue %tmp.32 156 59 67 ];
+            %tmp.32 = getv function %tmp.31 :getValue;
+            %tmp.33 = "casioDataFieldLeft";
+            %tmp.34 = invoke %tmp.31 %tmp.32(%tmp.33);
+            symbol [ _casioDataFieldLeft ? 156 14 33 ];
+            putv self :_casioDataFieldLeft %tmp.34;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 156 91 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_91_156_151_if_stmt:
+            symbol [ _casioDataFieldLeft %tmp.36 156 95 114 ];
+            %tmp.36 = getv ? :_casioDataFieldLeft;
+            %tmp.37 = null;
+            %tmp.38 = eq %tmp.36 %tmp.37;
+            bf %tmp.38 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_91_156_151_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_91_156_151_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_124_156_151_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 156 126 ]
+            %tmp.39 = 0;
+            symbol [ _casioDataFieldLeft ? 156 126 145 ];
+            putv self :_casioDataFieldLeft %tmp.39;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_124_156_151_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_91_156_151_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_91_156_151_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_12_156_153_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_catch:
+            %tmp.40 = exception;
+            push %tmp.40;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 156 155 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_155_156_192_end" ]
+            %e.3 = local;
+            symbol [ e %e.3 156 162 163 ];
+            %tmp.41 = dup %tmp.40;
+            lputv %e.3 %tmp.41;
+            symbol [ e %e.3 156 162 163 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_165_156_192_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 156 167 ]
+            %tmp.42 = 0;
+            symbol [ _casioDataFieldLeft ? 156 167 186 ];
+            putv self :_casioDataFieldLeft %tmp.42;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_165_156_192_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_155_156_192_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_155_156_192_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_155_156_192_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_finally;
+            throw %tmp.40;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_156_8_156_192_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 157 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_12_157_85_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 157 14 ]
+            symbol [ Application %tmp.43 157 33 44 ];
+            %tmp.43 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.44 157 45 55 ];
+            %tmp.44 = getv %tmp.43 :Properties;
+            symbol [ getValue %tmp.45 157 56 64 ];
+            %tmp.45 = getv function %tmp.44 :getValue;
+            %tmp.46 = "bluetoothStatus";
+            %tmp.47 = invoke %tmp.44 %tmp.45(%tmp.46);
+            symbol [ _bluetoothStatus ? 157 14 30 ];
+            putv self :_bluetoothStatus %tmp.47;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_12_157_85_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_catch:
+            %tmp.48 = exception;
+            push %tmp.48;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 157 87 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_87_157_125_end" ]
+            %e.4 = local;
+            symbol [ e %e.4 157 94 95 ];
+            %tmp.49 = dup %tmp.48;
+            lputv %e.4 %tmp.49;
+            symbol [ e %e.4 157 94 95 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_97_157_125_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 157 99 ]
+            %tmp.50 = false;
+            symbol [ _bluetoothStatus ? 157 99 115 ];
+            putv self :_bluetoothStatus %tmp.50;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_97_157_125_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_87_157_125_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_87_157_125_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_87_157_125_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_finally;
+            throw %tmp.48;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_157_8_157_125_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 158 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_12_158_83_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 158 14 ]
+            symbol [ Application %tmp.51 158 32 43 ];
+            %tmp.51 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.52 158 44 54 ];
+            %tmp.52 = getv %tmp.51 :Properties;
+            symbol [ getValue %tmp.53 158 55 63 ];
+            %tmp.53 = getv function %tmp.52 :getValue;
+            %tmp.54 = "doNotDisturbOn";
+            %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
+            symbol [ _doNotDisturbOn ? 158 14 29 ];
+            putv self :_doNotDisturbOn %tmp.55;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_12_158_83_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_catch:
+            %tmp.56 = exception;
+            push %tmp.56;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 158 85 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_85_158_122_end" ]
+            %e.5 = local;
+            symbol [ e %e.5 158 92 93 ];
+            %tmp.57 = dup %tmp.56;
+            lputv %e.5 %tmp.57;
+            symbol [ e %e.5 158 92 93 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_95_158_122_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 158 97 ]
+            %tmp.58 = false;
+            symbol [ _doNotDisturbOn ? 158 97 112 ];
+            putv self :_doNotDisturbOn %tmp.58;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_95_158_122_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_85_158_122_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_85_158_122_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_85_158_122_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_finally;
+            throw %tmp.56;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_158_8_158_122_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 159 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_12_159_95_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 159 14 ]
+            symbol [ Application %tmp.59 159 38 49 ];
+            %tmp.59 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.60 159 50 60 ];
+            %tmp.60 = getv %tmp.59 :Properties;
+            symbol [ getValue %tmp.61 159 61 69 ];
+            %tmp.61 = getv function %tmp.60 :getValue;
+            %tmp.62 = "batteryColourLevelOn";
+            %tmp.63 = invoke %tmp.60 %tmp.61(%tmp.62);
+            symbol [ _batteryColourLevelOn ? 159 14 35 ];
+            putv self :_batteryColourLevelOn %tmp.63;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_12_159_95_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_catch:
+            %tmp.64 = exception;
+            push %tmp.64;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 159 97 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_97_159_139_end" ]
+            %e.6 = local;
+            symbol [ e %e.6 159 104 105 ];
+            %tmp.65 = dup %tmp.64;
+            lputv %e.6 %tmp.65;
+            symbol [ e %e.6 159 104 105 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_107_159_139_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 159 109 ]
+            %tmp.66 = true;
+            symbol [ _batteryColourLevelOn ? 159 109 130 ];
+            putv self :_batteryColourLevelOn %tmp.66;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_107_159_139_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_97_159_139_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_97_159_139_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_97_159_139_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_finally;
+            throw %tmp.64;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_159_8_159_139_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 160 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_12_160_73_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 160 14 ]
+            symbol [ Application %tmp.67 160 27 38 ];
+            %tmp.67 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.68 160 39 49 ];
+            %tmp.68 = getv %tmp.67 :Properties;
+            symbol [ getValue %tmp.69 160 50 58 ];
+            %tmp.69 = getv function %tmp.68 :getValue;
+            %tmp.70 = "moveBarOn";
+            %tmp.71 = invoke %tmp.68 %tmp.69(%tmp.70);
+            symbol [ _moveBarOn ? 160 14 24 ];
+            putv self :_moveBarOn %tmp.71;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_12_160_73_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_catch:
+            %tmp.72 = exception;
+            push %tmp.72;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 160 75 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_75_160_107_end" ]
+            %e.7 = local;
+            symbol [ e %e.7 160 82 83 ];
+            %tmp.73 = dup %tmp.72;
+            lputv %e.7 %tmp.73;
+            symbol [ e %e.7 160 82 83 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_85_160_107_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 160 87 ]
+            %tmp.74 = false;
+            symbol [ _moveBarOn ? 160 87 97 ];
+            putv self :_moveBarOn %tmp.74;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_85_160_107_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_75_160_107_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_75_160_107_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_75_160_107_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_finally;
+            throw %tmp.72;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_160_8_160_107_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 161 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_12_161_85_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 161 14 ]
+            symbol [ Application %tmp.75 161 33 44 ];
+            %tmp.75 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.76 161 45 55 ];
+            %tmp.76 = getv %tmp.75 :Properties;
+            symbol [ getValue %tmp.77 161 56 64 ];
+            %tmp.77 = getv function %tmp.76 :getValue;
+            %tmp.78 = "lowPowerSeconds";
+            %tmp.79 = invoke %tmp.76 %tmp.77(%tmp.78);
+            symbol [ _lowPowerSeconds ? 161 14 30 ];
+            putv self :_lowPowerSeconds %tmp.79;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_12_161_85_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_catch:
+            %tmp.80 = exception;
+            push %tmp.80;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 161 87 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_87_161_125_end" ]
+            %e.8 = local;
+            symbol [ e %e.8 161 94 95 ];
+            %tmp.81 = dup %tmp.80;
+            lputv %e.8 %tmp.81;
+            symbol [ e %e.8 161 94 95 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_97_161_125_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 161 99 ]
+            %tmp.82 = false;
+            symbol [ _lowPowerSeconds ? 161 99 115 ];
+            putv self :_lowPowerSeconds %tmp.82;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_97_161_125_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_87_161_125_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_87_161_125_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_87_161_125_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_finally;
+            throw %tmp.80;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_161_8_161_125_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 162 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_12_162_69_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 162 14 ]
+            symbol [ Application %tmp.83 162 25 36 ];
+            %tmp.83 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.84 162 37 47 ];
+            %tmp.84 = getv %tmp.83 :Properties;
+            symbol [ getValue %tmp.85 162 48 56 ];
+            %tmp.85 = getv function %tmp.84 :getValue;
+            %tmp.86 = "touchOn";
+            %tmp.87 = invoke %tmp.84 %tmp.85(%tmp.86);
+            symbol [ _touchOn ? 162 14 22 ];
+            putv self :_touchOn %tmp.87;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_12_162_69_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_catch:
+            %tmp.88 = exception;
+            push %tmp.88;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 162 71 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_71_162_101_end" ]
+            %e.9 = local;
+            symbol [ e %e.9 162 78 79 ];
+            %tmp.89 = dup %tmp.88;
+            lputv %e.9 %tmp.89;
+            symbol [ e %e.9 162 78 79 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_81_162_101_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 162 83 ]
+            %tmp.90 = false;
+            symbol [ _touchOn ? 162 83 91 ];
+            putv self :_touchOn %tmp.90;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_81_162_101_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_71_162_101_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_71_162_101_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_71_162_101_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_finally;
+            throw %tmp.88;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_162_8_162_101_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 163 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_12_163_137_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 163 14 ]
+            symbol [ Application %tmp.91 163 32 43 ];
+            %tmp.91 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.92 163 44 54 ];
+            %tmp.92 = getv %tmp.91 :Properties;
+            symbol [ getValue %tmp.93 163 55 63 ];
+            %tmp.93 = getv function %tmp.92 :getValue;
+            %tmp.94 = "fontSizeAdjust";
+            %tmp.95 = invoke %tmp.92 %tmp.93(%tmp.94);
+            symbol [ _fontSizeAdjust ? 163 14 29 ];
+            putv self :_fontSizeAdjust %tmp.95;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 163 83 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_83_163_135_if_stmt:
+            symbol [ _fontSizeAdjust %tmp.97 163 87 102 ];
+            %tmp.97 = getv ? :_fontSizeAdjust;
+            %tmp.98 = null;
+            %tmp.99 = eq %tmp.97 %tmp.98;
+            bf %tmp.99 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_83_163_135_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_83_163_135_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_112_163_135_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 163 114 ]
+            %tmp.100 = 0;
+            symbol [ _fontSizeAdjust ? 163 114 129 ];
+            putv self :_fontSizeAdjust %tmp.100;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_112_163_135_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_83_163_135_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_83_163_135_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_12_163_137_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_catch:
+            %tmp.101 = exception;
+            push %tmp.101;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 163 139 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_139_163_172_end" ]
+            %e.10 = local;
+            symbol [ e %e.10 163 146 147 ];
+            %tmp.102 = dup %tmp.101;
+            lputv %e.10 %tmp.102;
+            symbol [ e %e.10 163 146 147 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_149_163_172_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 163 151 ]
+            %tmp.103 = 0;
+            symbol [ _fontSizeAdjust ? 163 151 166 ];
+            putv self :_fontSizeAdjust %tmp.103;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_149_163_172_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_139_163_172_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_139_163_172_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_139_163_172_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_finally;
+            throw %tmp.101;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_163_8_163_172_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 164 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_12_164_69_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 164 14 ]
+            symbol [ Application %tmp.104 164 25 36 ];
+            %tmp.104 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.105 164 37 47 ];
+            %tmp.105 = getv %tmp.104 :Properties;
+            symbol [ getValue %tmp.106 164 48 56 ];
+            %tmp.106 = getv function %tmp.105 :getValue;
+            %tmp.107 = "kmmiles";
+            %tmp.108 = invoke %tmp.105 %tmp.106(%tmp.107);
+            symbol [ _kmmiles ? 164 14 22 ];
+            putv self :_kmmiles %tmp.108;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_12_164_69_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_catch:
+            %tmp.109 = exception;
+            push %tmp.109;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 164 71 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_71_164_97_end" ]
+            %e.11 = local;
+            symbol [ e %e.11 164 78 79 ];
+            %tmp.110 = dup %tmp.109;
+            lputv %e.11 %tmp.110;
+            symbol [ e %e.11 164 78 79 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_81_164_97_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 164 83 ]
+            %tmp.111 = 0;
+            symbol [ _kmmiles ? 164 83 91 ];
+            putv self :_kmmiles %tmp.111;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_81_164_97_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_71_164_97_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_71_164_97_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_71_164_97_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_finally;
+            throw %tmp.109;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_164_8_164_97_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 165 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_12_165_75_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 165 14 ]
+            symbol [ Application %tmp.112 165 28 39 ];
+            %tmp.112 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.113 165 40 50 ];
+            %tmp.113 = getv %tmp.112 :Properties;
+            symbol [ getValue %tmp.114 165 51 59 ];
+            %tmp.114 = getv function %tmp.113 :getValue;
+            %tmp.115 = "metersfeet";
+            %tmp.116 = invoke %tmp.113 %tmp.114(%tmp.115);
+            symbol [ _metersfeet ? 165 14 25 ];
+            putv self :_metersfeet %tmp.116;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_12_165_75_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_catch:
+            %tmp.117 = exception;
+            push %tmp.117;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 165 77 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_77_165_106_end" ]
+            %e.12 = local;
+            symbol [ e %e.12 165 84 85 ];
+            %tmp.118 = dup %tmp.117;
+            lputv %e.12 %tmp.118;
+            symbol [ e %e.12 165 84 85 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_87_165_106_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 165 89 ]
+            %tmp.119 = 0;
+            symbol [ _metersfeet ? 165 89 100 ];
+            putv self :_metersfeet %tmp.119;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_87_165_106_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_77_165_106_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_77_165_106_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_77_165_106_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_finally;
+            throw %tmp.117;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_165_8_165_106_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 166 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_12_166_71_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 166 14 ]
+            symbol [ Application %tmp.120 166 26 37 ];
+            %tmp.120 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.121 166 38 48 ];
+            %tmp.121 = getv %tmp.120 :Properties;
+            symbol [ getValue %tmp.122 166 49 57 ];
+            %tmp.122 = getv function %tmp.121 :getValue;
+            %tmp.123 = "pressure";
+            %tmp.124 = invoke %tmp.121 %tmp.122(%tmp.123);
+            symbol [ _pressure ? 166 14 23 ];
+            putv self :_pressure %tmp.124;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_12_166_71_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_catch:
+            %tmp.125 = exception;
+            push %tmp.125;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 166 73 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_73_166_100_end" ]
+            %e.13 = local;
+            symbol [ e %e.13 166 80 81 ];
+            %tmp.126 = dup %tmp.125;
+            lputv %e.13 %tmp.126;
+            symbol [ e %e.13 166 80 81 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_83_166_100_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 166 85 ]
+            %tmp.127 = 0;
+            symbol [ _pressure ? 166 85 94 ];
+            putv self :_pressure %tmp.127;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_83_166_100_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_73_166_100_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_73_166_100_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_73_166_100_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_finally;
+            throw %tmp.125;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_166_8_166_100_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 167 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_12_167_89_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 167 14 ]
+            symbol [ Application %tmp.128 167 35 46 ];
+            %tmp.128 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.129 167 47 57 ];
+            %tmp.129 = getv %tmp.128 :Properties;
+            symbol [ getValue %tmp.130 167 58 66 ];
+            %tmp.130 = getv function %tmp.129 :getValue;
+            %tmp.131 = "celsiusfahrenheit";
+            %tmp.132 = invoke %tmp.129 %tmp.130(%tmp.131);
+            symbol [ _celsiusfahrenheit ? 167 14 32 ];
+            putv self :_celsiusfahrenheit %tmp.132;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_12_167_89_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_catch:
+            %tmp.133 = exception;
+            push %tmp.133;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 167 91 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_91_167_127_end" ]
+            %e.14 = local;
+            symbol [ e %e.14 167 98 99 ];
+            %tmp.134 = dup %tmp.133;
+            lputv %e.14 %tmp.134;
+            symbol [ e %e.14 167 98 99 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_101_167_127_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 167 103 ]
+            %tmp.135 = 0;
+            symbol [ _celsiusfahrenheit ? 167 103 121 ];
+            putv self :_celsiusfahrenheit %tmp.135;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_101_167_127_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_91_167_127_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_91_167_127_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_91_167_127_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_finally;
+            throw %tmp.133;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_167_8_167_127_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 168 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_12_168_82_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 168 14 ]
+            symbol [ Application %tmp.136 168 35 46 ];
+            %tmp.136 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.137 168 47 57 ];
+            %tmp.137 = getv %tmp.136 :Properties;
+            symbol [ getValue %tmp.138 168 58 66 ];
+            %tmp.138 = getv function %tmp.137 :getValue;
+            %tmp.139 = "timeZoneOn";
+            %tmp.140 = invoke %tmp.137 %tmp.138(%tmp.139);
+            symbol [ _timeZoneDigitalOn ? 168 14 32 ];
+            putv self :_timeZoneDigitalOn %tmp.140;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_12_168_82_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_catch:
+            %tmp.141 = exception;
+            push %tmp.141;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 168 84 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_84_168_124_end" ]
+            %e.15 = local;
+            symbol [ e %e.15 168 91 92 ];
+            %tmp.142 = dup %tmp.141;
+            lputv %e.15 %tmp.142;
+            symbol [ e %e.15 168 91 92 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_94_168_124_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 168 96 ]
+            %tmp.143 = false;
+            symbol [ _timeZoneDigitalOn ? 168 96 114 ];
+            putv self :_timeZoneDigitalOn %tmp.143;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_94_168_124_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_84_168_124_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_84_168_124_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_84_168_124_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_finally;
+            throw %tmp.141;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_168_8_168_124_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 169 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_12_169_85_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 169 14 ]
+            symbol [ Application %tmp.144 169 34 45 ];
+            %tmp.144 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.145 169 46 56 ];
+            %tmp.145 = getv %tmp.144 :Properties;
+            symbol [ getValue %tmp.146 169 57 65 ];
+            %tmp.146 = getv function %tmp.145 :getValue;
+            %tmp.147 = "daylightSaving";
+            %tmp.148 = invoke %tmp.145 %tmp.146(%tmp.147);
+            symbol [ _daylightSavingOn ? 169 14 31 ];
+            putv self :_daylightSavingOn %tmp.148;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_12_169_85_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_catch:
+            %tmp.149 = exception;
+            push %tmp.149;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 169 87 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_87_169_126_end" ]
+            %e.16 = local;
+            symbol [ e %e.16 169 94 95 ];
+            %tmp.150 = dup %tmp.149;
+            lputv %e.16 %tmp.150;
+            symbol [ e %e.16 169 94 95 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_97_169_126_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 169 99 ]
+            %tmp.151 = false;
+            symbol [ _daylightSavingOn ? 169 99 116 ];
+            putv self :_daylightSavingOn %tmp.151;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_97_169_126_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_87_169_126_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_87_169_126_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_87_169_126_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_finally;
+            throw %tmp.149;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_169_8_169_126_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 170 8 ]
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_beginTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_endTry @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_finally;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_beginTry:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_12_170_114_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 170 14 ]
+            symbol [ Application %tmp.152 170 26 37 ];
+            %tmp.152 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.153 170 38 48 ];
+            %tmp.153 = getv %tmp.152 :Properties;
+            symbol [ getValue %tmp.154 170 49 57 ];
+            %tmp.154 = getv function %tmp.153 :getValue;
+            %tmp.155 = "timeZone";
+            %tmp.156 = invoke %tmp.153 %tmp.154(%tmp.155);
+            symbol [ _timeZone ? 170 14 23 ];
+            putv self :_timeZone %tmp.156;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 170 71 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_71_170_112_if_stmt:
+            symbol [ _timeZone %tmp.158 170 75 84 ];
+            %tmp.158 = getv ? :_timeZone;
+            %tmp.159 = null;
+            %tmp.160 = eq %tmp.158 %tmp.159;
+            bf %tmp.160 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_71_170_112_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_71_170_112_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_94_170_112_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 170 96 ]
+            %tmp.161 = 15;
+            symbol [ _timeZone ? 170 96 105 ];
+            putv self :_timeZone %tmp.161;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_94_170_112_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_71_170_112_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_71_170_112_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_12_170_114_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_endTry:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_finally;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_catch:
+            %tmp.162 = exception;
+            push %tmp.162;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 170 116 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_catch" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_116_170_144_end" ]
+            %e.17 = local;
+            symbol [ e %e.17 170 123 124 ];
+            %tmp.163 = dup %tmp.162;
+            lputv %e.17 %tmp.163;
+            symbol [ e %e.17 170 123 124 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_126_170_144_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 170 128 ]
+            %tmp.164 = 15;
+            symbol [ _timeZone ? 170 128 137 ];
+            putv self :_timeZone %tmp.164;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_126_170_144_stop:
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_finally;
+            pop;
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_116_170_144_end:
+            try @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_catch @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_116_170_144_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_116_170_144_end @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_finally;
+            jsr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_finally;
+            throw %tmp.162;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_finally:
+            jsrret;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_170_8_170_144_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 173 8 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_149_4_190_4_start" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_149_4_190_4_stop" ]
+            %dfName.18 = local;
+            symbol [ dfName %dfName.18 173 12 18 ];
+            %tmp.165 = "Battery";
+            lputv %dfName.18 %tmp.165;
+            symbol [ dfName %dfName.18 173 12 18 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 174 8 ]
+            for @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_test @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_incr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_init:
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_begin" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_end" ]
+            %i.19 = local;
+            symbol [ i %i.19 174 17 18 ];
+            %tmp.166 = 0;
+            lputv %i.19 %tmp.166;
+            symbol [ i %i.19 174 17 18 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_test:
+            %tmp.167 = lgetv %i.19;
+            symbol [ i %tmp.167 174 24 25 ];
+            symbol [ casioDataFieldValues %tmp.169 174 28 48 ];
+            %tmp.169 = getv ? :casioDataFieldValues;
+            symbol [ size %tmp.170 174 49 53 ];
+            %tmp.170 = getv function %tmp.169 :size;
+            %tmp.171 = invoke %tmp.169 %tmp.170();
+            %tmp.172 = lt %tmp.167 %tmp.171;
+            bf %tmp.172 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_begin:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_62_176_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 175 12 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_175_12_175_102_if_stmt:
+            symbol [ casioDataFieldValues %tmp.174 175 16 36 ];
+            %tmp.174 = getv ? :casioDataFieldValues;
+            %tmp.175 = lgetv %i.19;
+            symbol [ i %tmp.175 175 37 38 ];
+            %tmp.176 = agetv %tmp.174 %tmp.175;
+            symbol [ _casioDataField %tmp.178 175 43 58 ];
+            %tmp.178 = getv ? :_casioDataField;
+            %tmp.179 = eq %tmp.176 %tmp.178;
+            bf %tmp.179 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_175_12_175_102_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_175_12_175_102_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_175_60_175_102_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 175 62 ]
+            symbol [ casioDataFieldNames %tmp.181 175 71 90 ];
+            %tmp.181 = getv ? :casioDataFieldNames;
+            %tmp.182 = lgetv %i.19;
+            symbol [ i %tmp.182 175 91 92 ];
+            %tmp.183 = agetv %tmp.181 %tmp.182;
+            lputv %dfName.18 %tmp.183;
+            symbol [ dfName %dfName.18 175 62 68 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 175 95 ]
+            goto break @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_175_60_175_102_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_175_12_175_102_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_175_12_175_102_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_62_176_8_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_incr:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 174 ]
+            %tmp.186 = lgetv %i.19;
+            symbol [ i %tmp.186 174 57 58 ];
+            %tmp.187 = add %tmp.186 1;
+            lputv %i.19 %tmp.187;
+            symbol [ i %i.19 174 57 58 ];
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_test;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_174_8_176_8_for_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 177 8 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_149_4_190_4_start" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_149_4_190_4_stop" ]
+            %dfNameLeft.20 = local;
+            symbol [ dfNameLeft %dfNameLeft.20 177 12 22 ];
+            %tmp.188 = "OFF";
+            lputv %dfNameLeft.20 %tmp.188;
+            symbol [ dfNameLeft %dfNameLeft.20 177 12 22 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 178 8 ]
+            for @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_test @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_incr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_init:
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_begin" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_end" ]
+            %i.21 = local;
+            symbol [ i %i.21 178 17 18 ];
+            %tmp.189 = 0;
+            lputv %i.21 %tmp.189;
+            symbol [ i %i.21 178 17 18 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_test:
+            %tmp.190 = lgetv %i.21;
+            symbol [ i %tmp.190 178 24 25 ];
+            symbol [ casioDataFieldValues %tmp.192 178 28 48 ];
+            %tmp.192 = getv ? :casioDataFieldValues;
+            symbol [ size %tmp.193 178 49 53 ];
+            %tmp.193 = getv function %tmp.192 :size;
+            %tmp.194 = invoke %tmp.192 %tmp.193();
+            %tmp.195 = lt %tmp.190 %tmp.194;
+            bf %tmp.195 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_begin:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_62_180_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 179 12 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_179_12_179_110_if_stmt:
+            symbol [ casioDataFieldValues %tmp.197 179 16 36 ];
+            %tmp.197 = getv ? :casioDataFieldValues;
+            %tmp.198 = lgetv %i.21;
+            symbol [ i %tmp.198 179 37 38 ];
+            %tmp.199 = agetv %tmp.197 %tmp.198;
+            symbol [ _casioDataFieldLeft %tmp.201 179 43 62 ];
+            %tmp.201 = getv ? :_casioDataFieldLeft;
+            %tmp.202 = eq %tmp.199 %tmp.201;
+            bf %tmp.202 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_179_12_179_110_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_179_12_179_110_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_179_64_179_110_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 179 66 ]
+            symbol [ casioDataFieldNames %tmp.204 179 79 98 ];
+            %tmp.204 = getv ? :casioDataFieldNames;
+            %tmp.205 = lgetv %i.21;
+            symbol [ i %tmp.205 179 99 100 ];
+            %tmp.206 = agetv %tmp.204 %tmp.205;
+            lputv %dfNameLeft.20 %tmp.206;
+            symbol [ dfNameLeft %dfNameLeft.20 179 66 76 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 179 103 ]
+            goto break @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_179_64_179_110_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_179_12_179_110_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_179_12_179_110_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_62_180_8_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_incr:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 178 ]
+            %tmp.209 = lgetv %i.21;
+            symbol [ i %tmp.209 178 57 58 ];
+            %tmp.210 = add %tmp.209 1;
+            lputv %i.21 %tmp.210;
+            symbol [ i %i.21 178 57 58 ];
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_test;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_178_8_180_8_for_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 182 8 ]
+            symbol [ Menu2 %tmp.212 182 8 13 ];
+            %tmp.212 = getv ? :Menu2;
+            symbol [ addItem %tmp.213 182 14 21 ];
+            %tmp.213 = getv function %tmp.212 :addItem;
+            symbol [ WatchUi %tmp.216 182 26 33 ];
+            %tmp.216 = getm $.Toybox.WatchUi;
+            symbol [ ToggleMenuItem %tmp.217 182 34 48 ];
+            %tmp.217 = getv function ? %tmp.216 :ToggleMenuItem;
+            %tmp.218 = "12 HOUR TIME";
+            %tmp.219 = null;
+            %tmp.220 = "twelvehourtime";
+            symbol [ _twelvehourtime %tmp.222 182 89 104 ];
+            %tmp.222 = getv ? :_twelvehourtime;
+            %tmp.223 = null;
+            %tmp.214 = newc %tmp.217 (%tmp.218, %tmp.219, %tmp.220, %tmp.222, %tmp.223);
+            invoke %tmp.212 %tmp.213(%tmp.214);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 183 8 ]
+            symbol [ Menu2 %tmp.225 183 8 13 ];
+            %tmp.225 = getv ? :Menu2;
+            symbol [ addItem %tmp.226 183 14 21 ];
+            %tmp.226 = getv function %tmp.225 :addItem;
+            symbol [ WatchUi %tmp.229 183 26 33 ];
+            %tmp.229 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.230 183 34 42 ];
+            %tmp.230 = getv function ? %tmp.229 :MenuItem;
+            %tmp.231 = "CLOCK FONT SIZE";
+            symbol [ fontSizeAdjustNames %tmp.233 183 62 81 ];
+            %tmp.233 = getv ? :fontSizeAdjustNames;
+            symbol [ _fontSizeAdjust %tmp.235 183 82 97 ];
+            %tmp.235 = getv ? :_fontSizeAdjust;
+            %tmp.236 = 1;
+            %tmp.237 = add %tmp.235 %tmp.236;
+            %tmp.238 = agetv %tmp.233 %tmp.237;
+            %tmp.239 = "fontSizeAdjust";
+            %tmp.240 = newd 0;
+            %tmp.227 = newc %tmp.230 (%tmp.231, %tmp.238, %tmp.239, %tmp.240);
+            invoke %tmp.225 %tmp.226(%tmp.227);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 184 8 ]
+            symbol [ Menu2 %tmp.242 184 8 13 ];
+            %tmp.242 = getv ? :Menu2;
+            symbol [ addItem %tmp.243 184 14 21 ];
+            %tmp.243 = getv function %tmp.242 :addItem;
+            symbol [ WatchUi %tmp.246 184 26 33 ];
+            %tmp.246 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.247 184 34 42 ];
+            %tmp.247 = getv function ? %tmp.246 :MenuItem;
+            %tmp.248 = "DATA RIGHT";
+            %tmp.249 = lgetv %dfName.18;
+            symbol [ dfName %tmp.249 184 57 63 ];
+            %tmp.250 = "casioDataField";
+            %tmp.251 = newd 0;
+            %tmp.244 = newc %tmp.247 (%tmp.248, %tmp.249, %tmp.250, %tmp.251);
+            invoke %tmp.242 %tmp.243(%tmp.244);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 185 8 ]
+            symbol [ Menu2 %tmp.253 185 8 13 ];
+            %tmp.253 = getv ? :Menu2;
+            symbol [ addItem %tmp.254 185 14 21 ];
+            %tmp.254 = getv function %tmp.253 :addItem;
+            symbol [ WatchUi %tmp.257 185 26 33 ];
+            %tmp.257 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.258 185 34 42 ];
+            %tmp.258 = getv function ? %tmp.257 :MenuItem;
+            %tmp.259 = "DATA LEFT";
+            %tmp.260 = lgetv %dfNameLeft.20;
+            symbol [ dfNameLeft %tmp.260 185 56 66 ];
+            %tmp.261 = "casioDataFieldLeft";
+            %tmp.262 = newd 0;
+            %tmp.255 = newc %tmp.258 (%tmp.259, %tmp.260, %tmp.261, %tmp.262);
+            invoke %tmp.253 %tmp.254(%tmp.255);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 186 8 ]
+            symbol [ Menu2 %tmp.264 186 8 13 ];
+            %tmp.264 = getv ? :Menu2;
+            symbol [ addItem %tmp.265 186 14 21 ];
+            %tmp.265 = getv function %tmp.264 :addItem;
+            symbol [ WatchUi %tmp.268 186 26 33 ];
+            %tmp.268 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.269 186 34 42 ];
+            %tmp.269 = getv function ? %tmp.268 :MenuItem;
+            %tmp.270 = "UNITS";
+            %tmp.271 = null;
+            %tmp.272 = "units";
+            %tmp.273 = newd 0;
+            %tmp.266 = newc %tmp.269 (%tmp.270, %tmp.271, %tmp.272, %tmp.273);
+            invoke %tmp.264 %tmp.265(%tmp.266);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 187 8 ]
+            symbol [ Menu2 %tmp.275 187 8 13 ];
+            %tmp.275 = getv ? :Menu2;
+            symbol [ addItem %tmp.276 187 14 21 ];
+            %tmp.276 = getv function %tmp.275 :addItem;
+            symbol [ WatchUi %tmp.279 187 26 33 ];
+            %tmp.279 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.280 187 34 42 ];
+            %tmp.280 = getv function ? %tmp.279 :MenuItem;
+            %tmp.281 = "SPECIAL FEATURES";
+            %tmp.282 = null;
+            %tmp.283 = "specialFeatures";
+            %tmp.284 = newd 0;
+            %tmp.277 = newc %tmp.280 (%tmp.281, %tmp.282, %tmp.283, %tmp.284);
+            invoke %tmp.275 %tmp.276(%tmp.277);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 188 8 ]
+            symbol [ Menu2 %tmp.286 188 8 13 ];
+            %tmp.286 = getv ? :Menu2;
+            symbol [ addItem %tmp.287 188 14 21 ];
+            %tmp.287 = getv function %tmp.286 :addItem;
+            symbol [ WatchUi %tmp.290 188 26 33 ];
+            %tmp.290 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.291 188 34 42 ];
+            %tmp.291 = getv function ? %tmp.290 :MenuItem;
+            %tmp.292 = "TIME ZONE";
+            %tmp.293 = null;
+            %tmp.294 = "timeZoneSettings";
+            %tmp.295 = newd 0;
+            %tmp.288 = newc %tmp.291 (%tmp.292, %tmp.293, %tmp.294, %tmp.295);
+            invoke %tmp.286 %tmp.287(%tmp.288);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 189 8 ]
+            symbol [ Menu2 %tmp.297 189 8 13 ];
+            %tmp.297 = getv ? :Menu2;
+            symbol [ addItem %tmp.298 189 14 21 ];
+            %tmp.298 = getv function %tmp.297 :addItem;
+            symbol [ WatchUi %tmp.301 189 26 33 ];
+            %tmp.301 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.302 189 34 42 ];
+            %tmp.302 = getv function ? %tmp.301 :MenuItem;
+            %tmp.303 = "VERSION";
+            symbol [ Application %tmp.304 189 54 65 ];
+            %tmp.304 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.305 189 66 76 ];
+            %tmp.305 = getv %tmp.304 :Properties;
+            symbol [ getValue %tmp.306 189 77 85 ];
+            %tmp.306 = getv function %tmp.305 :getValue;
+            %tmp.307 = "appVersion";
+            %tmp.308 = invoke %tmp.305 %tmp.306(%tmp.307);
+            %tmp.309 = "nothing";
+            %tmp.310 = newd 0;
+            %tmp.299 = newc %tmp.302 (%tmp.303, %tmp.308, %tmp.309, %tmp.310);
+            invoke %tmp.297 %tmp.298(%tmp.299);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_149_4_190_4_stop:
+        }
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 193; @symbol_classdef = [MainMenuDelegate,193,6,22]; @symbol_extends<0> = [WatchUi,193,31,38]; @symbol_extends<1> = [Menu2InputDelegate,193,39,57]; ]
+    class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
+        [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 193; ]
+        <init> {
+        }
+        [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 193; ]
+        static
+        <init> {
+        }
+        [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 195; @symbol_functiondef = [initialize,195,13,23]; ]
+        function initialize() as Void {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_195_26_197_4_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 196 8 ]
+            symbol [ Menu2InputDelegate %tmp.2 196 8 26 ];
+            %tmp.2 = getv ? :Menu2InputDelegate;
+            symbol [ initialize %tmp.3 196 27 37 ];
+            %tmp.3 = getv function %tmp.2 :initialize;
+            invoke %tmp.2 %tmp.3();
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_195_26_197_4_stop:
+        }
+        [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 199; @symbol_functiondef = [onSelect,199,12,20]; @symbol_param<0> = [item,199,21,25]; ]
+        function onSelect(item) {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_200_4_258_4_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 201 4 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_200_4_258_4_start" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_200_4_258_4_stop" ]
+            %id.1 = local;
+            symbol [ id %id.1 201 8 10 ];
+            %tmp.1 = lgetv %item;
+            symbol [ item %tmp.1 201 13 17 ];
+            symbol [ getId %tmp.2 201 18 23 ];
+            %tmp.2 = getv function %tmp.1 :getId;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %id.1 %tmp.3;
+            symbol [ id %id.1 201 8 10 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 203 8 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_203_8_257_8_if_stmt:
+            %tmp.4 = lgetv %id.1;
+            symbol [ id %tmp.4 203 12 14 ];
+            symbol [ equals %tmp.5 203 15 21 ];
+            %tmp.5 = getv function %tmp.4 :equals;
+            %tmp.6 = "twelvehourtime";
+            %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+            bf %tmp.7 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_203_8_257_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_203_8_257_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_203_41_206_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 204 12 ]
+            symbol [ _twelvehourtime %tmp.9 204 31 46 ];
+            %tmp.9 = getv ? :_twelvehourtime;
+            %tmp.10 = not %tmp.9;
+            symbol [ _twelvehourtime ? 204 12 27 ];
+            putv self :_twelvehourtime %tmp.10;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 205 12 ]
+            symbol [ Application %tmp.11 205 12 23 ];
+            %tmp.11 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.12 205 24 34 ];
+            %tmp.12 = getv %tmp.11 :Properties;
+            symbol [ setValue %tmp.13 205 35 43 ];
+            %tmp.13 = getv function %tmp.12 :setValue;
+            %tmp.14 = "twelvehourtime";
+            symbol [ _twelvehourtime %tmp.16 205 62 77 ];
+            %tmp.16 = getv ? :_twelvehourtime;
+            invoke %tmp.12 %tmp.13(%tmp.14, %tmp.16);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_203_41_206_8_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_203_8_257_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_203_8_257_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 207 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_207_13_257_8_if_stmt:
+            %tmp.17 = lgetv %id.1;
+            symbol [ id %tmp.17 207 17 19 ];
+            symbol [ equals %tmp.18 207 20 26 ];
+            %tmp.18 = getv function %tmp.17 :equals;
+            %tmp.19 = "fontSizeAdjust";
+            %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
+            bf %tmp.20 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_207_13_257_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_207_13_257_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_207_46_212_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 208 12 ]
+            symbol [ _fontSizeAdjust %tmp.22 208 30 45 ];
+            %tmp.22 = getv ? :_fontSizeAdjust;
+            %tmp.23 = 1;
+            %tmp.24 = add %tmp.22 %tmp.23;
+            symbol [ _fontSizeAdjust ? 208 12 27 ];
+            putv self :_fontSizeAdjust %tmp.24;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 209 12 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_209_12_209_61_if_stmt:
+            symbol [ _fontSizeAdjust %tmp.26 209 16 31 ];
+            %tmp.26 = getv ? :_fontSizeAdjust;
+            %tmp.27 = 1;
+            %tmp.28 = gt %tmp.26 %tmp.27;
+            bf %tmp.28 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_209_12_209_61_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_209_12_209_61_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_209_37_209_61_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 209 39 ]
+            %tmp.29 = -1;
+            symbol [ _fontSizeAdjust ? 209 39 54 ];
+            putv self :_fontSizeAdjust %tmp.29;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_209_37_209_61_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_209_12_209_61_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_209_12_209_61_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 210 12 ]
+            %tmp.30 = lgetv %item;
+            symbol [ item %tmp.30 210 12 16 ];
+            symbol [ setSubLabel %tmp.31 210 17 28 ];
+            %tmp.31 = getv function %tmp.30 :setSubLabel;
+            symbol [ fontSizeAdjustNames %tmp.33 210 29 48 ];
+            %tmp.33 = getv ? :fontSizeAdjustNames;
+            symbol [ _fontSizeAdjust %tmp.35 210 49 64 ];
+            %tmp.35 = getv ? :_fontSizeAdjust;
+            %tmp.36 = 1;
+            %tmp.37 = add %tmp.35 %tmp.36;
+            %tmp.38 = agetv %tmp.33 %tmp.37;
+            invoke %tmp.30 %tmp.31(%tmp.38);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 211 12 ]
+            symbol [ Application %tmp.39 211 12 23 ];
+            %tmp.39 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.40 211 24 34 ];
+            %tmp.40 = getv %tmp.39 :Properties;
+            symbol [ setValue %tmp.41 211 35 43 ];
+            %tmp.41 = getv function %tmp.40 :setValue;
+            %tmp.42 = "fontSizeAdjust";
+            symbol [ _fontSizeAdjust %tmp.44 211 62 77 ];
+            %tmp.44 = getv ? :_fontSizeAdjust;
+            invoke %tmp.40 %tmp.41(%tmp.42, %tmp.44);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_207_46_212_8_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_207_13_257_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_207_13_257_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 213 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_213_13_257_8_if_stmt:
+            %tmp.45 = lgetv %id.1;
+            symbol [ id %tmp.45 213 17 19 ];
+            symbol [ equals %tmp.46 213 20 26 ];
+            %tmp.46 = getv function %tmp.45 :equals;
+            %tmp.47 = "casioDataField";
+            %tmp.48 = invoke %tmp.45 %tmp.46(%tmp.47);
+            bf %tmp.48 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_213_13_257_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_213_13_257_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_213_46_222_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 214 12 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_213_46_222_8_start" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_213_46_222_8_stop" ]
+            %idx.2 = local;
+            symbol [ idx %idx.2 214 16 19 ];
+            %tmp.49 = 0;
+            lputv %idx.2 %tmp.49;
+            symbol [ idx %idx.2 214 16 19 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 215 12 ]
+            for @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_test @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_incr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_init:
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_begin" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_end" ]
+            %i.3 = local;
+            symbol [ i %i.3 215 21 22 ];
+            %tmp.50 = 0;
+            lputv %i.3 %tmp.50;
+            symbol [ i %i.3 215 21 22 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_test:
+            %tmp.51 = lgetv %i.3;
+            symbol [ i %tmp.51 215 28 29 ];
+            symbol [ casioDataFieldValues %tmp.53 215 32 52 ];
+            %tmp.53 = getv ? :casioDataFieldValues;
+            symbol [ size %tmp.54 215 53 57 ];
+            %tmp.54 = getv function %tmp.53 :size;
+            %tmp.55 = invoke %tmp.53 %tmp.54();
+            %tmp.56 = lt %tmp.51 %tmp.55;
+            bf %tmp.56 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_begin:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_66_217_12_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 216 16 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_216_16_216_82_if_stmt:
+            symbol [ casioDataFieldValues %tmp.58 216 20 40 ];
+            %tmp.58 = getv ? :casioDataFieldValues;
+            %tmp.59 = lgetv %i.3;
+            symbol [ i %tmp.59 216 41 42 ];
+            %tmp.60 = agetv %tmp.58 %tmp.59;
+            symbol [ _casioDataField %tmp.62 216 47 62 ];
+            %tmp.62 = getv ? :_casioDataField;
+            %tmp.63 = eq %tmp.60 %tmp.62;
+            bf %tmp.63 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_216_16_216_82_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_216_16_216_82_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_216_64_216_82_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 216 66 ]
+            %tmp.64 = lgetv %i.3;
+            symbol [ i %tmp.64 216 72 73 ];
+            lputv %idx.2 %tmp.64;
+            symbol [ idx %idx.2 216 66 69 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 216 75 ]
+            goto break @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_216_64_216_82_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_216_16_216_82_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_216_16_216_82_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_66_217_12_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_incr:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 215 ]
+            %tmp.67 = lgetv %i.3;
+            symbol [ i %tmp.67 215 61 62 ];
+            %tmp.68 = add %tmp.67 1;
+            lputv %i.3 %tmp.68;
+            symbol [ i %i.3 215 61 62 ];
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_test;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_215_12_217_12_for_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 218 12 ]
+            %tmp.69 = lgetv %idx.2;
+            symbol [ idx %tmp.69 218 19 22 ];
+            %tmp.70 = 1;
+            %tmp.71 = add %tmp.69 %tmp.70;
+            symbol [ casioDataFieldValues %tmp.73 218 30 50 ];
+            %tmp.73 = getv ? :casioDataFieldValues;
+            symbol [ size %tmp.74 218 51 55 ];
+            %tmp.74 = getv function %tmp.73 :size;
+            %tmp.75 = invoke %tmp.73 %tmp.74();
+            %tmp.76 = mod %tmp.71 %tmp.75;
+            lputv %idx.2 %tmp.76;
+            symbol [ idx %idx.2 218 12 15 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 219 12 ]
+            symbol [ casioDataFieldValues %tmp.78 219 30 50 ];
+            %tmp.78 = getv ? :casioDataFieldValues;
+            %tmp.79 = lgetv %idx.2;
+            symbol [ idx %tmp.79 219 51 54 ];
+            %tmp.80 = agetv %tmp.78 %tmp.79;
+            symbol [ _casioDataField ? 219 12 27 ];
+            putv self :_casioDataField %tmp.80;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 220 12 ]
+            %tmp.81 = lgetv %item;
+            symbol [ item %tmp.81 220 12 16 ];
+            symbol [ setSubLabel %tmp.82 220 17 28 ];
+            %tmp.82 = getv function %tmp.81 :setSubLabel;
+            symbol [ casioDataFieldNames %tmp.84 220 29 48 ];
+            %tmp.84 = getv ? :casioDataFieldNames;
+            %tmp.85 = lgetv %idx.2;
+            symbol [ idx %tmp.85 220 49 52 ];
+            %tmp.86 = agetv %tmp.84 %tmp.85;
+            invoke %tmp.81 %tmp.82(%tmp.86);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 221 12 ]
+            symbol [ Application %tmp.87 221 12 23 ];
+            %tmp.87 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.88 221 24 34 ];
+            %tmp.88 = getv %tmp.87 :Properties;
+            symbol [ setValue %tmp.89 221 35 43 ];
+            %tmp.89 = getv function %tmp.88 :setValue;
+            %tmp.90 = "casioDataField";
+            symbol [ _casioDataField %tmp.92 221 62 77 ];
+            %tmp.92 = getv ? :_casioDataField;
+            invoke %tmp.88 %tmp.89(%tmp.90, %tmp.92);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_213_46_222_8_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_213_13_257_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_213_13_257_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 223 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_223_13_257_8_if_stmt:
+            %tmp.93 = lgetv %id.1;
+            symbol [ id %tmp.93 223 17 19 ];
+            symbol [ equals %tmp.94 223 20 26 ];
+            %tmp.94 = getv function %tmp.93 :equals;
+            %tmp.95 = "casioDataFieldLeft";
+            %tmp.96 = invoke %tmp.93 %tmp.94(%tmp.95);
+            bf %tmp.96 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_223_13_257_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_223_13_257_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_223_50_232_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 224 12 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_223_50_232_8_start" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_223_50_232_8_stop" ]
+            %idx.4 = local;
+            symbol [ idx %idx.4 224 16 19 ];
+            %tmp.97 = 0;
+            lputv %idx.4 %tmp.97;
+            symbol [ idx %idx.4 224 16 19 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 225 12 ]
+            for @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_test @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_incr @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_init:
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_begin" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_end" ]
+            %i.5 = local;
+            symbol [ i %i.5 225 21 22 ];
+            %tmp.98 = 0;
+            lputv %i.5 %tmp.98;
+            symbol [ i %i.5 225 21 22 ];
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_test:
+            %tmp.99 = lgetv %i.5;
+            symbol [ i %tmp.99 225 28 29 ];
+            symbol [ casioDataFieldValues %tmp.101 225 32 52 ];
+            %tmp.101 = getv ? :casioDataFieldValues;
+            symbol [ size %tmp.102 225 53 57 ];
+            %tmp.102 = getv function %tmp.101 :size;
+            %tmp.103 = invoke %tmp.101 %tmp.102();
+            %tmp.104 = lt %tmp.99 %tmp.103;
+            bf %tmp.104 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_begin:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_66_227_12_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 226 16 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_226_16_226_86_if_stmt:
+            symbol [ casioDataFieldValues %tmp.106 226 20 40 ];
+            %tmp.106 = getv ? :casioDataFieldValues;
+            %tmp.107 = lgetv %i.5;
+            symbol [ i %tmp.107 226 41 42 ];
+            %tmp.108 = agetv %tmp.106 %tmp.107;
+            symbol [ _casioDataFieldLeft %tmp.110 226 47 66 ];
+            %tmp.110 = getv ? :_casioDataFieldLeft;
+            %tmp.111 = eq %tmp.108 %tmp.110;
+            bf %tmp.111 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_226_16_226_86_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_226_16_226_86_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_226_68_226_86_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 226 70 ]
+            %tmp.112 = lgetv %i.5;
+            symbol [ i %tmp.112 226 76 77 ];
+            lputv %idx.4 %tmp.112;
+            symbol [ idx %idx.4 226 70 73 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 226 79 ]
+            goto break @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_226_68_226_86_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_226_16_226_86_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_226_16_226_86_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_66_227_12_stop:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_incr:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 225 ]
+            %tmp.115 = lgetv %i.5;
+            symbol [ i %tmp.115 225 61 62 ];
+            %tmp.116 = add %tmp.115 1;
+            lputv %i.5 %tmp.116;
+            symbol [ i %i.5 225 61 62 ];
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_test;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_225_12_227_12_for_end:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 228 12 ]
+            %tmp.117 = lgetv %idx.4;
+            symbol [ idx %tmp.117 228 19 22 ];
+            %tmp.118 = 1;
+            %tmp.119 = add %tmp.117 %tmp.118;
+            symbol [ casioDataFieldValues %tmp.121 228 30 50 ];
+            %tmp.121 = getv ? :casioDataFieldValues;
+            symbol [ size %tmp.122 228 51 55 ];
+            %tmp.122 = getv function %tmp.121 :size;
+            %tmp.123 = invoke %tmp.121 %tmp.122();
+            %tmp.124 = mod %tmp.119 %tmp.123;
+            lputv %idx.4 %tmp.124;
+            symbol [ idx %idx.4 228 12 15 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 229 12 ]
+            symbol [ casioDataFieldValues %tmp.126 229 34 54 ];
+            %tmp.126 = getv ? :casioDataFieldValues;
+            %tmp.127 = lgetv %idx.4;
+            symbol [ idx %tmp.127 229 55 58 ];
+            %tmp.128 = agetv %tmp.126 %tmp.127;
+            symbol [ _casioDataFieldLeft ? 229 12 31 ];
+            putv self :_casioDataFieldLeft %tmp.128;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 230 12 ]
+            %tmp.129 = lgetv %item;
+            symbol [ item %tmp.129 230 12 16 ];
+            symbol [ setSubLabel %tmp.130 230 17 28 ];
+            %tmp.130 = getv function %tmp.129 :setSubLabel;
+            symbol [ casioDataFieldNames %tmp.132 230 29 48 ];
+            %tmp.132 = getv ? :casioDataFieldNames;
+            %tmp.133 = lgetv %idx.4;
+            symbol [ idx %tmp.133 230 49 52 ];
+            %tmp.134 = agetv %tmp.132 %tmp.133;
+            invoke %tmp.129 %tmp.130(%tmp.134);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 231 12 ]
+            symbol [ Application %tmp.135 231 12 23 ];
+            %tmp.135 = getm $.Toybox.Application;
+            symbol [ Properties %tmp.136 231 24 34 ];
+            %tmp.136 = getv %tmp.135 :Properties;
+            symbol [ setValue %tmp.137 231 35 43 ];
+            %tmp.137 = getv function %tmp.136 :setValue;
+            %tmp.138 = "casioDataFieldLeft";
+            symbol [ _casioDataFieldLeft %tmp.140 231 66 85 ];
+            %tmp.140 = getv ? :_casioDataFieldLeft;
+            invoke %tmp.136 %tmp.137(%tmp.138, %tmp.140);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_223_50_232_8_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_223_13_257_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_223_13_257_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 233 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_233_13_257_8_if_stmt:
+            %tmp.141 = lgetv %id.1;
+            symbol [ id %tmp.141 233 17 19 ];
+            symbol [ equals %tmp.142 233 20 26 ];
+            %tmp.142 = getv function %tmp.141 :equals;
+            %tmp.143 = "units";
+            %tmp.144 = invoke %tmp.141 %tmp.142(%tmp.143);
+            bf %tmp.144 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_233_13_257_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_233_13_257_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_233_37_240_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 234 12 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_233_37_240_8_start" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_233_37_240_8_stop" ]
+            %subMenu.6 = local;
+            symbol [ subMenu %subMenu.6 234 16 23 ];
+            symbol [ WatchUi %tmp.147 234 30 37 ];
+            %tmp.147 = getm $.Toybox.WatchUi;
+            symbol [ Menu2 %tmp.148 234 38 43 ];
+            %tmp.148 = getv function ? %tmp.147 :Menu2;
+            %tmp.149 = newd 1;
+            %tmp.151 = const :title;
+            symbol [ title %tmp.151 234 46 51 const ];
+            %tmp.152 = "UNITS";
+            %tmp.153 = dup %tmp.149;
+            %tmp.154 = aputv %tmp.153 %tmp.151 %tmp.152;
+            %tmp.145 = newc %tmp.148 (%tmp.154);
+            lputv %subMenu.6 %tmp.145;
+            symbol [ subMenu %subMenu.6 234 16 23 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 235 12 ]
+            %tmp.155 = lgetv %subMenu.6;
+            symbol [ subMenu %tmp.155 235 12 19 ];
+            symbol [ addItem %tmp.156 235 20 27 ];
+            %tmp.156 = getv function %tmp.155 :addItem;
+            symbol [ WatchUi %tmp.159 235 32 39 ];
+            %tmp.159 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.160 235 40 48 ];
+            %tmp.160 = getv function ? %tmp.159 :MenuItem;
+            %tmp.161 = "Distance (km/mi)";
+            symbol [ kmmilesNames %tmp.163 235 69 81 ];
+            %tmp.163 = getv ? :kmmilesNames;
+            symbol [ _kmmiles %tmp.165 235 82 90 ];
+            %tmp.165 = getv ? :_kmmiles;
+            %tmp.166 = agetv %tmp.163 %tmp.165;
+            %tmp.167 = "kmmiles";
+            %tmp.168 = newd 0;
+            %tmp.157 = newc %tmp.160 (%tmp.161, %tmp.166, %tmp.167, %tmp.168);
+            invoke %tmp.155 %tmp.156(%tmp.157);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 236 12 ]
+            %tmp.169 = lgetv %subMenu.6;
+            symbol [ subMenu %tmp.169 236 12 19 ];
+            symbol [ addItem %tmp.170 236 20 27 ];
+            %tmp.170 = getv function %tmp.169 :addItem;
+            symbol [ WatchUi %tmp.173 236 32 39 ];
+            %tmp.173 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.174 236 40 48 ];
+            %tmp.174 = getv function ? %tmp.173 :MenuItem;
+            %tmp.175 = "Distance (m/ft)";
+            symbol [ metersfeetNames %tmp.177 236 68 83 ];
+            %tmp.177 = getv ? :metersfeetNames;
+            symbol [ _metersfeet %tmp.179 236 84 95 ];
+            %tmp.179 = getv ? :_metersfeet;
+            %tmp.180 = agetv %tmp.177 %tmp.179;
+            %tmp.181 = "metersfeet";
+            %tmp.182 = newd 0;
+            %tmp.171 = newc %tmp.174 (%tmp.175, %tmp.180, %tmp.181, %tmp.182);
+            invoke %tmp.169 %tmp.170(%tmp.171);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 237 12 ]
+            %tmp.183 = lgetv %subMenu.6;
+            symbol [ subMenu %tmp.183 237 12 19 ];
+            symbol [ addItem %tmp.184 237 20 27 ];
+            %tmp.184 = getv function %tmp.183 :addItem;
+            symbol [ WatchUi %tmp.187 237 32 39 ];
+            %tmp.187 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.188 237 40 48 ];
+            %tmp.188 = getv function ? %tmp.187 :MenuItem;
+            %tmp.189 = "Pressure";
+            symbol [ pressureNames %tmp.191 237 61 74 ];
+            %tmp.191 = getv ? :pressureNames;
+            symbol [ _pressure %tmp.193 237 75 84 ];
+            %tmp.193 = getv ? :_pressure;
+            %tmp.194 = agetv %tmp.191 %tmp.193;
+            %tmp.195 = "pressure";
+            %tmp.196 = newd 0;
+            %tmp.185 = newc %tmp.188 (%tmp.189, %tmp.194, %tmp.195, %tmp.196);
+            invoke %tmp.183 %tmp.184(%tmp.185);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 238 12 ]
+            %tmp.197 = lgetv %subMenu.6;
+            symbol [ subMenu %tmp.197 238 12 19 ];
+            symbol [ addItem %tmp.198 238 20 27 ];
+            %tmp.198 = getv function %tmp.197 :addItem;
+            symbol [ WatchUi %tmp.201 238 32 39 ];
+            %tmp.201 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.202 238 40 48 ];
+            %tmp.202 = getv function ? %tmp.201 :MenuItem;
+            %tmp.203 = "Temperature (C/F)";
+            symbol [ celsiusfahrenheitNames %tmp.205 238 70 92 ];
+            %tmp.205 = getv ? :celsiusfahrenheitNames;
+            symbol [ _celsiusfahrenheit %tmp.207 238 93 111 ];
+            %tmp.207 = getv ? :_celsiusfahrenheit;
+            %tmp.208 = agetv %tmp.205 %tmp.207;
+            %tmp.209 = "celsiusfahrenheit";
+            %tmp.210 = newd 0;
+            %tmp.199 = newc %tmp.202 (%tmp.203, %tmp.208, %tmp.209, %tmp.210);
+            invoke %tmp.197 %tmp.198(%tmp.199);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 239 12 ]
+            symbol [ WatchUi %tmp.211 239 12 19 ];
+            %tmp.211 = getm $.Toybox.WatchUi;
+            symbol [ pushView %tmp.212 239 20 28 ];
+            %tmp.212 = getv function %tmp.211 :pushView;
+            %tmp.213 = lgetv %subMenu.6;
+            symbol [ subMenu %tmp.213 239 29 36 ];
+            symbol [ SubMenuDelegate %tmp.217 239 42 57 ];
+            %tmp.217 = getv ? :SubMenuDelegate;
+            %tmp.214 = newc %tmp.217 ();
+            symbol [ WatchUi %tmp.218 239 61 68 ];
+            %tmp.218 = getm $.Toybox.WatchUi;
+            symbol [ SLIDE_LEFT %tmp.219 239 69 79 ];
+            %tmp.219 = getv %tmp.218 :SLIDE_LEFT;
+            invoke %tmp.211 %tmp.212(%tmp.213, %tmp.214, %tmp.219);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_233_37_240_8_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_233_13_257_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_233_13_257_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 241 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_241_13_257_8_if_stmt:
+            %tmp.220 = lgetv %id.1;
+            symbol [ id %tmp.220 241 17 19 ];
+            symbol [ equals %tmp.221 241 20 26 ];
+            %tmp.221 = getv function %tmp.220 :equals;
+            %tmp.222 = "specialFeatures";
+            %tmp.223 = invoke %tmp.220 %tmp.221(%tmp.222);
+            bf %tmp.223 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_241_13_257_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_241_13_257_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_241_47_250_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 242 12 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_241_47_250_8_start" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_241_47_250_8_stop" ]
+            %subMenu.7 = local;
+            symbol [ subMenu %subMenu.7 242 16 23 ];
+            symbol [ WatchUi %tmp.226 242 30 37 ];
+            %tmp.226 = getm $.Toybox.WatchUi;
+            symbol [ Menu2 %tmp.227 242 38 43 ];
+            %tmp.227 = getv function ? %tmp.226 :Menu2;
+            %tmp.228 = newd 1;
+            %tmp.230 = const :title;
+            symbol [ title %tmp.230 242 46 51 const ];
+            %tmp.231 = "SPECIAL FEATURES";
+            %tmp.232 = dup %tmp.228;
+            %tmp.233 = aputv %tmp.232 %tmp.230 %tmp.231;
+            %tmp.224 = newc %tmp.227 (%tmp.233);
+            lputv %subMenu.7 %tmp.224;
+            symbol [ subMenu %subMenu.7 242 16 23 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 243 12 ]
+            %tmp.234 = lgetv %subMenu.7;
+            symbol [ subMenu %tmp.234 243 12 19 ];
+            symbol [ addItem %tmp.235 243 20 27 ];
+            %tmp.235 = getv function %tmp.234 :addItem;
+            symbol [ WatchUi %tmp.238 243 32 39 ];
+            %tmp.238 = getm $.Toybox.WatchUi;
+            symbol [ ToggleMenuItem %tmp.239 243 40 54 ];
+            %tmp.239 = getv function ? %tmp.238 :ToggleMenuItem;
+            %tmp.240 = "Touch screen calculator (bottom) and stopwatch (right)";
+            %tmp.241 = null;
+            %tmp.242 = "touchOn";
+            symbol [ _touchOn %tmp.244 243 130 138 ];
+            %tmp.244 = getv ? :_touchOn;
+            %tmp.245 = null;
+            %tmp.236 = newc %tmp.239 (%tmp.240, %tmp.241, %tmp.242, %tmp.244, %tmp.245);
+            invoke %tmp.234 %tmp.235(%tmp.236);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 244 12 ]
+            %tmp.246 = lgetv %subMenu.7;
+            symbol [ subMenu %tmp.246 244 12 19 ];
+            symbol [ addItem %tmp.247 244 20 27 ];
+            %tmp.247 = getv function %tmp.246 :addItem;
+            symbol [ WatchUi %tmp.250 244 32 39 ];
+            %tmp.250 = getm $.Toybox.WatchUi;
+            symbol [ ToggleMenuItem %tmp.251 244 40 54 ];
+            %tmp.251 = getv function ? %tmp.250 :ToggleMenuItem;
+            %tmp.252 = "Battery Colour";
+            %tmp.253 = null;
+            %tmp.254 = "batteryColourLevelOn";
+            symbol [ _batteryColourLevelOn %tmp.256 244 103 124 ];
+            %tmp.256 = getv ? :_batteryColourLevelOn;
+            %tmp.257 = null;
+            %tmp.248 = newc %tmp.251 (%tmp.252, %tmp.253, %tmp.254, %tmp.256, %tmp.257);
+            invoke %tmp.246 %tmp.247(%tmp.248);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 245 12 ]
+            %tmp.258 = lgetv %subMenu.7;
+            symbol [ subMenu %tmp.258 245 12 19 ];
+            symbol [ addItem %tmp.259 245 20 27 ];
+            %tmp.259 = getv function %tmp.258 :addItem;
+            symbol [ WatchUi %tmp.262 245 32 39 ];
+            %tmp.262 = getm $.Toybox.WatchUi;
+            symbol [ ToggleMenuItem %tmp.263 245 40 54 ];
+            %tmp.263 = getv function ? %tmp.262 :ToggleMenuItem;
+            %tmp.264 = "Move Bar";
+            %tmp.265 = null;
+            %tmp.266 = "moveBarOn";
+            symbol [ _moveBarOn %tmp.268 245 86 96 ];
+            %tmp.268 = getv ? :_moveBarOn;
+            %tmp.269 = null;
+            %tmp.260 = newc %tmp.263 (%tmp.264, %tmp.265, %tmp.266, %tmp.268, %tmp.269);
+            invoke %tmp.258 %tmp.259(%tmp.260);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 246 12 ]
+            %tmp.270 = lgetv %subMenu.7;
+            symbol [ subMenu %tmp.270 246 12 19 ];
+            symbol [ addItem %tmp.271 246 20 27 ];
+            %tmp.271 = getv function %tmp.270 :addItem;
+            symbol [ WatchUi %tmp.274 246 32 39 ];
+            %tmp.274 = getm $.Toybox.WatchUi;
+            symbol [ ToggleMenuItem %tmp.275 246 40 54 ];
+            %tmp.275 = getv function ? %tmp.274 :ToggleMenuItem;
+            %tmp.276 = "Do Not Disturb";
+            %tmp.277 = null;
+            %tmp.278 = "doNotDisturbOn";
+            symbol [ _doNotDisturbOn %tmp.280 246 97 112 ];
+            %tmp.280 = getv ? :_doNotDisturbOn;
+            %tmp.281 = null;
+            %tmp.272 = newc %tmp.275 (%tmp.276, %tmp.277, %tmp.278, %tmp.280, %tmp.281);
+            invoke %tmp.270 %tmp.271(%tmp.272);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 247 12 ]
+            %tmp.282 = lgetv %subMenu.7;
+            symbol [ subMenu %tmp.282 247 12 19 ];
+            symbol [ addItem %tmp.283 247 20 27 ];
+            %tmp.283 = getv function %tmp.282 :addItem;
+            symbol [ WatchUi %tmp.286 247 32 39 ];
+            %tmp.286 = getm $.Toybox.WatchUi;
+            symbol [ ToggleMenuItem %tmp.287 247 40 54 ];
+            %tmp.287 = getv function ? %tmp.286 :ToggleMenuItem;
+            %tmp.288 = "Bluetooth Status";
+            %tmp.289 = null;
+            %tmp.290 = "bluetoothStatus";
+            symbol [ _bluetoothStatus %tmp.292 247 100 116 ];
+            %tmp.292 = getv ? :_bluetoothStatus;
+            %tmp.293 = null;
+            %tmp.284 = newc %tmp.287 (%tmp.288, %tmp.289, %tmp.290, %tmp.292, %tmp.293);
+            invoke %tmp.282 %tmp.283(%tmp.284);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 248 12 ]
+            %tmp.294 = lgetv %subMenu.7;
+            symbol [ subMenu %tmp.294 248 12 19 ];
+            symbol [ addItem %tmp.295 248 20 27 ];
+            %tmp.295 = getv function %tmp.294 :addItem;
+            symbol [ WatchUi %tmp.298 248 32 39 ];
+            %tmp.298 = getm $.Toybox.WatchUi;
+            symbol [ ToggleMenuItem %tmp.299 248 40 54 ];
+            %tmp.299 = getv function ? %tmp.298 :ToggleMenuItem;
+            %tmp.300 = "Low Power Seconds";
+            %tmp.301 = null;
+            %tmp.302 = "lowPowerSeconds";
+            symbol [ _lowPowerSeconds %tmp.304 248 101 117 ];
+            %tmp.304 = getv ? :_lowPowerSeconds;
+            %tmp.305 = null;
+            %tmp.296 = newc %tmp.299 (%tmp.300, %tmp.301, %tmp.302, %tmp.304, %tmp.305);
+            invoke %tmp.294 %tmp.295(%tmp.296);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 249 12 ]
+            symbol [ WatchUi %tmp.306 249 12 19 ];
+            %tmp.306 = getm $.Toybox.WatchUi;
+            symbol [ pushView %tmp.307 249 20 28 ];
+            %tmp.307 = getv function %tmp.306 :pushView;
+            %tmp.308 = lgetv %subMenu.7;
+            symbol [ subMenu %tmp.308 249 29 36 ];
+            symbol [ SubMenuDelegate %tmp.312 249 42 57 ];
+            %tmp.312 = getv ? :SubMenuDelegate;
+            %tmp.309 = newc %tmp.312 ();
+            symbol [ WatchUi %tmp.313 249 61 68 ];
+            %tmp.313 = getm $.Toybox.WatchUi;
+            symbol [ SLIDE_LEFT %tmp.314 249 69 79 ];
+            %tmp.314 = getv %tmp.313 :SLIDE_LEFT;
+            invoke %tmp.306 %tmp.307(%tmp.308, %tmp.309, %tmp.314);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_241_47_250_8_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_241_13_257_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_241_13_257_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 251 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_251_13_257_8_if_stmt:
+            %tmp.315 = lgetv %id.1;
+            symbol [ id %tmp.315 251 17 19 ];
+            symbol [ equals %tmp.316 251 20 26 ];
+            %tmp.316 = getv function %tmp.315 :equals;
+            %tmp.317 = "timeZoneSettings";
+            %tmp.318 = invoke %tmp.315 %tmp.316(%tmp.317);
+            bf %tmp.318 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_251_13_257_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_251_13_257_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_251_48_257_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 252 12 ]
+            [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_251_48_257_8_start" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_251_48_257_8_stop" ]
+            %subMenu.8 = local;
+            symbol [ subMenu %subMenu.8 252 16 23 ];
+            symbol [ WatchUi %tmp.321 252 30 37 ];
+            %tmp.321 = getm $.Toybox.WatchUi;
+            symbol [ Menu2 %tmp.322 252 38 43 ];
+            %tmp.322 = getv function ? %tmp.321 :Menu2;
+            %tmp.323 = newd 1;
+            %tmp.325 = const :title;
+            symbol [ title %tmp.325 252 46 51 const ];
+            %tmp.326 = "TIME ZONE";
+            %tmp.327 = dup %tmp.323;
+            %tmp.328 = aputv %tmp.327 %tmp.325 %tmp.326;
+            %tmp.319 = newc %tmp.322 (%tmp.328);
+            lputv %subMenu.8 %tmp.319;
+            symbol [ subMenu %subMenu.8 252 16 23 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 253 12 ]
+            %tmp.329 = lgetv %subMenu.8;
+            symbol [ subMenu %tmp.329 253 12 19 ];
+            symbol [ addItem %tmp.330 253 20 27 ];
+            %tmp.330 = getv function %tmp.329 :addItem;
+            symbol [ WatchUi %tmp.333 253 32 39 ];
+            %tmp.333 = getm $.Toybox.WatchUi;
+            symbol [ ToggleMenuItem %tmp.334 253 40 54 ];
+            %tmp.334 = getv function ? %tmp.333 :ToggleMenuItem;
+            %tmp.335 = "Second Time Zone";
+            %tmp.336 = null;
+            %tmp.337 = "timeZoneOn";
+            symbol [ _timeZoneDigitalOn %tmp.339 253 95 113 ];
+            %tmp.339 = getv ? :_timeZoneDigitalOn;
+            %tmp.340 = null;
+            %tmp.331 = newc %tmp.334 (%tmp.335, %tmp.336, %tmp.337, %tmp.339, %tmp.340);
+            invoke %tmp.329 %tmp.330(%tmp.331);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 254 12 ]
+            %tmp.341 = lgetv %subMenu.8;
+            symbol [ subMenu %tmp.341 254 12 19 ];
+            symbol [ addItem %tmp.342 254 20 27 ];
+            %tmp.342 = getv function %tmp.341 :addItem;
+            symbol [ WatchUi %tmp.345 254 32 39 ];
+            %tmp.345 = getm $.Toybox.WatchUi;
+            symbol [ ToggleMenuItem %tmp.346 254 40 54 ];
+            %tmp.346 = getv function ? %tmp.345 :ToggleMenuItem;
+            %tmp.347 = "Daylight Saving";
+            %tmp.348 = null;
+            %tmp.349 = "daylightSaving";
+            symbol [ _daylightSavingOn %tmp.351 254 98 115 ];
+            %tmp.351 = getv ? :_daylightSavingOn;
+            %tmp.352 = null;
+            %tmp.343 = newc %tmp.346 (%tmp.347, %tmp.348, %tmp.349, %tmp.351, %tmp.352);
+            invoke %tmp.341 %tmp.342(%tmp.343);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 255 12 ]
+            %tmp.353 = lgetv %subMenu.8;
+            symbol [ subMenu %tmp.353 255 12 19 ];
+            symbol [ addItem %tmp.354 255 20 27 ];
+            %tmp.354 = getv function %tmp.353 :addItem;
+            symbol [ WatchUi %tmp.357 255 32 39 ];
+            %tmp.357 = getm $.Toybox.WatchUi;
+            symbol [ MenuItem %tmp.358 255 40 48 ];
+            %tmp.358 = getv function ? %tmp.357 :MenuItem;
+            %tmp.359 = "Time Zone";
+            symbol [ timeZoneNames %tmp.361 255 62 75 ];
+            %tmp.361 = getv ? :timeZoneNames;
+            symbol [ _timeZone %tmp.363 255 76 85 ];
+            %tmp.363 = getv ? :_timeZone;
+            %tmp.364 = agetv %tmp.361 %tmp.363;
+            %tmp.365 = "timeZone";
+            %tmp.366 = newd 0;
+            %tmp.355 = newc %tmp.358 (%tmp.359, %tmp.364, %tmp.365, %tmp.366);
+            invoke %tmp.353 %tmp.354(%tmp.355);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 256 12 ]
+            symbol [ WatchUi %tmp.367 256 12 19 ];
+            %tmp.367 = getm $.Toybox.WatchUi;
+            symbol [ pushView %tmp.368 256 20 28 ];
+            %tmp.368 = getv function %tmp.367 :pushView;
+            %tmp.369 = lgetv %subMenu.8;
+            symbol [ subMenu %tmp.369 256 29 36 ];
+            symbol [ SubMenuDelegate %tmp.373 256 42 57 ];
+            %tmp.373 = getv ? :SubMenuDelegate;
+            %tmp.370 = newc %tmp.373 ();
+            symbol [ WatchUi %tmp.374 256 61 68 ];
+            %tmp.374 = getm $.Toybox.WatchUi;
+            symbol [ SLIDE_LEFT %tmp.375 256 69 79 ];
+            %tmp.375 = getv %tmp.374 :SLIDE_LEFT;
+            invoke %tmp.367 %tmp.368(%tmp.369, %tmp.370, %tmp.375);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_251_48_257_8_stop:
+            goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_251_13_257_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_251_13_257_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_241_13_257_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_233_13_257_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_223_13_257_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_213_13_257_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_207_13_257_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_203_8_257_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_200_4_258_4_stop:
+        }
+        [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 260; @symbol_functiondef = [onBack,260,12,18]; ]
+        function onBack() {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_260_21_264_4_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 261 8 ]
+            symbol [ WatchUi %tmp.1 261 8 15 ];
+            %tmp.1 = getm $.Toybox.WatchUi;
+            symbol [ popView %tmp.2 261 16 23 ];
+            %tmp.2 = getv function %tmp.1 :popView;
+            symbol [ WatchUi %tmp.3 261 24 31 ];
+            %tmp.3 = getm $.Toybox.WatchUi;
+            symbol [ SLIDE_IMMEDIATE %tmp.4 261 32 47 ];
+            %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
+            invoke %tmp.1 %tmp.2(%tmp.4);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 262 8 ]
+            %tmp.5 = true;
+            symbol [ settingsChanged ? 262 8 23 ];
+            putv self :settingsChanged %tmp.5;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 263 8 ]
+            symbol [ WatchUi %tmp.6 263 8 15 ];
+            %tmp.6 = getm $.Toybox.WatchUi;
+            symbol [ requestUpdate %tmp.7 263 16 29 ];
+            %tmp.7 = getv function %tmp.6 :requestUpdate;
+            invoke %tmp.6 %tmp.7();
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_260_21_264_4_stop:
+        }
+    }
+}
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 271; @symbol_classdef = [SubMenuDelegate,271,6,21]; @symbol_extends<0> = [WatchUi,271,30,37]; @symbol_extends<1> = [Menu2InputDelegate,271,38,56]; ]
+class SubMenuDelegate extends WatchUi.Menu2InputDelegate {
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 271; ]
+    <init> {
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 271; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 273; @symbol_functiondef = [initialize,273,13,23]; ]
+    function initialize() as Void {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_273_26_275_4_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 274 8 ]
+        symbol [ Menu2InputDelegate %tmp.2 274 8 26 ];
+        %tmp.2 = getv ? :Menu2InputDelegate;
+        symbol [ initialize %tmp.3 274 27 37 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_273_26_275_4_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 277; @symbol_functiondef = [onSelect,277,13,21]; @symbol_param<0> = [subMenuItem,277,22,33]; ]
+    function onSelect(subMenuItem) {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_277_35_337_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 278 8 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_277_35_337_1_start" "D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_277_35_337_1_stop" ]
+        %id.1 = local;
+        symbol [ id %id.1 278 12 14 ];
+        %tmp.1 = lgetv %subMenuItem;
+        symbol [ subMenuItem %tmp.1 278 17 28 ];
+        symbol [ getId %tmp.2 278 29 34 ];
+        %tmp.2 = getv function %tmp.1 :getId;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %id.1 %tmp.3;
+        symbol [ id %id.1 278 12 14 ];
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 280 8 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_280_8_336_8_if_stmt:
+        %tmp.4 = lgetv %id.1;
+        symbol [ id %tmp.4 280 12 14 ];
+        symbol [ equals %tmp.5 280 15 21 ];
+        %tmp.5 = getv function %tmp.4 :equals;
+        %tmp.6 = "kmmiles";
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        bf %tmp.7 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_280_8_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_280_8_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_280_34_284_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 281 12 ]
+        symbol [ _kmmiles %tmp.9 281 24 32 ];
+        %tmp.9 = getv ? :_kmmiles;
+        %tmp.10 = 1;
+        %tmp.11 = add %tmp.9 %tmp.10;
+        symbol [ kmmilesNames %tmp.13 281 40 52 ];
+        %tmp.13 = getv ? :kmmilesNames;
+        symbol [ size %tmp.14 281 53 57 ];
+        %tmp.14 = getv function %tmp.13 :size;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        %tmp.16 = mod %tmp.11 %tmp.15;
+        symbol [ _kmmiles ? 281 12 20 ];
+        putv self :_kmmiles %tmp.16;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 282 12 ]
+        %tmp.17 = lgetv %subMenuItem;
+        symbol [ subMenuItem %tmp.17 282 12 23 ];
+        symbol [ setSubLabel %tmp.18 282 24 35 ];
+        %tmp.18 = getv function %tmp.17 :setSubLabel;
+        symbol [ kmmilesNames %tmp.20 282 36 48 ];
+        %tmp.20 = getv ? :kmmilesNames;
+        symbol [ _kmmiles %tmp.22 282 49 57 ];
+        %tmp.22 = getv ? :_kmmiles;
+        %tmp.23 = agetv %tmp.20 %tmp.22;
+        invoke %tmp.17 %tmp.18(%tmp.23);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 283 12 ]
+        symbol [ Application %tmp.24 283 12 23 ];
+        %tmp.24 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.25 283 24 34 ];
+        %tmp.25 = getv %tmp.24 :Properties;
+        symbol [ setValue %tmp.26 283 35 43 ];
+        %tmp.26 = getv function %tmp.25 :setValue;
+        %tmp.27 = "kmmiles";
+        symbol [ _kmmiles %tmp.29 283 55 63 ];
+        %tmp.29 = getv ? :_kmmiles;
+        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.29);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_280_34_284_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_280_8_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_280_8_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 285 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_285_13_336_8_if_stmt:
+        %tmp.30 = lgetv %id.1;
+        symbol [ id %tmp.30 285 17 19 ];
+        symbol [ equals %tmp.31 285 20 26 ];
+        %tmp.31 = getv function %tmp.30 :equals;
+        %tmp.32 = "metersfeet";
+        %tmp.33 = invoke %tmp.30 %tmp.31(%tmp.32);
+        bf %tmp.33 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_285_13_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_285_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_285_42_289_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 286 12 ]
+        symbol [ _metersfeet %tmp.35 286 27 38 ];
+        %tmp.35 = getv ? :_metersfeet;
+        %tmp.36 = 1;
+        %tmp.37 = add %tmp.35 %tmp.36;
+        symbol [ metersfeetNames %tmp.39 286 46 61 ];
+        %tmp.39 = getv ? :metersfeetNames;
+        symbol [ size %tmp.40 286 62 66 ];
+        %tmp.40 = getv function %tmp.39 :size;
+        %tmp.41 = invoke %tmp.39 %tmp.40();
+        %tmp.42 = mod %tmp.37 %tmp.41;
+        symbol [ _metersfeet ? 286 12 23 ];
+        putv self :_metersfeet %tmp.42;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 287 12 ]
+        %tmp.43 = lgetv %subMenuItem;
+        symbol [ subMenuItem %tmp.43 287 12 23 ];
+        symbol [ setSubLabel %tmp.44 287 24 35 ];
+        %tmp.44 = getv function %tmp.43 :setSubLabel;
+        symbol [ metersfeetNames %tmp.46 287 36 51 ];
+        %tmp.46 = getv ? :metersfeetNames;
+        symbol [ _metersfeet %tmp.48 287 52 63 ];
+        %tmp.48 = getv ? :_metersfeet;
+        %tmp.49 = agetv %tmp.46 %tmp.48;
+        invoke %tmp.43 %tmp.44(%tmp.49);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 288 12 ]
+        symbol [ Application %tmp.50 288 12 23 ];
+        %tmp.50 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.51 288 24 34 ];
+        %tmp.51 = getv %tmp.50 :Properties;
+        symbol [ setValue %tmp.52 288 35 43 ];
+        %tmp.52 = getv function %tmp.51 :setValue;
+        %tmp.53 = "metersfeet";
+        symbol [ _metersfeet %tmp.55 288 58 69 ];
+        %tmp.55 = getv ? :_metersfeet;
+        invoke %tmp.51 %tmp.52(%tmp.53, %tmp.55);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_285_42_289_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_285_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_285_13_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 290 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_290_13_336_8_if_stmt:
+        %tmp.56 = lgetv %id.1;
+        symbol [ id %tmp.56 290 17 19 ];
+        symbol [ equals %tmp.57 290 20 26 ];
+        %tmp.57 = getv function %tmp.56 :equals;
+        %tmp.58 = "pressure";
+        %tmp.59 = invoke %tmp.56 %tmp.57(%tmp.58);
+        bf %tmp.59 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_290_13_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_290_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_290_40_294_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 291 12 ]
+        symbol [ _pressure %tmp.61 291 25 34 ];
+        %tmp.61 = getv ? :_pressure;
+        %tmp.62 = 1;
+        %tmp.63 = add %tmp.61 %tmp.62;
+        symbol [ pressureNames %tmp.65 291 42 55 ];
+        %tmp.65 = getv ? :pressureNames;
+        symbol [ size %tmp.66 291 56 60 ];
+        %tmp.66 = getv function %tmp.65 :size;
+        %tmp.67 = invoke %tmp.65 %tmp.66();
+        %tmp.68 = mod %tmp.63 %tmp.67;
+        symbol [ _pressure ? 291 12 21 ];
+        putv self :_pressure %tmp.68;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 292 12 ]
+        %tmp.69 = lgetv %subMenuItem;
+        symbol [ subMenuItem %tmp.69 292 12 23 ];
+        symbol [ setSubLabel %tmp.70 292 24 35 ];
+        %tmp.70 = getv function %tmp.69 :setSubLabel;
+        symbol [ pressureNames %tmp.72 292 36 49 ];
+        %tmp.72 = getv ? :pressureNames;
+        symbol [ _pressure %tmp.74 292 50 59 ];
+        %tmp.74 = getv ? :_pressure;
+        %tmp.75 = agetv %tmp.72 %tmp.74;
+        invoke %tmp.69 %tmp.70(%tmp.75);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 293 12 ]
+        symbol [ Application %tmp.76 293 12 23 ];
+        %tmp.76 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.77 293 24 34 ];
+        %tmp.77 = getv %tmp.76 :Properties;
+        symbol [ setValue %tmp.78 293 35 43 ];
+        %tmp.78 = getv function %tmp.77 :setValue;
+        %tmp.79 = "pressure";
+        symbol [ _pressure %tmp.81 293 56 65 ];
+        %tmp.81 = getv ? :_pressure;
+        invoke %tmp.77 %tmp.78(%tmp.79, %tmp.81);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_290_40_294_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_290_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_290_13_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 295 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_295_13_336_8_if_stmt:
+        %tmp.82 = lgetv %id.1;
+        symbol [ id %tmp.82 295 17 19 ];
+        symbol [ equals %tmp.83 295 20 26 ];
+        %tmp.83 = getv function %tmp.82 :equals;
+        %tmp.84 = "celsiusfahrenheit";
+        %tmp.85 = invoke %tmp.82 %tmp.83(%tmp.84);
+        bf %tmp.85 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_295_13_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_295_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_295_49_299_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 296 12 ]
+        symbol [ _celsiusfahrenheit %tmp.87 296 34 52 ];
+        %tmp.87 = getv ? :_celsiusfahrenheit;
+        %tmp.88 = 1;
+        %tmp.89 = add %tmp.87 %tmp.88;
+        symbol [ celsiusfahrenheitNames %tmp.91 296 60 82 ];
+        %tmp.91 = getv ? :celsiusfahrenheitNames;
+        symbol [ size %tmp.92 296 83 87 ];
+        %tmp.92 = getv function %tmp.91 :size;
+        %tmp.93 = invoke %tmp.91 %tmp.92();
+        %tmp.94 = mod %tmp.89 %tmp.93;
+        symbol [ _celsiusfahrenheit ? 296 12 30 ];
+        putv self :_celsiusfahrenheit %tmp.94;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 297 12 ]
+        %tmp.95 = lgetv %subMenuItem;
+        symbol [ subMenuItem %tmp.95 297 12 23 ];
+        symbol [ setSubLabel %tmp.96 297 24 35 ];
+        %tmp.96 = getv function %tmp.95 :setSubLabel;
+        symbol [ celsiusfahrenheitNames %tmp.98 297 36 58 ];
+        %tmp.98 = getv ? :celsiusfahrenheitNames;
+        symbol [ _celsiusfahrenheit %tmp.100 297 59 77 ];
+        %tmp.100 = getv ? :_celsiusfahrenheit;
+        %tmp.101 = agetv %tmp.98 %tmp.100;
+        invoke %tmp.95 %tmp.96(%tmp.101);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 298 12 ]
+        symbol [ Application %tmp.102 298 12 23 ];
+        %tmp.102 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.103 298 24 34 ];
+        %tmp.103 = getv %tmp.102 :Properties;
+        symbol [ setValue %tmp.104 298 35 43 ];
+        %tmp.104 = getv function %tmp.103 :setValue;
+        %tmp.105 = "celsiusfahrenheit";
+        symbol [ _celsiusfahrenheit %tmp.107 298 65 83 ];
+        %tmp.107 = getv ? :_celsiusfahrenheit;
+        invoke %tmp.103 %tmp.104(%tmp.105, %tmp.107);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_295_49_299_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_295_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_295_13_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 300 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_300_13_336_8_if_stmt:
+        %tmp.108 = lgetv %id.1;
+        symbol [ id %tmp.108 300 17 19 ];
+        symbol [ equals %tmp.109 300 20 26 ];
+        %tmp.109 = getv function %tmp.108 :equals;
+        %tmp.110 = "timeZoneOn";
+        %tmp.111 = invoke %tmp.108 %tmp.109(%tmp.110);
+        bf %tmp.111 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_300_13_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_300_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_300_42_303_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 301 12 ]
+        symbol [ _timeZoneDigitalOn %tmp.113 301 34 52 ];
+        %tmp.113 = getv ? :_timeZoneDigitalOn;
+        %tmp.114 = not %tmp.113;
+        symbol [ _timeZoneDigitalOn ? 301 12 30 ];
+        putv self :_timeZoneDigitalOn %tmp.114;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 302 12 ]
+        symbol [ Application %tmp.115 302 12 23 ];
+        %tmp.115 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.116 302 24 34 ];
+        %tmp.116 = getv %tmp.115 :Properties;
+        symbol [ setValue %tmp.117 302 35 43 ];
+        %tmp.117 = getv function %tmp.116 :setValue;
+        %tmp.118 = "timeZoneOn";
+        symbol [ _timeZoneDigitalOn %tmp.120 302 58 76 ];
+        %tmp.120 = getv ? :_timeZoneDigitalOn;
+        invoke %tmp.116 %tmp.117(%tmp.118, %tmp.120);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_300_42_303_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_300_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_300_13_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 304 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_304_13_336_8_if_stmt:
+        %tmp.121 = lgetv %id.1;
+        symbol [ id %tmp.121 304 17 19 ];
+        symbol [ equals %tmp.122 304 20 26 ];
+        %tmp.122 = getv function %tmp.121 :equals;
+        %tmp.123 = "daylightSaving";
+        %tmp.124 = invoke %tmp.121 %tmp.122(%tmp.123);
+        bf %tmp.124 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_304_13_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_304_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_304_46_307_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 305 12 ]
+        symbol [ _daylightSavingOn %tmp.126 305 33 50 ];
+        %tmp.126 = getv ? :_daylightSavingOn;
+        %tmp.127 = not %tmp.126;
+        symbol [ _daylightSavingOn ? 305 12 29 ];
+        putv self :_daylightSavingOn %tmp.127;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 306 12 ]
+        symbol [ Application %tmp.128 306 12 23 ];
+        %tmp.128 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.129 306 24 34 ];
+        %tmp.129 = getv %tmp.128 :Properties;
+        symbol [ setValue %tmp.130 306 35 43 ];
+        %tmp.130 = getv function %tmp.129 :setValue;
+        %tmp.131 = "daylightSaving";
+        symbol [ _daylightSavingOn %tmp.133 306 62 79 ];
+        %tmp.133 = getv ? :_daylightSavingOn;
+        invoke %tmp.129 %tmp.130(%tmp.131, %tmp.133);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_304_46_307_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_304_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_304_13_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 308 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_308_13_336_8_if_stmt:
+        %tmp.134 = lgetv %id.1;
+        symbol [ id %tmp.134 308 17 19 ];
+        symbol [ equals %tmp.135 308 20 26 ];
+        %tmp.135 = getv function %tmp.134 :equals;
+        %tmp.136 = "timeZone";
+        %tmp.137 = invoke %tmp.134 %tmp.135(%tmp.136);
+        bf %tmp.137 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_308_13_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_308_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_308_40_312_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 309 12 ]
+        symbol [ _timeZone %tmp.139 309 25 34 ];
+        %tmp.139 = getv ? :_timeZone;
+        %tmp.140 = 1;
+        %tmp.141 = add %tmp.139 %tmp.140;
+        symbol [ timeZoneNames %tmp.143 309 42 55 ];
+        %tmp.143 = getv ? :timeZoneNames;
+        symbol [ size %tmp.144 309 56 60 ];
+        %tmp.144 = getv function %tmp.143 :size;
+        %tmp.145 = invoke %tmp.143 %tmp.144();
+        %tmp.146 = mod %tmp.141 %tmp.145;
+        symbol [ _timeZone ? 309 12 21 ];
+        putv self :_timeZone %tmp.146;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 310 12 ]
+        %tmp.147 = lgetv %subMenuItem;
+        symbol [ subMenuItem %tmp.147 310 12 23 ];
+        symbol [ setSubLabel %tmp.148 310 24 35 ];
+        %tmp.148 = getv function %tmp.147 :setSubLabel;
+        symbol [ timeZoneNames %tmp.150 310 36 49 ];
+        %tmp.150 = getv ? :timeZoneNames;
+        symbol [ _timeZone %tmp.152 310 50 59 ];
+        %tmp.152 = getv ? :_timeZone;
+        %tmp.153 = agetv %tmp.150 %tmp.152;
+        invoke %tmp.147 %tmp.148(%tmp.153);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 311 12 ]
+        symbol [ Application %tmp.154 311 12 23 ];
+        %tmp.154 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.155 311 24 34 ];
+        %tmp.155 = getv %tmp.154 :Properties;
+        symbol [ setValue %tmp.156 311 35 43 ];
+        %tmp.156 = getv function %tmp.155 :setValue;
+        %tmp.157 = "timeZone";
+        symbol [ _timeZone %tmp.159 311 56 65 ];
+        %tmp.159 = getv ? :_timeZone;
+        invoke %tmp.155 %tmp.156(%tmp.157, %tmp.159);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_308_40_312_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_308_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_308_13_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 313 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_313_13_336_8_if_stmt:
+        %tmp.160 = lgetv %id.1;
+        symbol [ id %tmp.160 313 17 19 ];
+        symbol [ equals %tmp.161 313 20 26 ];
+        %tmp.161 = getv function %tmp.160 :equals;
+        %tmp.162 = "batteryColourLevelOn";
+        %tmp.163 = invoke %tmp.160 %tmp.161(%tmp.162);
+        bf %tmp.163 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_313_13_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_313_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_313_52_316_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 314 12 ]
+        symbol [ _batteryColourLevelOn %tmp.165 314 37 58 ];
+        %tmp.165 = getv ? :_batteryColourLevelOn;
+        %tmp.166 = not %tmp.165;
+        symbol [ _batteryColourLevelOn ? 314 12 33 ];
+        putv self :_batteryColourLevelOn %tmp.166;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 315 12 ]
+        symbol [ Application %tmp.167 315 12 23 ];
+        %tmp.167 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.168 315 24 34 ];
+        %tmp.168 = getv %tmp.167 :Properties;
+        symbol [ setValue %tmp.169 315 35 43 ];
+        %tmp.169 = getv function %tmp.168 :setValue;
+        %tmp.170 = "batteryColourLevelOn";
+        symbol [ _batteryColourLevelOn %tmp.172 315 68 89 ];
+        %tmp.172 = getv ? :_batteryColourLevelOn;
+        invoke %tmp.168 %tmp.169(%tmp.170, %tmp.172);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_313_52_316_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_313_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_313_13_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 317 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_317_13_336_8_if_stmt:
+        %tmp.173 = lgetv %id.1;
+        symbol [ id %tmp.173 317 17 19 ];
+        symbol [ equals %tmp.174 317 20 26 ];
+        %tmp.174 = getv function %tmp.173 :equals;
+        %tmp.175 = "moveBarOn";
+        %tmp.176 = invoke %tmp.173 %tmp.174(%tmp.175);
+        bf %tmp.176 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_317_13_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_317_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_317_41_320_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 318 12 ]
+        symbol [ _moveBarOn %tmp.178 318 26 36 ];
+        %tmp.178 = getv ? :_moveBarOn;
+        %tmp.179 = not %tmp.178;
+        symbol [ _moveBarOn ? 318 12 22 ];
+        putv self :_moveBarOn %tmp.179;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 319 12 ]
+        symbol [ Application %tmp.180 319 12 23 ];
+        %tmp.180 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.181 319 24 34 ];
+        %tmp.181 = getv %tmp.180 :Properties;
+        symbol [ setValue %tmp.182 319 35 43 ];
+        %tmp.182 = getv function %tmp.181 :setValue;
+        %tmp.183 = "moveBarOn";
+        symbol [ _moveBarOn %tmp.185 319 57 67 ];
+        %tmp.185 = getv ? :_moveBarOn;
+        invoke %tmp.181 %tmp.182(%tmp.183, %tmp.185);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_317_41_320_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_317_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_317_13_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 321 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_321_13_336_8_if_stmt:
+        %tmp.186 = lgetv %id.1;
+        symbol [ id %tmp.186 321 17 19 ];
+        symbol [ equals %tmp.187 321 20 26 ];
+        %tmp.187 = getv function %tmp.186 :equals;
+        %tmp.188 = "doNotDisturbOn";
+        %tmp.189 = invoke %tmp.186 %tmp.187(%tmp.188);
+        bf %tmp.189 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_321_13_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_321_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_321_46_324_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 322 12 ]
+        symbol [ _doNotDisturbOn %tmp.191 322 31 46 ];
+        %tmp.191 = getv ? :_doNotDisturbOn;
+        %tmp.192 = not %tmp.191;
+        symbol [ _doNotDisturbOn ? 322 12 27 ];
+        putv self :_doNotDisturbOn %tmp.192;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 323 12 ]
+        symbol [ Application %tmp.193 323 12 23 ];
+        %tmp.193 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.194 323 24 34 ];
+        %tmp.194 = getv %tmp.193 :Properties;
+        symbol [ setValue %tmp.195 323 35 43 ];
+        %tmp.195 = getv function %tmp.194 :setValue;
+        %tmp.196 = "doNotDisturbOn";
+        symbol [ _doNotDisturbOn %tmp.198 323 62 77 ];
+        %tmp.198 = getv ? :_doNotDisturbOn;
+        invoke %tmp.194 %tmp.195(%tmp.196, %tmp.198);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_321_46_324_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_321_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_321_13_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 325 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_325_13_336_8_if_stmt:
+        %tmp.199 = lgetv %id.1;
+        symbol [ id %tmp.199 325 17 19 ];
+        symbol [ equals %tmp.200 325 20 26 ];
+        %tmp.200 = getv function %tmp.199 :equals;
+        %tmp.201 = "bluetoothStatus";
+        %tmp.202 = invoke %tmp.199 %tmp.200(%tmp.201);
+        bf %tmp.202 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_325_13_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_325_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_325_47_328_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 326 12 ]
+        symbol [ _bluetoothStatus %tmp.204 326 32 48 ];
+        %tmp.204 = getv ? :_bluetoothStatus;
+        %tmp.205 = not %tmp.204;
+        symbol [ _bluetoothStatus ? 326 12 28 ];
+        putv self :_bluetoothStatus %tmp.205;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 327 12 ]
+        symbol [ Application %tmp.206 327 12 23 ];
+        %tmp.206 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.207 327 24 34 ];
+        %tmp.207 = getv %tmp.206 :Properties;
+        symbol [ setValue %tmp.208 327 35 43 ];
+        %tmp.208 = getv function %tmp.207 :setValue;
+        %tmp.209 = "bluetoothStatus";
+        symbol [ _bluetoothStatus %tmp.211 327 63 79 ];
+        %tmp.211 = getv ? :_bluetoothStatus;
+        invoke %tmp.207 %tmp.208(%tmp.209, %tmp.211);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_325_47_328_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_325_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_325_13_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 329 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_329_13_336_8_if_stmt:
+        %tmp.212 = lgetv %id.1;
+        symbol [ id %tmp.212 329 17 19 ];
+        symbol [ equals %tmp.213 329 20 26 ];
+        %tmp.213 = getv function %tmp.212 :equals;
+        %tmp.214 = "lowPowerSeconds";
+        %tmp.215 = invoke %tmp.212 %tmp.213(%tmp.214);
+        bf %tmp.215 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_329_13_336_8_if_false;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_329_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_329_47_332_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 330 12 ]
+        symbol [ _lowPowerSeconds %tmp.217 330 32 48 ];
+        %tmp.217 = getv ? :_lowPowerSeconds;
+        %tmp.218 = not %tmp.217;
+        symbol [ _lowPowerSeconds ? 330 12 28 ];
+        putv self :_lowPowerSeconds %tmp.218;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 331 12 ]
+        symbol [ Application %tmp.219 331 12 23 ];
+        %tmp.219 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.220 331 24 34 ];
+        %tmp.220 = getv %tmp.219 :Properties;
+        symbol [ setValue %tmp.221 331 35 43 ];
+        %tmp.221 = getv function %tmp.220 :setValue;
+        %tmp.222 = "lowPowerSeconds";
+        symbol [ _lowPowerSeconds %tmp.224 331 63 79 ];
+        %tmp.224 = getv ? :_lowPowerSeconds;
+        invoke %tmp.220 %tmp.221(%tmp.222, %tmp.224);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_329_47_332_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_329_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_329_13_336_8_if_false:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 333 13 ]
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_333_13_336_8_if_stmt:
+        %tmp.225 = lgetv %id.1;
+        symbol [ id %tmp.225 333 17 19 ];
+        symbol [ equals %tmp.226 333 20 26 ];
+        %tmp.226 = getv function %tmp.225 :equals;
+        %tmp.227 = "touchOn";
+        %tmp.228 = invoke %tmp.225 %tmp.226(%tmp.227);
+        bf %tmp.228 @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_333_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_333_13_336_8_if_true:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_333_39_336_8_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 334 12 ]
+        symbol [ _touchOn %tmp.230 334 24 32 ];
+        %tmp.230 = getv ? :_touchOn;
+        %tmp.231 = not %tmp.230;
+        symbol [ _touchOn ? 334 12 20 ];
+        putv self :_touchOn %tmp.231;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 335 12 ]
+        symbol [ Application %tmp.232 335 12 23 ];
+        %tmp.232 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.233 335 24 34 ];
+        %tmp.233 = getv %tmp.232 :Properties;
+        symbol [ setValue %tmp.234 335 35 43 ];
+        %tmp.234 = getv function %tmp.233 :setValue;
+        %tmp.235 = "touchOn";
+        symbol [ _touchOn %tmp.237 335 55 63 ];
+        %tmp.237 = getv ? :_touchOn;
+        invoke %tmp.233 %tmp.234(%tmp.235, %tmp.237);
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_333_39_336_8_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_333_13_336_8_if_end;
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_333_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_329_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_325_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_321_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_317_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_313_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_308_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_304_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_300_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_295_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_290_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_285_13_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_280_8_336_8_if_end:
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_277_35_337_1_stop:
+    }
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 339; @symbol_functiondef = [onBack,339,13,19]; ]
+    function onBack() {
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_339_22_343_4_start:
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 340 8 ]
+        symbol [ WatchUi %tmp.1 340 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 340 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 340 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.4 340 32 47 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 341 8 ]
+        %tmp.5 = true;
+        symbol [ settingsChanged ? 341 8 23 ];
+        putv self :settingsChanged %tmp.5;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 342 8 ]
+        symbol [ WatchUi %tmp.6 342 8 15 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.7 342 16 29 ];
+        %tmp.7 = getv function %tmp.6 :requestUpdate;
+        invoke %tmp.6 %tmp.7();
+D__OneDrive_Garmin_Source_Casio_A171WE_1A_source_AnalogApp_mc_339_22_343_4_stop:
+    }
+}
+[ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc"; @line = 7; ]
+<init> {
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 22 4 ]
+    %tmp.8 = newa 3;
+    %tmp.9 = "Smaller";
+    %tmp.10 = dup %tmp.8;
+    %tmp.11 = aputv %tmp.10 0 %tmp.9;
+    %tmp.12 = "Default";
+    %tmp.13 = dup %tmp.11;
+    %tmp.14 = aputv %tmp.13 1 %tmp.12;
+    %tmp.15 = "Larger";
+    %tmp.16 = dup %tmp.14;
+    %tmp.17 = aputv %tmp.16 2 %tmp.15;
+    putv self :fontSizeAdjustNames %tmp.17;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 25 4 ]
+    %tmp.18 = newa 2;
+    %tmp.19 = "km";
+    %tmp.20 = dup %tmp.18;
+    %tmp.21 = aputv %tmp.20 0 %tmp.19;
+    %tmp.22 = "miles";
+    %tmp.23 = dup %tmp.21;
+    %tmp.24 = aputv %tmp.23 1 %tmp.22;
+    putv self :kmmilesNames %tmp.24;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 28 4 ]
+    %tmp.25 = newa 2;
+    %tmp.26 = "meters";
+    %tmp.27 = dup %tmp.25;
+    %tmp.28 = aputv %tmp.27 0 %tmp.26;
+    %tmp.29 = "feet";
+    %tmp.30 = dup %tmp.28;
+    %tmp.31 = aputv %tmp.30 1 %tmp.29;
+    putv self :metersfeetNames %tmp.31;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 31 4 ]
+    %tmp.32 = newa 4;
+    %tmp.33 = "hPa";
+    %tmp.34 = dup %tmp.32;
+    %tmp.35 = aputv %tmp.34 0 %tmp.33;
+    %tmp.36 = "millibar";
+    %tmp.37 = dup %tmp.35;
+    %tmp.38 = aputv %tmp.37 1 %tmp.36;
+    %tmp.39 = "mmHg";
+    %tmp.40 = dup %tmp.38;
+    %tmp.41 = aputv %tmp.40 2 %tmp.39;
+    %tmp.42 = "inHg";
+    %tmp.43 = dup %tmp.41;
+    %tmp.44 = aputv %tmp.43 3 %tmp.42;
+    putv self :pressureNames %tmp.44;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 34 4 ]
+    %tmp.45 = newa 2;
+    %tmp.46 = "Celsius";
+    %tmp.47 = dup %tmp.45;
+    %tmp.48 = aputv %tmp.47 0 %tmp.46;
+    %tmp.49 = "Fahrenheit";
+    %tmp.50 = dup %tmp.48;
+    %tmp.51 = aputv %tmp.50 1 %tmp.49;
+    putv self :celsiusfahrenheitNames %tmp.51;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 40 4 ]
+    %tmp.52 = newa 57;
+    %tmp.53 = "(UTC-12) Intl Date Line";
+    %tmp.54 = dup %tmp.52;
+    %tmp.55 = aputv %tmp.54 0 %tmp.53;
+    %tmp.56 = "(UTC-11) Midway, Samoa";
+    %tmp.57 = dup %tmp.55;
+    %tmp.58 = aputv %tmp.57 1 %tmp.56;
+    %tmp.59 = "(UTC-10) Hawaii";
+    %tmp.60 = dup %tmp.58;
+    %tmp.61 = aputv %tmp.60 2 %tmp.59;
+    %tmp.62 = "(UTC-9) Alaska";
+    %tmp.63 = dup %tmp.61;
+    %tmp.64 = aputv %tmp.63 3 %tmp.62;
+    %tmp.65 = "(UTC-8) Pacific Time";
+    %tmp.66 = dup %tmp.64;
+    %tmp.67 = aputv %tmp.66 4 %tmp.65;
+    %tmp.68 = "(UTC-7) Mountain Time";
+    %tmp.69 = dup %tmp.67;
+    %tmp.70 = aputv %tmp.69 5 %tmp.68;
+    %tmp.71 = "(UTC-6) Central America";
+    %tmp.72 = dup %tmp.70;
+    %tmp.73 = aputv %tmp.72 6 %tmp.71;
+    %tmp.74 = "(UTC-6) Central Time";
+    %tmp.75 = dup %tmp.73;
+    %tmp.76 = aputv %tmp.75 7 %tmp.74;
+    %tmp.77 = "(UTC-5) Eastern Time";
+    %tmp.78 = dup %tmp.76;
+    %tmp.79 = aputv %tmp.78 8 %tmp.77;
+    %tmp.80 = "(UTC-4) Atlantic Time";
+    %tmp.81 = dup %tmp.79;
+    %tmp.82 = aputv %tmp.81 9 %tmp.80;
+    %tmp.83 = "(UTC-3:30) Newfoundland";
+    %tmp.84 = dup %tmp.82;
+    %tmp.85 = aputv %tmp.84 10 %tmp.83;
+    %tmp.86 = "(UTC-3) Brasilia";
+    %tmp.87 = dup %tmp.85;
+    %tmp.88 = aputv %tmp.87 11 %tmp.86;
+    %tmp.89 = "(UTC-2) Mid-Atlantic";
+    %tmp.90 = dup %tmp.88;
+    %tmp.91 = aputv %tmp.90 12 %tmp.89;
+    %tmp.92 = "(UTC-1) Azores";
+    %tmp.93 = dup %tmp.91;
+    %tmp.94 = aputv %tmp.93 13 %tmp.92;
+    %tmp.95 = "(UTC+0) Casablanca";
+    %tmp.96 = dup %tmp.94;
+    %tmp.97 = aputv %tmp.96 14 %tmp.95;
+    %tmp.98 = "(UTC+0) London";
+    %tmp.99 = dup %tmp.97;
+    %tmp.100 = aputv %tmp.99 15 %tmp.98;
+    %tmp.101 = "(UTC+1) Amsterdam, Berlin";
+    %tmp.102 = dup %tmp.100;
+    %tmp.103 = aputv %tmp.102 16 %tmp.101;
+    %tmp.104 = "(UTC+1) Belgrade, Prague";
+    %tmp.105 = dup %tmp.103;
+    %tmp.106 = aputv %tmp.105 17 %tmp.104;
+    %tmp.107 = "(UTC+1) Brussels, Paris";
+    %tmp.108 = dup %tmp.106;
+    %tmp.109 = aputv %tmp.108 18 %tmp.107;
+    %tmp.110 = "(UTC+1) Sarajevo, Warsaw";
+    %tmp.111 = dup %tmp.109;
+    %tmp.112 = aputv %tmp.111 19 %tmp.110;
+    %tmp.113 = "(UTC+1) West Africa";
+    %tmp.114 = dup %tmp.112;
+    %tmp.115 = aputv %tmp.114 20 %tmp.113;
+    %tmp.116 = "(UTC+2) Athens, Istanbul";
+    %tmp.117 = dup %tmp.115;
+    %tmp.118 = aputv %tmp.117 21 %tmp.116;
+    %tmp.119 = "(UTC+2) Beirut, Cairo";
+    %tmp.120 = dup %tmp.118;
+    %tmp.121 = aputv %tmp.120 22 %tmp.119;
+    %tmp.122 = "(UTC+2) Helsinki, Kyiv";
+    %tmp.123 = dup %tmp.121;
+    %tmp.124 = aputv %tmp.123 23 %tmp.122;
+    %tmp.125 = "(UTC+2) Jerusalem";
+    %tmp.126 = dup %tmp.124;
+    %tmp.127 = aputv %tmp.126 24 %tmp.125;
+    %tmp.128 = "(UTC+3) Kuwait, Riyadh";
+    %tmp.129 = dup %tmp.127;
+    %tmp.130 = aputv %tmp.129 25 %tmp.128;
+    %tmp.131 = "(UTC+3) Moscow";
+    %tmp.132 = dup %tmp.130;
+    %tmp.133 = aputv %tmp.132 26 %tmp.131;
+    %tmp.134 = "(UTC+3) Nairobi";
+    %tmp.135 = dup %tmp.133;
+    %tmp.136 = aputv %tmp.135 27 %tmp.134;
+    %tmp.137 = "(UTC+3:30) Tehran";
+    %tmp.138 = dup %tmp.136;
+    %tmp.139 = aputv %tmp.138 28 %tmp.137;
+    %tmp.140 = "(UTC+4) Abu Dhabi";
+    %tmp.141 = dup %tmp.139;
+    %tmp.142 = aputv %tmp.141 29 %tmp.140;
+    %tmp.143 = "(UTC+4) Baku";
+    %tmp.144 = dup %tmp.142;
+    %tmp.145 = aputv %tmp.144 30 %tmp.143;
+    %tmp.146 = "(UTC+4:30) Kabul";
+    %tmp.147 = dup %tmp.145;
+    %tmp.148 = aputv %tmp.147 31 %tmp.146;
+    %tmp.149 = "(UTC+5) Yekaterinburg";
+    %tmp.150 = dup %tmp.148;
+    %tmp.151 = aputv %tmp.150 32 %tmp.149;
+    %tmp.152 = "(UTC+5) Islamabad";
+    %tmp.153 = dup %tmp.151;
+    %tmp.154 = aputv %tmp.153 33 %tmp.152;
+    %tmp.155 = "(UTC+5:30) Sri Lanka";
+    %tmp.156 = dup %tmp.154;
+    %tmp.157 = aputv %tmp.156 34 %tmp.155;
+    %tmp.158 = "(UTC+5:30) Mumbai, Delhi";
+    %tmp.159 = dup %tmp.157;
+    %tmp.160 = aputv %tmp.159 35 %tmp.158;
+    %tmp.161 = "(UTC+5:45) Kathmandu";
+    %tmp.162 = dup %tmp.160;
+    %tmp.163 = aputv %tmp.162 36 %tmp.161;
+    %tmp.164 = "(UTC+6) Almaty";
+    %tmp.165 = dup %tmp.163;
+    %tmp.166 = aputv %tmp.165 37 %tmp.164;
+    %tmp.167 = "(UTC+6) Astana, Dhaka";
+    %tmp.168 = dup %tmp.166;
+    %tmp.169 = aputv %tmp.168 38 %tmp.167;
+    %tmp.170 = "(UTC+6:30) Yangon";
+    %tmp.171 = dup %tmp.169;
+    %tmp.172 = aputv %tmp.171 39 %tmp.170;
+    %tmp.173 = "(UTC+7) Bangkok, Jakarta";
+    %tmp.174 = dup %tmp.172;
+    %tmp.175 = aputv %tmp.174 40 %tmp.173;
+    %tmp.176 = "(UTC+7) Krasnoyarsk";
+    %tmp.177 = dup %tmp.175;
+    %tmp.178 = aputv %tmp.177 41 %tmp.176;
+    %tmp.179 = "(UTC+8) Beijing, HK";
+    %tmp.180 = dup %tmp.178;
+    %tmp.181 = aputv %tmp.180 42 %tmp.179;
+    %tmp.182 = "(UTC+8) Kuala Lumpur";
+    %tmp.183 = dup %tmp.181;
+    %tmp.184 = aputv %tmp.183 43 %tmp.182;
+    %tmp.185 = "(UTC+8) Irkutsk";
+    %tmp.186 = dup %tmp.184;
+    %tmp.187 = aputv %tmp.186 44 %tmp.185;
+    %tmp.188 = "(UTC+8) Perth";
+    %tmp.189 = dup %tmp.187;
+    %tmp.190 = aputv %tmp.189 45 %tmp.188;
+    %tmp.191 = "(UTC+9) Tokyo";
+    %tmp.192 = dup %tmp.190;
+    %tmp.193 = aputv %tmp.192 46 %tmp.191;
+    %tmp.194 = "(UTC+9) Seoul";
+    %tmp.195 = dup %tmp.193;
+    %tmp.196 = aputv %tmp.195 47 %tmp.194;
+    %tmp.197 = "(UTC+9:30) Adelaide";
+    %tmp.198 = dup %tmp.196;
+    %tmp.199 = aputv %tmp.198 48 %tmp.197;
+    %tmp.200 = "(UTC+9:30) Darwin";
+    %tmp.201 = dup %tmp.199;
+    %tmp.202 = aputv %tmp.201 49 %tmp.200;
+    %tmp.203 = "(UTC+10) Brisbane, Sydney";
+    %tmp.204 = dup %tmp.202;
+    %tmp.205 = aputv %tmp.204 50 %tmp.203;
+    %tmp.206 = "(UTC+10) Guam";
+    %tmp.207 = dup %tmp.205;
+    %tmp.208 = aputv %tmp.207 51 %tmp.206;
+    %tmp.209 = "(UTC+10) Vladivostok";
+    %tmp.210 = dup %tmp.208;
+    %tmp.211 = aputv %tmp.210 52 %tmp.209;
+    %tmp.212 = "(UTC+11) Magadan";
+    %tmp.213 = dup %tmp.211;
+    %tmp.214 = aputv %tmp.213 53 %tmp.212;
+    %tmp.215 = "(UTC+12) Auckland";
+    %tmp.216 = dup %tmp.214;
+    %tmp.217 = aputv %tmp.216 54 %tmp.215;
+    %tmp.218 = "(UTC+12) Fiji";
+    %tmp.219 = dup %tmp.217;
+    %tmp.220 = aputv %tmp.219 55 %tmp.218;
+    %tmp.221 = "(UTC+13) Nuku'alofa";
+    %tmp.222 = dup %tmp.220;
+    %tmp.223 = aputv %tmp.222 56 %tmp.221;
+    putv self :timeZoneNames %tmp.223;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 101 4 ]
+    %tmp.224 = newa 28;
+    %tmp.225 = 0;
+    %tmp.226 = dup %tmp.224;
+    %tmp.227 = aputv %tmp.226 0 %tmp.225;
+    %tmp.228 = 1;
+    %tmp.229 = dup %tmp.227;
+    %tmp.230 = aputv %tmp.229 1 %tmp.228;
+    %tmp.231 = 2;
+    %tmp.232 = dup %tmp.230;
+    %tmp.233 = aputv %tmp.232 2 %tmp.231;
+    %tmp.234 = 23;
+    %tmp.235 = dup %tmp.233;
+    %tmp.236 = aputv %tmp.235 3 %tmp.234;
+    %tmp.237 = 3;
+    %tmp.238 = dup %tmp.236;
+    %tmp.239 = aputv %tmp.238 4 %tmp.237;
+    %tmp.240 = 4;
+    %tmp.241 = dup %tmp.239;
+    %tmp.242 = aputv %tmp.241 5 %tmp.240;
+    %tmp.243 = 5;
+    %tmp.244 = dup %tmp.242;
+    %tmp.245 = aputv %tmp.244 6 %tmp.243;
+    %tmp.246 = 6;
+    %tmp.247 = dup %tmp.245;
+    %tmp.248 = aputv %tmp.247 7 %tmp.246;
+    %tmp.249 = 7;
+    %tmp.250 = dup %tmp.248;
+    %tmp.251 = aputv %tmp.250 8 %tmp.249;
+    %tmp.252 = 26;
+    %tmp.253 = dup %tmp.251;
+    %tmp.254 = aputv %tmp.253 9 %tmp.252;
+    %tmp.255 = 27;
+    %tmp.256 = dup %tmp.254;
+    %tmp.257 = aputv %tmp.256 10 %tmp.255;
+    %tmp.258 = 8;
+    %tmp.259 = dup %tmp.257;
+    %tmp.260 = aputv %tmp.259 11 %tmp.258;
+    %tmp.261 = 9;
+    %tmp.262 = dup %tmp.260;
+    %tmp.263 = aputv %tmp.262 12 %tmp.261;
+    %tmp.264 = 10;
+    %tmp.265 = dup %tmp.263;
+    %tmp.266 = aputv %tmp.265 13 %tmp.264;
+    %tmp.267 = 11;
+    %tmp.268 = dup %tmp.266;
+    %tmp.269 = aputv %tmp.268 14 %tmp.267;
+    %tmp.270 = 12;
+    %tmp.271 = dup %tmp.269;
+    %tmp.272 = aputv %tmp.271 15 %tmp.270;
+    %tmp.273 = 13;
+    %tmp.274 = dup %tmp.272;
+    %tmp.275 = aputv %tmp.274 16 %tmp.273;
+    %tmp.276 = 21;
+    %tmp.277 = dup %tmp.275;
+    %tmp.278 = aputv %tmp.277 17 %tmp.276;
+    %tmp.279 = 14;
+    %tmp.280 = dup %tmp.278;
+    %tmp.281 = aputv %tmp.280 18 %tmp.279;
+    %tmp.282 = 15;
+    %tmp.283 = dup %tmp.281;
+    %tmp.284 = aputv %tmp.283 19 %tmp.282;
+    %tmp.285 = 22;
+    %tmp.286 = dup %tmp.284;
+    %tmp.287 = aputv %tmp.286 20 %tmp.285;
+    %tmp.288 = 16;
+    %tmp.289 = dup %tmp.287;
+    %tmp.290 = aputv %tmp.289 21 %tmp.288;
+    %tmp.291 = 17;
+    %tmp.292 = dup %tmp.290;
+    %tmp.293 = aputv %tmp.292 22 %tmp.291;
+    %tmp.294 = 18;
+    %tmp.295 = dup %tmp.293;
+    %tmp.296 = aputv %tmp.295 23 %tmp.294;
+    %tmp.297 = 19;
+    %tmp.298 = dup %tmp.296;
+    %tmp.299 = aputv %tmp.298 24 %tmp.297;
+    %tmp.300 = 20;
+    %tmp.301 = dup %tmp.299;
+    %tmp.302 = aputv %tmp.301 25 %tmp.300;
+    %tmp.303 = 25;
+    %tmp.304 = dup %tmp.302;
+    %tmp.305 = aputv %tmp.304 26 %tmp.303;
+    %tmp.306 = 24;
+    %tmp.307 = dup %tmp.305;
+    %tmp.308 = aputv %tmp.307 27 %tmp.306;
+    putv self :casioDataFieldValues %tmp.308;
+[ "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogApp.mc" 102 4 ]
+    %tmp.309 = newa 28;
+    %tmp.310 = "OFF";
+    %tmp.311 = dup %tmp.309;
+    %tmp.312 = aputv %tmp.311 0 %tmp.310;
+    %tmp.313 = "2nd Time";
+    %tmp.314 = dup %tmp.312;
+    %tmp.315 = aputv %tmp.314 1 %tmp.313;
+    %tmp.316 = "Battery";
+    %tmp.317 = dup %tmp.315;
+    %tmp.318 = aputv %tmp.317 2 %tmp.316;
+    %tmp.319 = "Body Battery";
+    %tmp.320 = dup %tmp.318;
+    %tmp.321 = aputv %tmp.320 3 %tmp.319;
+    %tmp.322 = "Distance (day)";
+    %tmp.323 = dup %tmp.321;
+    %tmp.324 = aputv %tmp.323 4 %tmp.322;
+    %tmp.325 = "Distance (week)";
+    %tmp.326 = dup %tmp.324;
+    %tmp.327 = aputv %tmp.326 5 %tmp.325;
+    %tmp.328 = "Calories";
+    %tmp.329 = dup %tmp.327;
+    %tmp.330 = aputv %tmp.329 6 %tmp.328;
+    %tmp.331 = "Steps";
+    %tmp.332 = dup %tmp.330;
+    %tmp.333 = aputv %tmp.332 7 %tmp.331;
+    %tmp.334 = "Floors";
+    %tmp.335 = dup %tmp.333;
+    %tmp.336 = aputv %tmp.335 8 %tmp.334;
+    %tmp.337 = "Active min (day)";
+    %tmp.338 = dup %tmp.336;
+    %tmp.339 = aputv %tmp.338 9 %tmp.337;
+    %tmp.340 = "Active min (week)";
+    %tmp.341 = dup %tmp.339;
+    %tmp.342 = aputv %tmp.341 10 %tmp.340;
+    %tmp.343 = "Heart Rate";
+    %tmp.344 = dup %tmp.342;
+    %tmp.345 = aputv %tmp.344 11 %tmp.343;
+    %tmp.346 = "Notifications";
+    %tmp.347 = dup %tmp.345;
+    %tmp.348 = aputv %tmp.347 12 %tmp.346;
+    %tmp.349 = "Alarms";
+    %tmp.350 = dup %tmp.348;
+    %tmp.351 = aputv %tmp.350 13 %tmp.349;
+    %tmp.352 = "Next Sun Event";
+    %tmp.353 = dup %tmp.351;
+    %tmp.354 = aputv %tmp.353 14 %tmp.352;
+    %tmp.355 = "Sunrise";
+    %tmp.356 = dup %tmp.354;
+    %tmp.357 = aputv %tmp.356 15 %tmp.355;
+    %tmp.358 = "Sunset";
+    %tmp.359 = dup %tmp.357;
+    %tmp.360 = aputv %tmp.359 16 %tmp.358;
+    %tmp.361 = "Sunrise+Sunset";
+    %tmp.362 = dup %tmp.360;
+    %tmp.363 = aputv %tmp.362 17 %tmp.361;
+    %tmp.364 = "Latitude";
+    %tmp.365 = dup %tmp.363;
+    %tmp.366 = aputv %tmp.365 18 %tmp.364;
+    %tmp.367 = "Longitude";
+    %tmp.368 = dup %tmp.366;
+    %tmp.369 = aputv %tmp.368 19 %tmp.367;
+    %tmp.370 = "Lat+Long";
+    %tmp.371 = dup %tmp.369;
+    %tmp.372 = aputv %tmp.371 20 %tmp.370;
+    %tmp.373 = "Altitude";
+    %tmp.374 = dup %tmp.372;
+    %tmp.375 = aputv %tmp.374 21 %tmp.373;
+    %tmp.376 = "Sea Lvl Pressure";
+    %tmp.377 = dup %tmp.375;
+    %tmp.378 = aputv %tmp.377 22 %tmp.376;
+    %tmp.379 = "Ambient Pressure";
+    %tmp.380 = dup %tmp.378;
+    %tmp.381 = aputv %tmp.380 23 %tmp.379;
+    %tmp.382 = "Pressure History";
+    %tmp.383 = dup %tmp.381;
+    %tmp.384 = aputv %tmp.383 24 %tmp.382;
+    %tmp.385 = "Temperature";
+    %tmp.386 = dup %tmp.384;
+    %tmp.387 = aputv %tmp.386 25 %tmp.385;
+    %tmp.388 = "Outside Temp";
+    %tmp.389 = dup %tmp.387;
+    %tmp.390 = aputv %tmp.389 26 %tmp.388;
+    %tmp.391 = "Recovery";
+    %tmp.392 = dup %tmp.390;
+    %tmp.393 = aputv %tmp.392 27 %tmp.391;
+    putv self :casioDataFieldNames %tmp.393;
+}

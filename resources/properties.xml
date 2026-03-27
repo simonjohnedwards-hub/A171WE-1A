@@ -1,0 +1,26 @@
+<properties>
+    <property id="appVersion" type="string"></property>
+    <property id="sunsetOn" type="boolean">false</property>
+    <property id="wakeTime" type="boolean">false</property>
+    <property id="twelvehourtime" type="boolean">true</property>
+    <property id="casioDataField" type="number">2</property>
+    <property id="casioDataFieldLeft" type="number">0</property>
+    <property id="kmmiles" type="number">0</property>
+    <property id="metersfeet" type="number">0</property>
+    <property id="pressure" type="number">0</property>
+    <property id="celsiusfahrenheit" type="number">0</property>
+    <property id="doNotDisturbOn" type="boolean">false</property>
+    <property id="moveBarOn" type="boolean">false</property>
+    <property id="batteryColourLevelOn" type="boolean">false</property>
+    <property id="topText" type="string">NOMIS</property>
+    <property id="lowPowerSeconds" type="boolean">false</property>
+    <property id="bluetoothStatus" type="boolean">true</property>
+    <property id="dateNotificationOn" type="boolean">false</property>
+    <property id="leftNotificationOn" type="boolean">false</property>
+    <property id="rightNotificationOn" type="boolean">false</property>
+    <property id="daylightSaving" type="boolean">false</property>
+    <property id="timeZoneOn" type="boolean">false</property>
+    <property id="timeZone" type="number">15</property>
+    <property id="touchOn" type="boolean">true</property>
+    <property id="fontSizeAdjust" type="number">0</property>
+</properties>

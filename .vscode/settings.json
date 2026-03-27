@@ -1,0 +1,9 @@
+{
+    "monkeyC.optimizationLevel": "Default",
+    "monkeyC.typeCheckLevel": "Off",
+    "github.codespaces.defaultExtensions": [
+        
+        "GitHub.codespaces",
+        "GitHub.vscode-pull-request-github"
+    ]
+}

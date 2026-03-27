@@ -1,0 +1,539 @@
+[ @file = "Rez.mc"; @line = 1; ]
+module Rez {
+    [ @file = "Rez.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "Rez.mc"; @line = 2; ]
+    module Drawables {
+        [ @file = "Rez.mc"; @line = 2; ]
+        <init> {
+        }
+        [ @file = "Rez.mc"; @line = 3; ]
+        import Toybox.Lang;
+        [ @file = "Rez.mc"; @line = 4; @position = 19; initialized = true; ]
+        var DoNotDisturbIcon as Symbol;
+        [ @file = "Rez.mc"; @line = 5; @position = 19; initialized = true; ]
+        var LauncherIcon as Symbol;
+    }
+    [ @file = "Rez.mc"; @line = 7; ]
+    module Fonts {
+        [ @file = "Rez.mc"; @line = 7; ]
+        <init> {
+        }
+        [ @file = "Rez.mc"; @line = 8; ]
+        import Toybox.Lang;
+        [ @file = "Rez.mc"; @line = 9; @position = 19; initialized = true; ]
+        var id_font_black_diamond as Symbol;
+        [ @file = "Rez.mc"; @line = 10; @position = 19; initialized = true; ]
+        var id_font_CleanAnalogFont as Symbol;
+    }
+    [ @file = "Rez.mc"; @line = 12; ]
+    module JsonData {
+        [ @file = "Rez.mc"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "Rez.mc"; @line = 13; ]
+        import Toybox.Lang;
+        [ @file = "Rez.mc"; @line = 14; @position = 19; initialized = true; ]
+        var arrayTimeZones as Symbol;
+        [ @file = "Rez.mc"; @line = 15; @position = 19; initialized = true; ]
+        var arrayColours as Symbol;
+        [ @file = "Rez.mc"; @line = 16; @position = 19; initialized = true; ]
+        var arrayDays as Symbol;
+        [ @file = "Rez.mc"; @line = 17; @position = 19; initialized = true; ]
+        var arrayPressureConvert as Symbol;
+        [ @file = "Rez.mc"; @line = 18; @position = 19; initialized = true; ]
+        var arrayPressureString as Symbol;
+        [ @file = "Rez.mc"; @line = 19; @position = 19; initialized = true; ]
+        var arrayBatteryString as Symbol;
+        [ @file = "Rez.mc"; @line = 20; @position = 19; initialized = true; ]
+        var Default as Symbol;
+        [ @file = "Rez.mc"; @line = 21; @position = 19; initialized = true; ]
+        var Smart as Symbol;
+        [ @file = "Rez.mc"; @line = 22; @position = 19; initialized = true; ]
+        var Evening as Symbol;
+        [ @file = "Rez.mc"; @line = 23; @position = 19; initialized = true; ]
+        var DarkBlue as Symbol;
+        [ @file = "Rez.mc"; @line = 24; @position = 19; initialized = true; ]
+        var StepsAndHeart as Symbol;
+        [ @file = "Rez.mc"; @line = 25; @position = 19; initialized = true; ]
+        var Elegant as Symbol;
+        [ @file = "Rez.mc"; @line = 26; @position = 19; initialized = true; ]
+        var SunriseSunset as Symbol;
+        [ @file = "Rez.mc"; @line = 27; @position = 19; initialized = true; ]
+        var LatitudeLongitude as Symbol;
+        [ @file = "Rez.mc"; @line = 28; @position = 19; initialized = true; ]
+        var MoveArc as Symbol;
+        [ @file = "Rez.mc"; @line = 29; @position = 19; initialized = true; ]
+        var JustForMe as Symbol;
+    }
+    [ @file = "Rez.mc"; @line = 31; ]
+    module Layouts {
+        [ @file = "Rez.mc"; @line = 31; ]
+        <init> {
+        }
+    }
+    [ @file = "Rez.mc"; @line = 33; ]
+    module Menus {
+        [ @file = "Rez.mc"; @line = 33; ]
+        <init> {
+        }
+    }
+    [ @file = "Rez.mc"; @line = 35; ]
+    module Strings {
+        [ @file = "Rez.mc"; @line = 35; ]
+        <init> {
+        }
+        [ @file = "Rez.mc"; @line = 36; ]
+        import Toybox.Lang;
+        [ @file = "Rez.mc"; @line = 37; @position = 19; initialized = true; ]
+        var Buenos as Symbol;
+        [ @file = "Rez.mc"; @line = 38; @position = 19; initialized = true; ]
+        var Belgrade as Symbol;
+        [ @file = "Rez.mc"; @line = 39; @position = 19; initialized = true; ]
+        var MMDD as Symbol;
+        [ @file = "Rez.mc"; @line = 40; @position = 19; initialized = true; ]
+        var Indiana as Symbol;
+        [ @file = "Rez.mc"; @line = 41; @position = 19; initialized = true; ]
+        var kmmilesTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 42; @position = 19; initialized = true; ]
+        var Central_America as Symbol;
+        [ @file = "Rez.mc"; @line = 43; @position = 19; initialized = true; ]
+        var Black as Symbol;
+        [ @file = "Rez.mc"; @line = 44; @position = 19; initialized = true; ]
+        var Beirut as Symbol;
+        [ @file = "Rez.mc"; @line = 45; @position = 19; initialized = true; ]
+        var Baku as Symbol;
+        [ @file = "Rez.mc"; @line = 46; @position = 19; initialized = true; ]
+        var dateFontTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 47; @position = 19; initialized = true; ]
+        var textNextToNineNumberTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 48; @position = 19; initialized = true; ]
+        var DateMonthDay as Symbol;
+        [ @file = "Rez.mc"; @line = 49; @position = 19; initialized = true; ]
+        var LtGray as Symbol;
+        [ @file = "Rez.mc"; @line = 50; @position = 19; initialized = true; ]
+        var textBox as Symbol;
+        [ @file = "Rez.mc"; @line = 51; @position = 19; initialized = true; ]
+        var preset6 as Symbol;
+        [ @file = "Rez.mc"; @line = 52; @position = 19; initialized = true; ]
+        var preset5 as Symbol;
+        [ @file = "Rez.mc"; @line = 53; @position = 19; initialized = true; ]
+        var preset4 as Symbol;
+        [ @file = "Rez.mc"; @line = 54; @position = 19; initialized = true; ]
+        var preset3 as Symbol;
+        [ @file = "Rez.mc"; @line = 55; @position = 19; initialized = true; ]
+        var timeZoneOnTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 56; @position = 19; initialized = true; ]
+        var Irkutsk as Symbol;
+        [ @file = "Rez.mc"; @line = 57; @position = 19; initialized = true; ]
+        var preset2 as Symbol;
+        [ @file = "Rez.mc"; @line = 58; @position = 19; initialized = true; ]
+        var preset1 as Symbol;
+        [ @file = "Rez.mc"; @line = 59; @position = 19; initialized = true; ]
+        var Mid_Atlantic as Symbol;
+        [ @file = "Rez.mc"; @line = 60; @position = 19; initialized = true; ]
+        var Eastern as Symbol;
+        [ @file = "Rez.mc"; @line = 61; @position = 19; initialized = true; ]
+        var preset9 as Symbol;
+        [ @file = "Rez.mc"; @line = 62; @position = 19; initialized = true; ]
+        var Atlantic as Symbol;
+        [ @file = "Rez.mc"; @line = 63; @position = 19; initialized = true; ]
+        var preset8 as Symbol;
+        [ @file = "Rez.mc"; @line = 64; @position = 19; initialized = true; ]
+        var preset7 as Symbol;
+        [ @file = "Rez.mc"; @line = 65; @position = 19; initialized = true; ]
+        var DDMM as Symbol;
+        [ @file = "Rez.mc"; @line = 66; @position = 19; initialized = true; ]
+        var totalWeekDistance as Symbol;
+        [ @file = "Rez.mc"; @line = 67; @position = 19; initialized = true; ]
+        var textNextToNineColourTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 68; @position = 19; initialized = true; ]
+        var sunrise as Symbol;
+        [ @file = "Rez.mc"; @line = 69; @position = 19; initialized = true; ]
+        var latitude as Symbol;
+        [ @file = "Rez.mc"; @line = 70; @position = 19; initialized = true; ]
+        var EvenThicker as Symbol;
+        [ @file = "Rez.mc"; @line = 71; @position = 19; initialized = true; ]
+        var Amman as Symbol;
+        [ @file = "Rez.mc"; @line = 72; @position = 19; initialized = true; ]
+        var rightTextTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 73; @position = 19; initialized = true; ]
+        var DayMonthDate as Symbol;
+        [ @file = "Rez.mc"; @line = 74; @position = 19; initialized = true; ]
+        var Yakutsk as Symbol;
+        [ @file = "Rez.mc"; @line = 75; @position = 19; initialized = true; ]
+        var Abu as Symbol;
+        [ @file = "Rez.mc"; @line = 76; @position = 19; initialized = true; ]
+        var temperature as Symbol;
+        [ @file = "Rez.mc"; @line = 77; @position = 19; initialized = true; ]
+        var Yekaterinburg as Symbol;
+        [ @file = "Rez.mc"; @line = 78; @position = 19; initialized = true; ]
+        var YYYYMMDD as Symbol;
+        [ @file = "Rez.mc"; @line = 79; @position = 19; initialized = true; ]
+        var Helsinki as Symbol;
+        [ @file = "Rez.mc"; @line = 80; @position = 19; initialized = true; ]
+        var Minsk as Symbol;
+        [ @file = "Rez.mc"; @line = 81; @position = 19; initialized = true; ]
+        var Blue as Symbol;
+        [ @file = "Rez.mc"; @line = 82; @position = 19; initialized = true; ]
+        var EvenEvenThicker as Symbol;
+        [ @file = "Rez.mc"; @line = 83; @position = 19; initialized = true; ]
+        var Hawaii as Symbol;
+        [ @file = "Rez.mc"; @line = 84; @position = 19; initialized = true; ]
+        var flipFieldsTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 85; @position = 19; initialized = true; ]
+        var metersfeetTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 86; @position = 19; initialized = true; ]
+        var MonthDateDay as Symbol;
+        [ @file = "Rez.mc"; @line = 87; @position = 19; initialized = true; ]
+        var celsiusfahrenheitTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 88; @position = 19; initialized = true; ]
+        var Tbilisi as Symbol;
+        [ @file = "Rez.mc"; @line = 89; @position = 19; initialized = true; ]
+        var Red as Symbol;
+        [ @file = "Rez.mc"; @line = 90; @position = 19; initialized = true; ]
+        var latitudeLongitude as Symbol;
+        [ @file = "Rez.mc"; @line = 91; @position = 19; initialized = true; ]
+        var licenseKey as Symbol;
+        [ @file = "Rez.mc"; @line = 92; @position = 19; initialized = true; ]
+        var sunset as Symbol;
+        [ @file = "Rez.mc"; @line = 93; @position = 19; initialized = true; ]
+        var hPa as Symbol;
+        [ @file = "Rez.mc"; @line = 94; @position = 19; initialized = true; ]
+        var Azores as Symbol;
+        [ @file = "Rez.mc"; @line = 95; @position = 19; initialized = true; ]
+        var Osaka as Symbol;
+        [ @file = "Rez.mc"; @line = 96; @position = 19; initialized = true; ]
+        var digitalColourTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 97; @position = 19; initialized = true; ]
+        var DD as Symbol;
+        [ @file = "Rez.mc"; @line = 98; @position = 19; initialized = true; ]
+        var dateNotificationOnTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 99; @position = 19; initialized = true; ]
+        var mmHg as Symbol;
+        [ @file = "Rez.mc"; @line = 100; @position = 19; initialized = true; ]
+        var historyPressure as Symbol;
+        [ @file = "Rez.mc"; @line = 101; @position = 19; initialized = true; ]
+        var wakeTimeTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 102; @position = 19; initialized = true; ]
+        var Nairobi as Symbol;
+        [ @file = "Rez.mc"; @line = 103; @position = 19; initialized = true; ]
+        var Brisbane as Symbol;
+        [ @file = "Rez.mc"; @line = 104; @position = 19; initialized = true; ]
+        var digitalClock as Symbol;
+        [ @file = "Rez.mc"; @line = 105; @position = 19; initialized = true; ]
+        var Battery as Symbol;
+        [ @file = "Rez.mc"; @line = 106; @position = 19; initialized = true; ]
+        var Guadalajara as Symbol;
+        [ @file = "Rez.mc"; @line = 107; @position = 19; initialized = true; ]
+        var millibar as Symbol;
+        [ @file = "Rez.mc"; @line = 108; @position = 19; initialized = true; ]
+        var Midway as Symbol;
+        [ @file = "Rez.mc"; @line = 109; @position = 19; initialized = true; ]
+        var Thin as Symbol;
+        [ @file = "Rez.mc"; @line = 110; @position = 19; initialized = true; ]
+        var notificationNumber as Symbol;
+        [ @file = "Rez.mc"; @line = 111; @position = 19; initialized = true; ]
+        var Sarajevo as Symbol;
+        [ @file = "Rez.mc"; @line = 112; @position = 19; initialized = true; ]
+        var DDMMYYYY as Symbol;
+        [ @file = "Rez.mc"; @line = 113; @position = 19; initialized = true; ]
+        var Jerusalem as Symbol;
+        [ @file = "Rez.mc"; @line = 114; @position = 19; initialized = true; ]
+        var Perth as Symbol;
+        [ @file = "Rez.mc"; @line = 115; @position = 19; initialized = true; ]
+        var sunsetOnTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 116; @position = 19; initialized = true; ]
+        var minuteSecondSeparatorTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 117; @position = 19; initialized = true; ]
+        var Greenwich as Symbol;
+        [ @file = "Rez.mc"; @line = 118; @position = 19; initialized = true; ]
+        var Medium as Symbol;
+        [ @file = "Rez.mc"; @line = 119; @position = 19; initialized = true; ]
+        var totalCal as Symbol;
+        [ @file = "Rez.mc"; @line = 120; @position = 19; initialized = true; ]
+        var Yerevan as Symbol;
+        [ @file = "Rez.mc"; @line = 121; @position = 19; initialized = true; ]
+        var secondsColourTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 122; @position = 19; initialized = true; ]
+        var psi as Symbol;
+        [ @file = "Rez.mc"; @line = 123; @position = 19; initialized = true; ]
+        var dateNextToThreeBoxColourTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 124; @position = 19; initialized = true; ]
+        var Taipei as Symbol;
+        [ @file = "Rez.mc"; @line = 125; @position = 19; initialized = true; ]
+        var medium as Symbol;
+        [ @file = "Rez.mc"; @line = 126; @position = 19; initialized = true; ]
+        var dateNextToThreeFillColourTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 127; @position = 19; initialized = true; ]
+        var DateMonth as Symbol;
+        [ @file = "Rez.mc"; @line = 128; @position = 19; initialized = true; ]
+        var miles as Symbol;
+        [ @file = "Rez.mc"; @line = 129; @position = 19; initialized = true; ]
+        var dateNextToThreeColourTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 130; @position = 19; initialized = true; ]
+        var Thinest as Symbol;
+        [ @file = "Rez.mc"; @line = 131; @position = 19; initialized = true; ]
+        var Mountain as Symbol;
+        [ @file = "Rez.mc"; @line = 132; @position = 19; initialized = true; ]
+        var Thickest as Symbol;
+        [ @file = "Rez.mc"; @line = 133; @position = 19; initialized = true; ]
+        var textNextToNineBoxTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 134; @position = 19; initialized = true; ]
+        var DateTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 135; @position = 19; initialized = true; ]
+        var ambientPressure as Symbol;
+        [ @file = "Rez.mc"; @line = 136; @position = 19; initialized = true; ]
+        var preset10 as Symbol;
+        [ @file = "Rez.mc"; @line = 137; @position = 19; initialized = true; ]
+        var Alaska as Symbol;
+        [ @file = "Rez.mc"; @line = 138; @position = 19; initialized = true; ]
+        var daylightSavingTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 139; @position = 19; initialized = true; ]
+        var International as Symbol;
+        [ @file = "Rez.mc"; @line = 140; @position = 19; initialized = true; ]
+        var nextToNineNotificationOnTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 141; @position = 19; initialized = true; ]
+        var custom as Symbol;
+        [ @file = "Rez.mc"; @line = 142; @position = 19; initialized = true; ]
+        var Almaty as Symbol;
+        [ @file = "Rez.mc"; @line = 143; @position = 19; initialized = true; ]
+        var pressureTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 144; @position = 19; initialized = true; ]
+        var Chihuahua as Symbol;
+        [ @file = "Rez.mc"; @line = 145; @position = 19; initialized = true; ]
+        var Cape as Symbol;
+        [ @file = "Rez.mc"; @line = 146; @position = 19; initialized = true; ]
+        var Central_Time as Symbol;
+        [ @file = "Rez.mc"; @line = 147; @position = 19; initialized = true; ]
+        var White as Symbol;
+        [ @file = "Rez.mc"; @line = 148; @position = 19; initialized = true; ]
+        var Purple as Symbol;
+        [ @file = "Rez.mc"; @line = 149; @position = 19; initialized = true; ]
+        var Cairo as Symbol;
+        [ @file = "Rez.mc"; @line = 150; @position = 19; initialized = true; ]
+        var dateFormatTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 151; @position = 19; initialized = true; ]
+        var Green as Symbol;
+        [ @file = "Rez.mc"; @line = 152; @position = 19; initialized = true; ]
+        var big as Symbol;
+        [ @file = "Rez.mc"; @line = 153; @position = 19; initialized = true; ]
+        var Casablanca as Symbol;
+        [ @file = "Rez.mc"; @line = 154; @position = 19; initialized = true; ]
+        var totalSteps as Symbol;
+        [ @file = "Rez.mc"; @line = 155; @position = 19; initialized = true; ]
+        var Orange as Symbol;
+        [ @file = "Rez.mc"; @line = 156; @position = 19; initialized = true; ]
+        var Kabul as Symbol;
+        [ @file = "Rez.mc"; @line = 157; @position = 19; initialized = true; ]
+        var digitalFontTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 158; @position = 19; initialized = true; ]
+        var hourMinuteSeparatorTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 159; @position = 19; initialized = true; ]
+        var DayDD as Symbol;
+        [ @file = "Rez.mc"; @line = 160; @position = 19; initialized = true; ]
+        var Chennai as Symbol;
+        [ @file = "Rez.mc"; @line = 161; @position = 19; initialized = true; ]
+        var Kathmandu as Symbol;
+        [ @file = "Rez.mc"; @line = 162; @position = 19; initialized = true; ]
+        var nextsunevent as Symbol;
+        [ @file = "Rez.mc"; @line = 163; @position = 19; initialized = true; ]
+        var Arizona as Symbol;
+        [ @file = "Rez.mc"; @line = 164; @position = 19; initialized = true; ]
+        var AppVersionTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 165; @position = 19; initialized = true; ]
+        var productId as Symbol;
+        [ @file = "Rez.mc"; @line = 166; @position = 19; initialized = true; ]
+        var large as Symbol;
+        [ @file = "Rez.mc"; @line = 167; @position = 19; initialized = true; ]
+        var Saskatchewan as Symbol;
+        [ @file = "Rez.mc"; @line = 168; @position = 19; initialized = true; ]
+        var Athens as Symbol;
+        [ @file = "Rez.mc"; @line = 169; @position = 19; initialized = true; ]
+        var Bangkok as Symbol;
+        [ @file = "Rez.mc"; @line = 170; @position = 19; initialized = true; ]
+        var Beijing as Symbol;
+        [ @file = "Rez.mc"; @line = 171; @position = 19; initialized = true; ]
+        var Santiago as Symbol;
+        [ @file = "Rez.mc"; @line = 172; @position = 19; initialized = true; ]
+        var celsius as Symbol;
+        [ @file = "Rez.mc"; @line = 173; @position = 19; initialized = true; ]
+        var inHg as Symbol;
+        [ @file = "Rez.mc"; @line = 174; @position = 19; initialized = true; ]
+        var Yellow as Symbol;
+        [ @file = "Rez.mc"; @line = 175; @position = 19; initialized = true; ]
+        var tiny as Symbol;
+        [ @file = "Rez.mc"; @line = 176; @position = 19; initialized = true; ]
+        var appVersionNumber as Symbol;
+        [ @file = "Rez.mc"; @line = 177; @position = 19; initialized = true; ]
+        var Canberra as Symbol;
+        [ @file = "Rez.mc"; @line = 178; @position = 19; initialized = true; ]
+        var presetsTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 179; @position = 19; initialized = true; ]
+        var dateBox as Symbol;
+        [ @file = "Rez.mc"; @line = 180; @position = 19; initialized = true; ]
+        var nextToNineFontTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 181; @position = 19; initialized = true; ]
+        var DkGreen as Symbol;
+        [ @file = "Rez.mc"; @line = 182; @position = 19; initialized = true; ]
+        var larger as Symbol;
+        [ @file = "Rez.mc"; @line = 183; @position = 19; initialized = true; ]
+        var Fiji as Symbol;
+        [ @file = "Rez.mc"; @line = 184; @position = 19; initialized = true; ]
+        var Astana as Symbol;
+        [ @file = "Rez.mc"; @line = 185; @position = 19; initialized = true; ]
+        var Adelaide as Symbol;
+        [ @file = "Rez.mc"; @line = 186; @position = 19; initialized = true; ]
+        var altitudeft as Symbol;
+        [ @file = "Rez.mc"; @line = 187; @position = 19; initialized = true; ]
+        var Moscow as Symbol;
+        [ @file = "Rez.mc"; @line = 188; @position = 19; initialized = true; ]
+        var Windhoek as Symbol;
+        [ @file = "Rez.mc"; @line = 189; @position = 19; initialized = true; ]
+        var Hobart as Symbol;
+        [ @file = "Rez.mc"; @line = 190; @position = 19; initialized = true; ]
+        var sunriseSunset as Symbol;
+        [ @file = "Rez.mc"; @line = 191; @position = 19; initialized = true; ]
+        var Harare as Symbol;
+        [ @file = "Rez.mc"; @line = 192; @position = 19; initialized = true; ]
+        var Amsterdam as Symbol;
+        [ @file = "Rez.mc"; @line = 193; @position = 19; initialized = true; ]
+        var Seoul as Symbol;
+        [ @file = "Rez.mc"; @line = 194; @position = 19; initialized = true; ]
+        var leftTextTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 195; @position = 19; initialized = true; ]
+        var Kuwait as Symbol;
+        [ @file = "Rez.mc"; @line = 196; @position = 19; initialized = true; ]
+        var textFontTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 197; @position = 19; initialized = true; ]
+        var userInfoTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 198; @position = 19; initialized = true; ]
+        var bigger as Symbol;
+        [ @file = "Rez.mc"; @line = 199; @position = 19; initialized = true; ]
+        var alarmNumber as Symbol;
+        [ @file = "Rez.mc"; @line = 200; @position = 19; initialized = true; ]
+        var Islamabad as Symbol;
+        [ @file = "Rez.mc"; @line = 201; @position = 19; initialized = true; ]
+        var twelvehourtimeTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 202; @position = 19; initialized = true; ]
+        var Pacific as Symbol;
+        [ @file = "Rez.mc"; @line = 203; @position = 19; initialized = true; ]
+        var DayDateMonth as Symbol;
+        [ @file = "Rez.mc"; @line = 204; @position = 19; initialized = true; ]
+        var None as Symbol;
+        [ @file = "Rez.mc"; @line = 205; @position = 19; initialized = true; ]
+        var small as Symbol;
+        [ @file = "Rez.mc"; @line = 206; @position = 19; initialized = true; ]
+        var feet as Symbol;
+        [ @file = "Rez.mc"; @line = 207; @position = 19; initialized = true; ]
+        var Brasilia as Symbol;
+        [ @file = "Rez.mc"; @line = 208; @position = 19; initialized = true; ]
+        var totalWeekDistanceMiles as Symbol;
+        [ @file = "Rez.mc"; @line = 209; @position = 19; initialized = true; ]
+        var Vladivostok as Symbol;
+        [ @file = "Rez.mc"; @line = 210; @position = 19; initialized = true; ]
+        var MMDDYYYY as Symbol;
+        [ @file = "Rez.mc"; @line = 211; @position = 19; initialized = true; ]
+        var Guam as Symbol;
+        [ @file = "Rez.mc"; @line = 212; @position = 19; initialized = true; ]
+        var totalDistanceMiles as Symbol;
+        [ @file = "Rez.mc"; @line = 213; @position = 19; initialized = true; ]
+        var DkRed as Symbol;
+        [ @file = "Rez.mc"; @line = 214; @position = 19; initialized = true; ]
+        var Kuala as Symbol;
+        [ @file = "Rez.mc"; @line = 215; @position = 19; initialized = true; ]
+        var fahrenheit as Symbol;
+        [ @file = "Rez.mc"; @line = 216; @position = 19; initialized = true; ]
+        var totalDistance as Symbol;
+        [ @file = "Rez.mc"; @line = 217; @position = 19; initialized = true; ]
+        var longitude as Symbol;
+        [ @file = "Rez.mc"; @line = 218; @position = 19; initialized = true; ]
+        var Brussels as Symbol;
+        [ @file = "Rez.mc"; @line = 219; @position = 19; initialized = true; ]
+        var dateColourTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 220; @position = 19; initialized = true; ]
+        var DkGray as Symbol;
+        [ @file = "Rez.mc"; @line = 221; @position = 19; initialized = true; ]
+        var Manaus as Symbol;
+        [ @file = "Rez.mc"; @line = 222; @position = 19; initialized = true; ]
+        var DkBlue as Symbol;
+        [ @file = "Rez.mc"; @line = 223; @position = 19; initialized = true; ]
+        var Thick as Symbol;
+        [ @file = "Rez.mc"; @line = 224; @position = 19; initialized = true; ]
+        var Bogota as Symbol;
+        [ @file = "Rez.mc"; @line = 225; @position = 19; initialized = true; ]
+        var Pink as Symbol;
+        [ @file = "Rez.mc"; @line = 226; @position = 19; initialized = true; ]
+        var Caracas as Symbol;
+        [ @file = "Rez.mc"; @line = 227; @position = 19; initialized = true; ]
+        var heartRate as Symbol;
+        [ @file = "Rez.mc"; @line = 228; @position = 19; initialized = true; ]
+        var Nuku as Symbol;
+        [ @file = "Rez.mc"; @line = 229; @position = 19; initialized = true; ]
+        var largest as Symbol;
+        [ @file = "Rez.mc"; @line = 230; @position = 19; initialized = true; ]
+        var altitude as Symbol;
+        [ @file = "Rez.mc"; @line = 231; @position = 19; initialized = true; ]
+        var moveBarOnTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 232; @position = 19; initialized = true; ]
+        var customstyle as Symbol;
+        [ @file = "Rez.mc"; @line = 233; @position = 19; initialized = true; ]
+        var leftNotificationOnTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 234; @position = 19; initialized = true; ]
+        var Sri as Symbol;
+        [ @file = "Rez.mc"; @line = 235; @position = 19; initialized = true; ]
+        var totalFloors as Symbol;
+        [ @file = "Rez.mc"; @line = 236; @position = 19; initialized = true; ]
+        var Auckland as Symbol;
+        [ @file = "Rez.mc"; @line = 237; @position = 19; initialized = true; ]
+        var AppName as Symbol;
+        [ @file = "Rez.mc"; @line = 238; @position = 19; initialized = true; ]
+        var meters as Symbol;
+        [ @file = "Rez.mc"; @line = 239; @position = 19; initialized = true; ]
+        var Darwin as Symbol;
+        [ @file = "Rez.mc"; @line = 240; @position = 19; initialized = true; ]
+        var customFontTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 241; @position = 19; initialized = true; ]
+        var DateMonthWeek as Symbol;
+        [ @file = "Rez.mc"; @line = 242; @position = 19; initialized = true; ]
+        var bluetoothStatusTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 243; @position = 19; initialized = true; ]
+        var backgroundColourTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 244; @position = 19; initialized = true; ]
+        var Magadan as Symbol;
+        [ @file = "Rez.mc"; @line = 245; @position = 19; initialized = true; ]
+        var Montevideo as Symbol;
+        [ @file = "Rez.mc"; @line = 246; @position = 19; initialized = true; ]
+        var secondsFontSizeTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 247; @position = 19; initialized = true; ]
+        var MonthDate as Symbol;
+        [ @file = "Rez.mc"; @line = 248; @position = 19; initialized = true; ]
+        var Tehran as Symbol;
+        [ @file = "Rez.mc"; @line = 249; @position = 19; initialized = true; ]
+        var timeZoneTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 250; @position = 19; initialized = true; ]
+        var textColourTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 251; @position = 19; initialized = true; ]
+        var West as Symbol;
+        [ @file = "Rez.mc"; @line = 252; @position = 19; initialized = true; ]
+        var Yangon as Symbol;
+        [ @file = "Rez.mc"; @line = 253; @position = 19; initialized = true; ]
+        var Newfoundland as Symbol;
+        [ @file = "Rez.mc"; @line = 254; @position = 19; initialized = true; ]
+        var meanSeaLevelPressure as Symbol;
+        [ @file = "Rez.mc"; @line = 255; @position = 19; initialized = true; ]
+        var Tijuana as Symbol;
+        [ @file = "Rez.mc"; @line = 256; @position = 19; initialized = true; ]
+        var Krasnoyarsk as Symbol;
+        [ @file = "Rez.mc"; @line = 257; @position = 19; initialized = true; ]
+        var rightNotificationOnTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 258; @position = 19; initialized = true; ]
+        var kilometers as Symbol;
+        [ @file = "Rez.mc"; @line = 259; @position = 19; initialized = true; ]
+        var Greenland as Symbol;
+    }
+}
+[ @file = "Rez.mc"; @line = 1; ]
+<init> {
+}

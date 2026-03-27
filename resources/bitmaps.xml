@@ -1,0 +1,13 @@
+<resources>
+    <bitmap id="LauncherIcon" filename="images/icon.png" />
+    <bitmap id="DoNotDisturbIcon" filename="images/donotdisturb.png">
+        <palette>
+            <color>FFFFFF</color>
+        </palette>
+    </bitmap>
+    <bitmap id="settingsIcon" filename="images/settings.png">
+        <palette>
+            <color>FFFFFF</color>
+        </palette>
+    </bitmap>
+</resources>
