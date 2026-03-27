@@ -62,6 +62,7 @@ using Toybox.Weather;
 using Toybox.UserProfile;
 
 var appVersion = "1.4.4"; 
+
 var partialUpdatesAllowed = false;
 
 // Calculator overlay state (global so AnalogDelegate and AnalogView can share)
