@@ -25,7 +25,7 @@ using Toybox.Weather;
 [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogView.mc"; @line = 62; @symbol_usingdef<0> = [Toybox,62,6,12]; @symbol_usingdef<1> = [UserProfile,62,13,24]; ]
 using Toybox.UserProfile;
 [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogView.mc"; @line = 64; @position = 4; @symbol_vardef = [appVersion,64,4,14]; ]
-var appVersion = "1.4.4";
+var appVersion = "1.4.5";
 [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogView.mc"; @line = 66; @position = 4; @symbol_vardef = [partialUpdatesAllowed,66,4,25]; ]
 var partialUpdatesAllowed = false;
 [ @file = "D:\OneDrive\Garmin\Source\Casio A171WE-1A\source\AnalogView.mc"; @line = 69; @position = 4; @symbol_vardef = [calculatorActive,69,4,20]; ]
